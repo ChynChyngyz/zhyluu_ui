@@ -406,6 +406,12 @@ class $AssetsImagesAppartmentGen {
   AssetGenImage get windowScheme =>
       const AssetGenImage('assets/images/appartment/window_scheme.png');
 
+  AssetGenImage get insulationLathing =>
+      const AssetGenImage('assets/images/appartment/insulation_lathing.png');
+
+  AssetGenImage get insulationLathing2 =>
+      const AssetGenImage('assets/images/appartment/insulation_lathing2.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
         energySavingScheme,

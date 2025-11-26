@@ -33,100 +33,105 @@ class WhereToInsulateContainerScreen extends StatelessWidget {
         ),
       ),
       backgroundGradiend: AppColors.backgroundLightGradient,
-      body: Column(
-        children: [
-          SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(horizontal: 29),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+      body: SingleChildScrollView(  // Добавлен SingleChildScrollView для прокрутки
+        padding: const EdgeInsets.symmetric(horizontal: 29),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 95),
+            Text(
+              "Где утеплять?",
+              textAlign: TextAlign.start,
+              style: GoogleFonts.poppins(
+                fontSize: 18,
+                color: Colors.white,
+                letterSpacing: 0.63,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            const SizedBox(height: 32),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const SizedBox(height: 95),
-                Text(
-                  "Где утеплять?",
-                  textAlign: TextAlign.start,
-                  style: GoogleFonts.poppins(
-                    fontSize: 18,
-                    color: Colors.white,
-                    letterSpacing: 0.63,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                const SizedBox(height: 32),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                Column(
                   children: [
-                    Column(
-                      children: [
-                        WhereToInsulateCard(
-                          onTap: () {
-                            context.push(
-                                WhereToInsulateWindowsDoorsScreen.routeName);
-                          },
-                          color: const Color(0xFFFFB2B2),
-                          iconPath:
-                              Assets.icons.whereToInsulate.windowsDoors.path,
-                          text: "Окна/Двери",
-                        ),
-                        const SizedBox(height: 21),
-                        WhereToInsulateCard(
-                          onTap: () {
-                            context
-                                .push(WhereToInsulateCeilingScreen.routeName);
-                          },
-                          color: const Color(0xFFA4EBDE),
-                          iconPath: Assets.icons.whereToInsulate.ceiling.path,
-                          text: "Соединение\nпотолка",
-                        ),
-                        const SizedBox(height: 21),
-                        WhereToInsulateCard(
-                          onTap: () {
-                            context.push(WhereToInsulateWallScreen.routeName);
-                          },
-                          color: const Color(0xFFF9DC78),
-                          iconPath: Assets.icons.whereToInsulate.wall.path,
-                          text: "Стены",
-                        ),
-                      ],
+                    WhereToInsulateCard(
+                      onTap: () {
+                        context.push(
+                            WhereToInsulateWindowsDoorsScreen.routeName);
+                      },
+                      color: const Color(0xFFFFB2B2),
+                      iconPath:
+                      Assets.icons.whereToInsulate.windowsDoors.path,
+                      text: "Окна/Двери",
                     ),
-                    Column(
-                      children: [
-                        const SizedBox(height: 37),
-                        WhereToInsulateCard(
-                          onTap: () {
-                            context.push(WhereToInsulateRoofScreen.routeName);
-                          },
-                          color: const Color(0xFFA5E47E),
-                          iconPath: Assets.icons.whereToInsulate.roof.path,
-                          text: "Крыша",
-                        ),
-                        const SizedBox(height: 21),
-                        WhereToInsulateCard(
-                          onTap: () {
-                            context.push(WhereToInsulateFloorScreen.routeName);
-                          },
-                          color: const Color(0xFFBAD6F6),
-                          iconPath: Assets.icons.whereToInsulate.floor.path,
-                          text: "Пол",
-                        ),
-                        const SizedBox(height: 21),
-                        WhereToInsulateCard(
-                          onTap: () {
-                            context
-                                .push(WhereToInsulateFundamentScreen.routeName);
-                          },
-                          color: const Color(0xFF8DE09A),
-                          iconPath: Assets.icons.whereToInsulate.fundament.path,
-                          text: "Фундамент",
-                        ),
-                      ],
+                    const SizedBox(height: 21),
+                    WhereToInsulateCard(
+                      onTap: () {
+                        context
+                            .push(WhereToInsulateCeilingScreen.routeName);
+                      },
+                      color: const Color(0xFFA4EBDE),
+                      iconPath: Assets.icons.whereToInsulate.ceiling.path,
+                      text: "Соединение\nпотолка",
+                    ),
+                    const SizedBox(height: 21),
+                    WhereToInsulateCard(
+                      onTap: () {
+                        context.push(WhereToInsulateWallScreen.routeName);
+                      },
+                      color: const Color(0xFFF9DC78),
+                      iconPath: Assets.icons.whereToInsulate.wall.path,
+                      text: "Стены",
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    const SizedBox(height: 37),
+                    WhereToInsulateCard(
+                      onTap: () {
+                        context.push(WhereToInsulateRoofScreen.routeName);
+                      },
+                      color: const Color(0xFFA5E47E),
+                      iconPath: Assets.icons.whereToInsulate.roof.path,
+                      text: "Крыша",
+                    ),
+                    const SizedBox(height: 21),
+                    WhereToInsulateCard(
+                      onTap: () {
+                        context.push(WhereToInsulateFloorScreen.routeName);
+                      },
+                      color: const Color(0xFFBAD6F6),
+                      iconPath: Assets.icons.whereToInsulate.floor.path,
+                      text: "Пол",
+                    ),
+                    const SizedBox(height: 21),
+                    WhereToInsulateCard(
+                      onTap: () {
+                        context.push(WhereToInsulateFundamentScreen.routeName);
+                      },
+                      color: const Color(0xFF8DE09A),
+                      iconPath: Assets.icons.whereToInsulate.fundament.path,
+                      text: "Фундамент",
                     ),
                   ],
                 ),
               ],
             ),
-          ),
-          const Spacer(),
-        ],
+            const SizedBox(height: 32),
+            // Добавляем новую секцию "Повышенная влажность"
+            WhereToInsulateCard(
+              onTap: () {
+                // Переход на экран, если нужно (здесь предполагается, что экран существует)
+                context.push("/increased-humidity-screen");
+              },
+              color: const Color(0xFF6EC5F3),  // Случайный цвет для секции
+              iconPath: Assets.icons.whereToInsulate.windowsDoors.path,  // Можно выбрать свой иконки для влажности
+              text: "Повышенная\nвлажность",
+            ),
+          ],
+        ),
       ),
     );
   }

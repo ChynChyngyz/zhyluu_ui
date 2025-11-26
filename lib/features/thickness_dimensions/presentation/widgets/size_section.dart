@@ -25,13 +25,13 @@ class SizeSection extends StatelessWidget {
         onTap?.call(data);
       },
       children: [
-        TIManager1Data(text: "200"),
-        TIManager1Data(text: "250"),
-        TIManager1Data(text: "300"),
-        TIManager1Data(text: "350"),
-        TIManager1Data(text: "400"),
-        TIManager1Data(text: "450"),
-        TIManager1Data(text: "500"),
+        TIManager1Data(text: "200 мм"),
+        TIManager1Data(text: "250 мм"),
+        TIManager1Data(text: "300 мм"),
+        TIManager1Data(text: "350 мм"),
+        TIManager1Data(text: "400 мм"),
+        TIManager1Data(text: "450 мм"),
+        TIManager1Data(text: "500 мм"),
       ],
     );
   }

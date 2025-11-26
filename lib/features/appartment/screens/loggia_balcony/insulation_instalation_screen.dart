@@ -170,7 +170,18 @@ class InsulationInstalationWorkScreen extends StatelessWidget {
                 SizedBox(height: 15),
                 TextWithDot(
                     text:
-                        "Обрешетка производится для дальнейшего крепления отделочных листов (ГКЛ, OSB, пластиковые панели и др.)."),
+                    "Обрешетка производится для дальнейшего крепления отделочных листов (ГКЛ, OSB, пластиковые панели и др.)."),
+              ],
+            ),
+          ),
+          const SizedBox(height: 15),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 27),
+            child: Column(
+              children: [
+                Image.asset(Assets.images.appartment.insulationLathing.path), // Первая картинка
+                const SizedBox(height: 12),
+                Image.asset(Assets.images.appartment.insulationLathing2.path), // Вторая картинка
               ],
             ),
           ),

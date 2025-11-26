@@ -71,7 +71,7 @@ class AboutScreen extends StatelessWidget {
                     Image.asset(Assets.images.about.image05.path),
                     const SizedBox(height: 8),
                     Text(
-                      "КНАУ им. С.И. Скрябина",
+                      "КНАУ им. К.И. Скрябина",
                       style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontWeight: FontWeight.w600,

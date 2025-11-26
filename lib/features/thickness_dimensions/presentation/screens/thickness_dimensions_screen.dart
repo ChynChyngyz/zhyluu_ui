@@ -368,7 +368,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                           floor = data;
 
                                           switch (data) {
-                                            case "Грунт":
+                                            case "На грунте":
                                               nextPage(
                                                 TIManager2(
                                                   text: "Покрытие пола",
