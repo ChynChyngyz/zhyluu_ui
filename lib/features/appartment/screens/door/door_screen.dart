@@ -88,7 +88,7 @@ class DoorScreen extends StatelessWidget {
                     height: 50,
                     child: Center(
                       child: Text(
-                        "Установка\nуплотнителей по\nпериметру",
+                        "Замена или\nустановка уполнителей",
                         textAlign: TextAlign.center,
                         style: GoogleFonts.rubik(
                           letterSpacing: 0.16,

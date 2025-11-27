@@ -12,7 +12,7 @@ class SealPerimeterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MyScaffoldCurveImage(
-      title: "Утепление откосов",
+      title: "Замена или\nустановка\nуполнителей",
       imagePath: Assets.images.door.sealInstalationPerimeter.path,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
