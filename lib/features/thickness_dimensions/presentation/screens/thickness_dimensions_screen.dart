@@ -584,7 +584,7 @@ class ThicknessDimensionsScreen extends HookWidget {
                                           }
                                         },
                                         children: [
-                                          TIManager1Data(text: "Грунт"),
+                                          TIManager1Data(text: "На грунте"),
                                           TIManager1Data(text: "Железобетон"),
                                         ],
                                       ),

@@ -12,7 +12,10 @@ import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_r
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_wall_screen.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_windows_doors_screen.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/widgets/where_to_insulate_card.dart';
+import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_humidity_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+
+
 
 class WhereToInsulateContainerScreen extends StatelessWidget {
   static const routeName = "/where-to-insulate";
@@ -119,16 +122,15 @@ class WhereToInsulateContainerScreen extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 32),
-            // Добавляем новую секцию "Повышенная влажность"
-            WhereToInsulateCard(
-              onTap: () {
-                // Переход на экран, если нужно (здесь предполагается, что экран существует)
-                context.push("/increased-humidity-screen");
-              },
-              color: const Color(0xFF6EC5F3),  // Случайный цвет для секции
-              iconPath: Assets.icons.whereToInsulate.windowsDoors.path,  // Можно выбрать свой иконки для влажности
-              text: "Повышенная\nвлажность",
+                    const SizedBox(height: 32),
+                    // Добавляем новую секцию "Повышенная влажность"
+                    WhereToInsulateCard(
+                      onTap: () {
+                        context.push(WhereToInsulateHumidityScreen.routeName);
+                      },
+                      color: const Color(0xFF6EC5F3),  // Цвет для секции
+                      iconPath: Assets.icons.whereToInsulate.watersoil.path,  // Иконка для влажности
+                      text: "Повышенная\nвлажность",  // Текст для карточки
             ),
           ],
         ),

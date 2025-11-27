@@ -148,6 +148,7 @@ class $AssetsImagesGen {
   AssetGenImage get curveGradient =>
       const AssetGenImage('assets/images/curve_gradient.png');
 
+
   $AssetsImagesDoorGen get door => const $AssetsImagesDoorGen();
   $AssetsImagesFloorGen get floor => const $AssetsImagesFloorGen();
   $AssetsImagesFundamentGen get fundament => const $AssetsImagesFundamentGen();
@@ -273,6 +274,9 @@ class $AssetsIconsWhereToInsulateGen {
   /// File path: assets/icons/where_to_insulate/ceiling.svg
   SvgGenImage get ceiling =>
       const SvgGenImage('assets/icons/where_to_insulate/ceiling.svg');
+
+  SvgGenImage get watersoil =>
+      const SvgGenImage('assets/icons/where_to_insulate/water-svgrepo-com.svg');
 
   /// File path: assets/icons/where_to_insulate/floor.svg
   SvgGenImage get floor =>
@@ -412,6 +416,7 @@ class $AssetsImagesAppartmentGen {
   AssetGenImage get insulationLathing2 =>
       const AssetGenImage('assets/images/appartment/insulation_lathing2.png');
 
+
   /// List of all assets
   List<AssetGenImage> get values => [
         energySavingScheme,
@@ -442,6 +447,12 @@ class $AssetsImagesDoorGen {
   /// File path: assets/images/door/door_parts.png
   AssetGenImage get doorParts =>
       const AssetGenImage('assets/images/door/door_parts.png');
+
+  AssetGenImage get doorOtkos =>
+      const AssetGenImage('assets/images/door/Otkosy.png');
+
+  AssetGenImage get doorPolot =>
+      const AssetGenImage('assets/images/door/Polotno_inside.png');
 
   /// File path: assets/images/door/door_size.png
   AssetGenImage get doorSize =>
@@ -968,6 +979,9 @@ class $AssetsImagesWhereToInsulateGen {
   /// File path: assets/images/where_to_insulate/windows-doors.png
   AssetGenImage get windowsDoors =>
       const AssetGenImage('assets/images/where_to_insulate/windows-doors.png');
+
+  AssetGenImage get humidity =>
+      const AssetGenImage('assets/images/where_to_insulate/humidity.png');
 
   /// List of all assets
   List<AssetGenImage> get values =>
