@@ -10,38 +10,22 @@ class LocalizationSwitch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isKg = context.watch<IsKgCubit>().state;
+
+    final locale = context.watch<IsKgCubit>().state;
+    final isKg = locale.languageCode == 'ky';
 
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.end,
+      mainAxisSize: MainAxisSize.min,
       children: [
-        Text(
-          "KGZ",
-          textAlign: TextAlign.center,
-          style: GoogleFonts.poppins(
-            fontSize: 12,
-            color: Colors.white,
-          ),
-        ),
-        const SizedBox(width: 9),
-        CupertinoSwitch(
-          activeColor: AppColors.secondaryLight,
-          trackColor: AppColors.secondaryLight,
-          thumbColor: AppColors.secondaryDark,
+        Text("KGZ", style: TextStyle(color: isKg ? Colors.white : Colors.white60)),
+        Switch(
           value: !isKg,
           onChanged: (value) {
-            context.read<IsKgCubit>().change(!value);
+            context.read<IsKgCubit>().changeLanguage(!value);
           },
+          activeColor: const Color(0xFF5AB48E),
         ),
-        const SizedBox(width: 9),
-        Text(
-          "RU",
-          textAlign: TextAlign.center,
-          style: GoogleFonts.poppins(
-            fontSize: 12,
-            color: Colors.white,
-          ),
-        ),
+        Text("RU", style: TextStyle(color: !isKg ? Colors.white : Colors.white60)),
       ],
     );
   }

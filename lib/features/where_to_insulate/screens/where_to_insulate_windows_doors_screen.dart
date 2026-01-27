@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
+
 
 class WhereToInsulateWindowsDoorsScreen extends StatelessWidget {
   static const routeName = "/where-to-insulate-windows-doors";
@@ -10,29 +12,26 @@ class WhereToInsulateWindowsDoorsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return WhereToInsulateScreen(
       imagePath: Assets.images.whereToInsulate.windowsDoors.path,
-      title: "Оконные и дверные проемы",
+      title: s.windows_doors_title,
       child: RichText(
         text: TextSpan(
           style: AppTextStyles.regularTextStyle,
           children: [
-            const TextSpan(
-                text:
-                    """Другими критическими точками утечки тепла являются окна и двери во внешних стенах, особенно перемычки и прямые соединения окна со стеной здания.
-Тепловые потери через окно происходят по нескольким каналам: потери через оконный блок и переплеты (мостики холода, неплотности), потери за счет теплопроводности воздуха и конвективных потоков между стеклами, а также теплопотери посредством теплового излучения. Очевидно, что, величина теплопотерь через оконный блок напрямую зависит от конструкции окна, используемых материалов, качества изготовления. В реальности она составляет около 10 % от общих теплопотерь из помещения. Остальные два канала теплопотерь - это потери непосредственно через остекление.\n\nОценить правильно ли были выполнены работы в этом случае довольно сложно.
-Если ошибки видны, мы можем минимизировать потери тепла на стыках, используя так называемую установку теплых окон с использованием лент и герметизирующей фольги.
-Подробнее об утеплении окон и дверей, вы можете изучить в разделе """),
+            TextSpan(text: s.windows_doors_description_part1),
             TextSpan(
-              text: "УТЕПЛЕНИЕ ОКОН ",
+              text: s.windows_insulation_link,
               style: AppTextStyles.invertedTextStyle,
             ),
-            const TextSpan(text: "и "),
+            TextSpan(text: s.and_conjunction),
             TextSpan(
-              text: "УТЕПЛЕНИЕ ДВЕРЕЙ",
+              text: s.doors_insulation_link,
               style: AppTextStyles.invertedTextStyle,
             ),
-            const TextSpan(text: "."),
+            TextSpan(text: s.dot),
           ],
         ),
       ),

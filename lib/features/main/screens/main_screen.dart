@@ -9,6 +9,7 @@ import 'package:zhyluu_ui/features/main/widgets/category_carousel.dart';
 import 'package:zhyluu_ui/features/main/widgets/localization_switch.dart';
 import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/thickness_dimensions_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class MainScreen extends StatelessWidget {
   static const routeName = "/main";
@@ -17,6 +18,8 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldColor(
       backgroundColor: AppColors.secondary,
       appBar: const MyAppBar(
@@ -49,7 +52,7 @@ class MainScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 28),
                     child: Text(
-                      "Категории",
+                      s.home_categories,
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                         fontSize: 18,

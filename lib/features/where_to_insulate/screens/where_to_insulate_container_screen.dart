@@ -14,8 +14,7 @@ import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_w
 import 'package:zhyluu_ui/features/where_to_insulate/widgets/where_to_insulate_card.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_humidity_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
-
-
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class WhereToInsulateContainerScreen extends StatelessWidget {
   static const routeName = "/where-to-insulate";
@@ -24,6 +23,8 @@ class WhereToInsulateContainerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldGradient(
       appBar: MyAppBar(
         leading: Padding(
@@ -36,14 +37,14 @@ class WhereToInsulateContainerScreen extends StatelessWidget {
         ),
       ),
       backgroundGradiend: AppColors.backgroundLightGradient,
-      body: SingleChildScrollView(  // Добавлен SingleChildScrollView для прокрутки
+      body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 29),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 95),
             Text(
-              "Где утеплять?",
+              s.where_to_insulate_title,
               textAlign: TextAlign.start,
               style: GoogleFonts.poppins(
                 fontSize: 18,
@@ -59,33 +60,24 @@ class WhereToInsulateContainerScreen extends StatelessWidget {
                 Column(
                   children: [
                     WhereToInsulateCard(
-                      onTap: () {
-                        context.push(
-                            WhereToInsulateWindowsDoorsScreen.routeName);
-                      },
+                      onTap: () => context.push(WhereToInsulateWindowsDoorsScreen.routeName),
                       color: const Color(0xFFFFB2B2),
-                      iconPath:
-                      Assets.icons.whereToInsulate.windowsDoors.path,
-                      text: "Окна/Двери",
+                      iconPath: Assets.icons.whereToInsulate.windowsDoors.path,
+                      text: s.card_windows_doors,
                     ),
                     const SizedBox(height: 21),
                     WhereToInsulateCard(
-                      onTap: () {
-                        context
-                            .push(WhereToInsulateCeilingScreen.routeName);
-                      },
+                      onTap: () => context.push(WhereToInsulateCeilingScreen.routeName),
                       color: const Color(0xFFA4EBDE),
                       iconPath: Assets.icons.whereToInsulate.ceiling.path,
-                      text: "Соединение\nпотолка",
+                      text: s.card_ceiling,
                     ),
                     const SizedBox(height: 21),
                     WhereToInsulateCard(
-                      onTap: () {
-                        context.push(WhereToInsulateWallScreen.routeName);
-                      },
+                      onTap: () => context.push(WhereToInsulateWallScreen.routeName),
                       color: const Color(0xFFF9DC78),
                       iconPath: Assets.icons.whereToInsulate.wall.path,
-                      text: "Стены",
+                      text: s.card_walls,
                     ),
                   ],
                 ),
@@ -93,44 +85,35 @@ class WhereToInsulateContainerScreen extends StatelessWidget {
                   children: [
                     const SizedBox(height: 37),
                     WhereToInsulateCard(
-                      onTap: () {
-                        context.push(WhereToInsulateRoofScreen.routeName);
-                      },
+                      onTap: () => context.push(WhereToInsulateRoofScreen.routeName),
                       color: const Color(0xFFA5E47E),
                       iconPath: Assets.icons.whereToInsulate.roof.path,
-                      text: "Крыша",
+                      text: s.card_roof,
                     ),
                     const SizedBox(height: 21),
                     WhereToInsulateCard(
-                      onTap: () {
-                        context.push(WhereToInsulateFloorScreen.routeName);
-                      },
+                      onTap: () => context.push(WhereToInsulateFloorScreen.routeName),
                       color: const Color(0xFFBAD6F6),
                       iconPath: Assets.icons.whereToInsulate.floor.path,
-                      text: "Пол",
+                      text: s.card_floor,
                     ),
                     const SizedBox(height: 21),
                     WhereToInsulateCard(
-                      onTap: () {
-                        context.push(WhereToInsulateFundamentScreen.routeName);
-                      },
+                      onTap: () => context.push(WhereToInsulateFundamentScreen.routeName),
                       color: const Color(0xFF8DE09A),
                       iconPath: Assets.icons.whereToInsulate.fundament.path,
-                      text: "Фундамент",
+                      text: s.card_foundation,
                     ),
                   ],
                 ),
               ],
             ),
-                    const SizedBox(height: 32),
-                    // Добавляем новую секцию "Повышенная влажность"
-                    WhereToInsulateCard(
-                      onTap: () {
-                        context.push(WhereToInsulateHumidityScreen.routeName);
-                      },
-                      color: const Color(0xFF6EC5F3),  // Цвет для секции
-                      iconPath: Assets.icons.whereToInsulate.watersoil.path,  // Иконка для влажности
-                      text: "Повышенная\nвлажность",  // Текст для карточки
+            const SizedBox(height: 32),
+            WhereToInsulateCard(
+              onTap: () => context.push(WhereToInsulateHumidityScreen.routeName),
+              color: const Color(0xFF6EC5F3),
+              iconPath: Assets.icons.whereToInsulate.watersoil.path,
+              text: s.card_humidity,
             ),
           ],
         ),

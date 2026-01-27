@@ -1,20 +1,10 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class IsKgCubit extends Cubit<bool> {
-  IsKgCubit() : super(false);
+class IsKgCubit extends Cubit<Locale> {
+  IsKgCubit() : super(const Locale('ru'));
 
-  void change(bool value) {
-    emit(value);
+  void changeLanguage(bool isKg) {
+    emit(isKg ? const Locale('ky') : const Locale('ru'));
   }
 }
-
-// import 'package:flutter_bloc/flutter_bloc.dart';
-// import 'package:flutter/material.dart';
-//
-// class LanguageCubit extends Cubit<Locale> {
-//   LanguageCubit() : super(Locale('ru'));
-//
-//   void changeLanguage(String languageCode) {
-//     emit(Locale(languageCode));
-//   }
-// }

@@ -3,6 +3,7 @@ import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/widgets/enumerating_text.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class WhereToInsulateRoofScreen extends StatelessWidget {
   static const routeName = "/where-to-insulate-roof";
@@ -11,24 +12,25 @@ class WhereToInsulateRoofScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return WhereToInsulateScreen(
       imagePath: Assets.images.whereToInsulate.roof.path,
-      title: "Тепловые потери через крышу здания",
+      title: s.roof_title,
       child: Column(
         children: [
           RichText(
             text: TextSpan(
                 style: AppTextStyles.regularTextStyle,
-                text:
-                    """Через крышу здания теряется примерно 25-30 % от общих потерь. Это еще одно частое место возникновения тепловых мостов в домах. Как правило, утечки тепла в мансардах и чердаках возникают из-за неправильного сделанного соединения теплоизоляции между внешними стенами и несущей конструкцией крыши."""),
+                text: s.roof_description_1),
           ),
           const SizedBox(height: 7),
-          const EnumeratingText(
-            title: "Причин для этого много:",
+          EnumeratingText(
+            title: s.roof_reasons_title,
             texts: [
-              "Теплый воздух всегда поднимается к потолку, поэтому самый большой перепад температуры приходится на крышу. Если у нее нет надежной теплоизоляции, энергия покидает дом без каких-либо препятствий.",
-              "Проверьте целостность и толщину перекрытия на крыше, уделяя особое внимание местам примыкания к стенам.",
-              "Крыши часто протекают: если с потолка капает, это первый сигнал того, что утеплитель напитывается водой и намокает (в результате тепло уходит очень быстро).",
+              s.roof_reason_1,
+              s.roof_reason_2,
+              s.roof_reason_3,
             ],
           ),
           const SizedBox(height: 7),
@@ -36,14 +38,12 @@ class WhereToInsulateRoofScreen extends StatelessWidget {
             text: TextSpan(
               style: AppTextStyles.regularTextStyle,
               children: [
-                const TextSpan(
-                    text:
-                        """Подробнее об утеплении крыши здания, можете изучить в разделе """),
+                TextSpan(text: s.roof_link_text),
                 TextSpan(
-                  text: "УТЕПЛЕНИЕ КРЫШИ",
+                  text: s.roof_link_action,
                   style: AppTextStyles.invertedTextStyle,
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: s.dot),
               ],
             ),
           ),

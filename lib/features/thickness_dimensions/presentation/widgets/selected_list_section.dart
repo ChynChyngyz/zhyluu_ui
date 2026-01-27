@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class SelectedListSectionData {
   final String title;
@@ -25,6 +26,7 @@ class SelectedListSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
     final List<TextSpan> list = [];
 
     for (final child in children) {
@@ -69,7 +71,7 @@ class SelectedListSection extends StatelessWidget {
               bottom: 18,
             ),
             child: Text(
-              "Ваш список:",
+              s.your_list_title,
               textAlign: TextAlign.start,
               style: GoogleFonts.poppins(
                 fontSize: 18,
@@ -131,7 +133,7 @@ class SelectedListSection extends StatelessWidget {
                   height: 32,
                   child: Center(
                     child: Text(
-                      "Подвердить",
+                      s.button_confirm,
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                         letterSpacing: 0.35,

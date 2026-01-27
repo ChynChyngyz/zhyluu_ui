@@ -10,6 +10,7 @@ import 'package:zhyluu_ui/features/main/screens/main_screen.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_container_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 import 'package:zhyluu_ui/is_kg_cubit.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -17,6 +18,10 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
+    final s = S.of(context);
+
+    final currentLocale = context.watch<IsKgCubit>().state;
+    final isKg = currentLocale.languageCode == 'ky';
 
     return Container(
       width: screenSize.width * 0.75,
@@ -45,7 +50,7 @@ class MyDrawer extends StatelessWidget {
                     SvgPicture.asset(Assets.icons.main.main.path),
                     const SizedBox(width: 10),
                     Text(
-                      "Главная",
+                      s.drawer_main,
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                         color: Colors.white,
@@ -63,7 +68,7 @@ class MyDrawer extends StatelessWidget {
               context.push(AboutScreen.routeName);
             },
             iconPath: Assets.icons.main.drawer.aboutProject.path,
-            text: "О проекте",
+            text: s.drawer_about,
           ),
           const SizedBox(height: 28),
           _MyDrawerButton(
@@ -71,7 +76,7 @@ class MyDrawer extends StatelessWidget {
               context.push(WhereToInsulateContainerScreen.routeName);
             },
             iconPath: Assets.icons.main.drawer.question.path,
-            text: "Где утеплять ?",
+            text: s.drawer_where,
           ),
           const SizedBox(height: 28),
           SizedBox(
@@ -80,14 +85,14 @@ class MyDrawer extends StatelessWidget {
               color: Colors.transparent,
               child: InkWell(
                 onTap: () async {
-                  final isKg = context.read<IsKgCubit>().state;
-                  final link = !isKg
-                      ? "https://docs.google.com/forms/d/e/1FAIpQLSeEeYjz8hbC_PJNzDXHA3Qjt6a4TTuLkG9XAtN2ZP7HtR2WPw/viewform?usp=sf_link"
-                      : "https://docs.google.com/forms/d/e/1FAIpQLSeDDRdNuZp9rR_3ilc1WDl9f_OKgbcRXqEB4ynDv2YyaruVPQ/viewform?usp=sf_link";
+                  final link = isKg
+                      ? "https://docs.google.com/forms/d/e/1FAIpQLSeDDRdNuZp9rR_3ilc1WDl9f_OKgbcRXqEB4ynDv2YyaruVPQ/viewform?usp=sf_link"
+                      : "https://docs.google.com/forms/d/e/1FAIpQLSeEeYjz8hbC_PJNzDXHA3Qjt6a4TTuLkG9XAtN2ZP7HtR2WPw/viewform?usp=sf_link";
 
                   final Uri url = Uri.parse(link);
-
-                  await launchUrl(url);
+                  if (await canLaunchUrl(url)) {
+                    await launchUrl(url, mode: LaunchMode.externalApplication);
+                  }
                 },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,

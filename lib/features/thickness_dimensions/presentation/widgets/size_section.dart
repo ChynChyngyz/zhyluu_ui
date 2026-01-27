@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/features/thickness_dimensions/presentation/widgets/ti_manager.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class SizeSection extends StatelessWidget {
   const SizeSection({
@@ -16,8 +17,11 @@ class SizeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+    final mm = s.unit_mm;
+
     return TIManager1(
-      text: "Толщина стены",
+      text: s.wall_thickness_title,
       childrenIconPath: Assets.icons.roulette.path,
       progress: progress,
       length: length,
@@ -25,13 +29,13 @@ class SizeSection extends StatelessWidget {
         onTap?.call(data);
       },
       children: [
-        TIManager1Data(text: "200 мм"),
-        TIManager1Data(text: "250 мм"),
-        TIManager1Data(text: "300 мм"),
-        TIManager1Data(text: "350 мм"),
-        TIManager1Data(text: "400 мм"),
-        TIManager1Data(text: "450 мм"),
-        TIManager1Data(text: "500 мм"),
+        TIManager1Data(text: "200 $mm"),
+        TIManager1Data(text: "250 $mm"),
+        TIManager1Data(text: "300 $mm"),
+        TIManager1Data(text: "350 $mm"),
+        TIManager1Data(text: "400 $mm"),
+        TIManager1Data(text: "450 $mm"),
+        TIManager1Data(text: "500 $mm"),
       ],
     );
   }

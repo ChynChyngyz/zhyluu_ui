@@ -3,6 +3,7 @@ import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/widgets/enumerating_text.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class WhereToInsulateFloorScreen extends StatelessWidget {
   static const routeName = "/where-to-insulate-floor";
@@ -11,26 +12,27 @@ class WhereToInsulateFloorScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return WhereToInsulateScreen(
       imagePath: Assets.images.whereToInsulate.floor.path,
-      title: "Тепловые потери через пол",
+      title: s.floor_title,
       child: Column(
         children: [
           RichText(
             text: TextSpan(
               style: AppTextStyles.regularTextStyle,
-              text:
-                  """Неизолированное перекрытие отдает весомую часть тепла фундаменту и стенам. Как показывает практический опыт, значительная часть тепла уходит на участке соединения стены и пола, через мостики холода в углу. При определенных температурных условиях в таком углу появляется повышенная влажность, а со временем развивается плесень и грибок.""",
+              text: s.floor_description,
             ),
           ),
           const SizedBox(height: 7),
-          const EnumeratingText(
-            title: "Основными причинами утечки тепла в области пола являются:",
+          EnumeratingText(
+            title: s.floor_reasons_title,
             texts: [
-              "особенности конструкции строения;",
-              "использование материалов с разным показателем теплопроводности;",
-              "неплотные стыки, щели и другие строительные дефекты;",
-              "отсутствующая или некачественная тепло и гидроизоляция стяжки на первом этаже.",
+              s.floor_reason_1,
+              s.floor_reason_2,
+              s.floor_reason_3,
+              s.floor_reason_4,
             ],
           ),
           const SizedBox(height: 7),
@@ -38,14 +40,12 @@ class WhereToInsulateFloorScreen extends StatelessWidget {
             text: TextSpan(
               style: AppTextStyles.regularTextStyle,
               children: [
-                const TextSpan(
-                    text:
-                        """Подробнее об утеплении пола, можно изучить в разделе """),
+                TextSpan(text: s.floor_link_text),
                 TextSpan(
-                  text: "УТЕПЛЕНИЕ ПОЛА",
+                  text: s.floor_link_action,
                   style: AppTextStyles.invertedTextStyle,
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: s.dot),
               ],
             ),
           ),

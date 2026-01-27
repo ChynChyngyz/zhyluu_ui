@@ -57,6 +57,7 @@ import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_c
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_roof_screen.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_wall_screen.dart';
 import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_windows_doors_screen.dart';
+import 'package:zhyluu_ui/features/where_to_insulate/screens/where_to_insulate_humidity_screen.dart';
 
 final routerConfig = GoRouter(
   routes: [
@@ -367,6 +368,10 @@ final routerConfig = GoRouter(
     GoRoute(
       path: WhereToInsulateRoofScreen.routeName,
       builder: (context, state) => const WhereToInsulateRoofScreen(),
+    ),
+    GoRoute(
+      path: WhereToInsulateHumidityScreen.routeName,
+      builder: (context, state) => const WhereToInsulateHumidityScreen(),
     ),
   ],
 );
