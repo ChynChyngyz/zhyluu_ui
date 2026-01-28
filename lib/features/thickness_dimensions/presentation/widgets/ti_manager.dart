@@ -3,11 +3,26 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/colors.dart';
 
+// --- Модели данных ---
+
 class TIManager1Data {
   final String text;
-
   TIManager1Data({required this.text});
 }
+
+class TIManager2Data {
+  final String text;
+  final String iconPath;
+  final String technicalKey; // Добавлено поле для логики переключения
+
+  TIManager2Data({
+    required this.text,
+    required this.iconPath,
+    required this.technicalKey,
+  });
+}
+
+// --- Виджеты ---
 
 class TIManager1 extends StatelessWidget {
   const TIManager1({
@@ -31,31 +46,20 @@ class TIManager1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _TIManager(
+    return _TIManagerBase(
       text: text,
       subText: subText,
       progress: progress,
       length: length,
       children: children
-          .map(
-            (child) => _TICard(
-              iconPath: childrenIconPath,
-              text: child.text,
-              onTap: () {
-                onTap?.call(child.text);
-              },
-            ),
-          )
+          .map((child) => _TICard(
+        iconPath: childrenIconPath,
+        text: child.text,
+        onTap: () => onTap?.call(child.text),
+      ))
           .toList(),
     );
   }
-}
-
-class TIManager2Data {
-  final String text;
-  final String iconPath;
-
-  TIManager2Data({required this.text, required this.iconPath});
 }
 
 class TIManager2 extends StatelessWidget {
@@ -74,32 +78,29 @@ class TIManager2 extends StatelessWidget {
   final int progress;
   final int length;
   final List<TIManager2Data> children;
-  final Function(String)? onTap;
+  final Function(String)? onTap; // Передает technicalKey
 
   @override
   Widget build(BuildContext context) {
-    return _TIManager(
+    return _TIManagerBase(
       text: text,
       subText: subText,
       progress: progress,
       length: length,
       children: children
-          .map(
-            (child) => _TICard(
-              iconPath: child.iconPath,
-              text: child.text,
-              onTap: () {
-                onTap?.call(child.text);
-              },
-            ),
-          )
+          .map((child) => _TICard(
+        iconPath: child.iconPath,
+        text: child.text,
+        onTap: () => onTap?.call(child.technicalKey),
+      ))
           .toList(),
     );
   }
 }
 
-class _TIManager extends StatelessWidget {
-  const _TIManager({
+// Приватный базовый виджет (переименован для ясности)
+class _TIManagerBase extends StatelessWidget {
+  const _TIManagerBase({
     required this.text,
     this.subText,
     required this.children,
@@ -123,21 +124,17 @@ class _TIManager extends StatelessWidget {
           padding: const EdgeInsets.only(left: 26),
           child: Text(
             text,
-            textAlign: TextAlign.start,
             style: GoogleFonts.poppins(
               fontSize: 32,
               color: Colors.white,
-              letterSpacing: 0.48,
               fontWeight: FontWeight.w600,
             ),
           ),
         ),
         const SizedBox(height: 3),
-        const Divider(
-          height: 1,
-          color: AppColors.primary,
-        ),
+        const Divider(height: 1, color: AppColors.primary),
         const SizedBox(height: 38),
+        // Индикатор прогресса
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 7),
           child: Row(
@@ -151,8 +148,8 @@ class _TIManager extends StatelessWidget {
                     color: i < progress
                         ? const Color(0xFFFF5B42)
                         : i == progress
-                            ? const Color(0xFFFAC710)
-                            : const Color(0xFFF5F5F5),
+                        ? const Color(0xFFFAC710)
+                        : const Color(0xFFF5F5F5),
                     borderRadius: BorderRadius.circular(5),
                   ),
                 ),
@@ -162,7 +159,7 @@ class _TIManager extends StatelessWidget {
         const SizedBox(height: 22.5),
         Expanded(
           child: Container(
-            width: MediaQuery.of(context).size.width,
+            width: double.infinity,
             decoration: const BoxDecoration(
               color: AppColors.primary,
               borderRadius: BorderRadius.only(
@@ -176,18 +173,11 @@ class _TIManager extends StatelessWidget {
                 children: [
                   if (subText != null)
                     Padding(
-                      padding: const EdgeInsets.only(
-                        top: 8,
-                        left: 26,
-                        bottom: 6,
-                      ),
+                      padding: const EdgeInsets.only(top: 8, left: 26, bottom: 6),
                       child: Text(
                         subText!,
-                        textAlign: TextAlign.start,
                         style: GoogleFonts.poppins(
                           fontSize: 15,
-                          color: Colors.black,
-                          letterSpacing: 0.75,
                           fontWeight: FontWeight.w800,
                         ),
                       ),
@@ -204,7 +194,7 @@ class _TIManager extends StatelessWidget {
                     crossAxisSpacing: 28,
                     children: children,
                   ),
-                  const SizedBox(height: 113.65),
+                  const SizedBox(height: 100),
                 ],
               ),
             ),
@@ -216,12 +206,7 @@ class _TIManager extends StatelessWidget {
 }
 
 class _TICard extends StatelessWidget {
-  const _TICard({
-    required this.iconPath,
-    required this.text,
-    this.onTap,
-  });
-
+  const _TICard({required this.iconPath, required this.text, this.onTap});
   final String iconPath;
   final String text;
   final VoidCallback? onTap;
@@ -229,9 +214,7 @@ class _TICard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 138,
-      height: 112,
-      clipBehavior: Clip.antiAliasWithSaveLayer,
+      clipBehavior: Clip.antiAlias,
       decoration: BoxDecoration(
         color: const Color(0xFFF7F8FC),
         borderRadius: BorderRadius.circular(5),
@@ -239,23 +222,19 @@ class _TICard extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {
-            onTap?.call();
-          },
+          onTap: onTap,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(height: 20),
               SvgPicture.asset(iconPath),
               const SizedBox(height: 14),
-              SizedBox(
-                width: 112,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4),
                 child: Text(
                   text,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.poppins(
                     fontSize: 12,
-                    color: Colors.black,
-                    letterSpacing: 0.42,
                     fontWeight: FontWeight.w600,
                   ),
                 ),

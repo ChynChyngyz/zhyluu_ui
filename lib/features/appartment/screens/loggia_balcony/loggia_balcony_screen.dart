@@ -9,6 +9,8 @@ import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_gradient.dar
 import 'package:zhyluu_ui/features/common/widgets/enumerating_text.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_button.dart';
 import 'package:zhyluu_ui/features/common/widgets/text_with_dot.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
+
 
 class LoggiaBalconyScreen extends StatelessWidget {
   static const routeName = "/loggia-balcony";
@@ -17,33 +19,34 @@ class LoggiaBalconyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
     return MyScaffoldCurveGradient(
-      title: "УТЕПЛЕНИЕ\nБАЛКОНА / ЛОДЖИИ",
+      title: s.insulation_balcony_loggia_title,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             EnumeratingText(
-              title: "Преимущества утепления\nбалкона/ лоджии:",
+              title: s.advantage_insulation_balcony_loggia_title,
               includeSpacing: true,
               titleTextStyle: GoogleFonts.poppins(
                 fontSize: 15,
                 color: Colors.black,
                 fontWeight: FontWeight.w600,
               ),
-              texts: const [
-                "Энергоэффективность - утепление балкона помогает уменьшить теплопотери через стены, что повышает энергоэффективность всего здания. Это позволяет снизить расходы на отопление и кондиционирование воздуха и сделать жилье более комфортным независимо от времени года.",
-                "Защита от холода и влаги - утепленный балкон служит дополнительным барьером от холодного воздуха, ветра и влажности.",
-                "Создание дополнительного жилого пространства - после утепления балкон можно преобразовать в дополнительное пространство (кабинет, студию, зону для отдыха, место для хранения вещей и др).",
-                "Повышение стоимости недвижимости - утепление балкона может увеличить стоимость жилья при его продаже или сдаче в аренду. Покупатели и арендаторы часто ценят наличие утепленных балконов, которые могут быть использованы как дополнительное жилое пространство.",
-                "Защита от повреждений - утепление может предотвратить повреждение балкона из-за экстремальных температурных условий, влажности и образования конденсата.",
-                "Теплоизоляция балкона/лоджии позволяет зимой сохранить тепло в квартирах, а летом создать прохладу.",
+              texts: [
+                s.balcony_text_1,
+                s.balcony_text_2,
+                s.balcony_text_3,
+                s.balcony_text_4,
+                s.balcony_text_5,
+                s.balcony_text_6,
               ],
             ),
             const SizedBox(height: 15),
             Text(
-              "Варианты утеплени\nбалкона/лоджии:",
+              s.variants_of_insulation,
               style: AppTextStyles.invertedTextStyle,
             ),
             const SizedBox(height: 15),
@@ -57,7 +60,7 @@ class LoggiaBalconyScreen extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: "Снаружи ",
+                    text: s.variants_balcony_out,
                     style: GoogleFonts.poppins(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
@@ -65,7 +68,7 @@ class LoggiaBalconyScreen extends StatelessWidget {
                       letterSpacing: 0.88,
                     ),
                   ),
-                  const TextSpan(text: "(только балкон)."),
+                  TextSpan(text: s.variants_balcony_out_1),
                 ],
               ),
             ),
@@ -74,7 +77,7 @@ class LoggiaBalconyScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyButton(
-                  text: "Снаружи",
+                  text: s.button_outside,
                   onTap: () {
                     context.push(LoggiaBalconyOutsideScreen.routeName);
                   },
@@ -92,7 +95,7 @@ class LoggiaBalconyScreen extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: "Изнутри ",
+                    text: s.variants_balcony_ins_,
                     style: GoogleFonts.poppins(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
@@ -100,7 +103,7 @@ class LoggiaBalconyScreen extends StatelessWidget {
                       letterSpacing: 0.88,
                     ),
                   ),
-                  const TextSpan(text: "(балкон и лоджию)."),
+                  TextSpan(text: s.variants_balcony_ins_1),
                 ],
               ),
             ),
@@ -109,7 +112,7 @@ class LoggiaBalconyScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyButton(
-                  text: "Изнутри",
+                  text: s.button_inside,
                   onTap: () {
                     context.push(LoggiaBalconyInsideScreen.routeName);
                   },
@@ -127,7 +130,7 @@ class LoggiaBalconyScreen extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: "С обеих сторон ",
+                    text: s.variants_balcony_two,
                     style: GoogleFonts.poppins(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
@@ -135,7 +138,7 @@ class LoggiaBalconyScreen extends StatelessWidget {
                       letterSpacing: 0.88,
                     ),
                   ),
-                  const TextSpan(text: "(только балкон)."),
+                  TextSpan(text: s.variants_balcony_two_1),
                 ],
               ),
             ),
@@ -149,7 +152,7 @@ class LoggiaBalconyScreen extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: "Утепление с обеих сторон\n",
+                    text: s.variants_two_side,
                     style: GoogleFonts.poppins(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
@@ -157,9 +160,10 @@ class LoggiaBalconyScreen extends StatelessWidget {
                       letterSpacing: 0.88,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                       text:
-                          "приводит к увеличению затрат в два раза, но при этом не повышает тепловая эффективность. Поэтому достаточно утеплить балкон/лоджию или снаружи или изнутри."),
+                          s.variants_two_side_1,
+                  )
                 ],
               ),
             )

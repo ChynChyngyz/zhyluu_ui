@@ -6,6 +6,8 @@ import 'package:zhyluu_ui/features/appartment/screens/loggia_balcony/insulation_
 import 'package:zhyluu_ui/features/appartment/screens/loggia_balcony/preparatory_work_screen.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_image.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
+
 
 class LoggiaBalconyInsideScreen extends StatelessWidget {
   static const routeName = "/loggia-balcony-inside";
@@ -14,9 +16,10 @@ class LoggiaBalconyInsideScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
     return MyScaffoldCurveImage(
       imagePath: Assets.images.appartment.loggiaBalconyInside.path,
-      title: "Утепление\nбалкона изнутри",
+      title: s.inside_insulation_title,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(
@@ -32,7 +35,7 @@ class LoggiaBalconyInsideScreen extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: "Утепление балкона изнутри.\n",
+                    text: s.inside_insulation_title_1,
                     style: GoogleFonts.poppins(
                       fontSize: 16,
                       color: Colors.black,
@@ -41,9 +44,9 @@ class LoggiaBalconyInsideScreen extends StatelessWidget {
                       fontStyle: FontStyle.italic,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                       text:
-                          "Преимущества - относительная простота установки, особенно, если балкон уже застеклен. Недостаток - уменьшение площади помещения из-за утеплителя.\n\nДля утепления своими реками нужны некоторые базовые навыки в строительстве и умение правильно использовать подходящие материалы. Нужно соблюдать меры безопасности и тщательно выполнить каждый шаг процесса."),
+                          s.inside_insulation_text),
                 ],
               ),
             ),
@@ -60,7 +63,7 @@ class LoggiaBalconyInsideScreen extends StatelessWidget {
                   ..onTap = () {
                     context.push(PreparatoryWorkScreen.routeName);
                   },
-                text: "1. Подготовительные работы",
+                text: s.preparation_inside_text,
               ),
             ),
             RichText(
@@ -75,7 +78,7 @@ class LoggiaBalconyInsideScreen extends StatelessWidget {
                   ..onTap = () {
                     context.push(InsulationInstalationWorkScreen.routeName);
                   },
-                text: "2. Монтаж утеплителя",
+                text: s.preparation_inside_text_1,
               ),
             ),
           ],

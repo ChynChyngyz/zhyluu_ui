@@ -1,0 +1,354 @@
+// DO NOT EDIT. This is code generated via package:intl/generate_localized.dart
+// This is a library that provides messages for a ky locale. All the
+// messages from the main program should be duplicated here with the same
+// function name.
+
+// Ignore issues from commonly used lints in this file.
+// ignore_for_file:unnecessary_brace_in_string_interps, unnecessary_new
+// ignore_for_file:prefer_single_quotes,comment_references, directives_ordering
+// ignore_for_file:annotate_overrides,prefer_generic_function_type_aliases
+// ignore_for_file:unused_import, file_names, avoid_escaping_inner_quotes
+// ignore_for_file:unnecessary_string_interpolations, unnecessary_string_escapes
+
+import 'package:intl/intl.dart';
+import 'package:intl/message_lookup_by_library.dart';
+
+final messages = new MessageLookup();
+
+typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
+
+class MessageLookup extends MessageLookupByLibrary {
+  String get localeName => 'ky';
+
+  final messages = _notInlinedMessages(_notInlinedMessages);
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "about_proj": MessageLookupByLibrary.simpleMessage("Проект жондо"),
+        "adobe_title": MessageLookupByLibrary.simpleMessage("Саман/Ылай"),
+        "advantage_insulation_balcony_loggia_title":
+            MessageLookupByLibrary.simpleMessage(
+                "Балконду/лоджияны \nжылуулоонун артыкчылыктары:"),
+        "and_conjunction": MessageLookupByLibrary.simpleMessage("жана "),
+        "balcony_text_1": MessageLookupByLibrary.simpleMessage(
+            "Энергия үнѳмдүүлүк – балконду жылуулоо дубал аркылуу жылуулукту жоготууну азайтууга жардам берет, бул бүткүл имараттын энергия үнѳмдүүлүгүн жогорулатат. Бул жылытууга жана абаны желдетүүгѳ кеткен чыгымдарды азайтууга жана турак жайдын жылдын кай мезгили болсо да ыңгайлуу болушуна алып келет."),
+        "balcony_text_2": MessageLookupByLibrary.simpleMessage(
+            "Сууктан жана нымдуулуктан коргоо – жылууланган балкон муздак абадан, шамалдан жана нымдуулуктан коргоочу кошумча тоскоолдук катары кызмат кылат."),
+        "balcony_text_3": MessageLookupByLibrary.simpleMessage(
+            "Кошумча турак жай мейкиндигин жаратуу – балконду жылуулагандан кийин аны кошумча мейкиндикке (кабинет, студия, эс алуу аймагы, буюм-тайымды сактоочу жай ж.б.) ѳзгѳртүүгѳ болот."),
+        "balcony_text_4": MessageLookupByLibrary.simpleMessage(
+            "Кыймылсыз мүлктүн наркын жогорулатуу – балконду жылуулоо сатууда же ижарага берүүдѳ турак жайдын наркын кѳтѳрүшү мүмкүн. Сатып алуучулар жана ижарачылар, адатта, жылууланган балкондун болуусуна баа берет, анткени аны кошумча турак жай мейкиндиги катары да колдонууга болот."),
+        "balcony_text_5": MessageLookupByLibrary.simpleMessage(
+            "Зыянга учуроодон коргоо – балконду жылуулоо аны экстремалдык температуралык шарттарда зыянга учуроодон, нымдуулуктан жана конденсаттын пайда болуусунан коргойт."),
+        "balcony_text_6": MessageLookupByLibrary.simpleMessage(
+            "Балкондун/лоджиянын жылуулук изоляциясы кышында батирде жылуулукту, ал эми жайында салкынды сактоого мүмкүндүк берет."),
+        "brick_title": MessageLookupByLibrary.simpleMessage("Кирпич"),
+        "button_confirm": MessageLookupByLibrary.simpleMessage("Ырастоо"),
+        "button_inside": MessageLookupByLibrary.simpleMessage("Ичинен"),
+        "button_outside": MessageLookupByLibrary.simpleMessage("Тышынан"),
+        "buy": MessageLookupByLibrary.simpleMessage(
+            "Тѳмѳнкүлѳрдү сатып алыңыз:\n"),
+        "card_ceiling":
+            MessageLookupByLibrary.simpleMessage("Шыптын\nкошулушу"),
+        "card_floor": MessageLookupByLibrary.simpleMessage("Пол"),
+        "card_foundation": MessageLookupByLibrary.simpleMessage("Пайдубал"),
+        "card_humidity":
+            MessageLookupByLibrary.simpleMessage("Жогорку\nнымдуулук"),
+        "card_roof": MessageLookupByLibrary.simpleMessage("Чатыр"),
+        "card_walls": MessageLookupByLibrary.simpleMessage("Дубалдар"),
+        "card_windows_doors":
+            MessageLookupByLibrary.simpleMessage("Терезе/Эшик"),
+        "ceiling_description": MessageLookupByLibrary.simpleMessage(
+            "Жылуулук көпүрөлөрү көп кездешкен дагы бир жер — бул шыптын дубал менен кошулган жери.\nЭски имараттарда бул көйгөй алда канча көп кездешет, өзгөчө эски жана агып жаткан жыгач терезелерди ПВХ терезелерге алмаштыргандан кийин. Бул жерлерде ным топтолуп, көк, ал тургай грибок пайда болушу мүмкүн. Мунун баарына жабуу плитасы менен дубалдын сырткы четинин ортосундагы кошулган жер себеп болот. Бактыга жараша, плитанын дубалдын чети менен кошулган жерин кылдаттык менен тегиздөө аркылуу бул жылуулук көпүрөсүн жок кылса болот."),
+        "ceiling_title": MessageLookupByLibrary.simpleMessage(
+            "Шыптын дубал менен кошулган жери"),
+        "ceramic_brick": MessageLookupByLibrary.simpleMessage("Керамикалык"),
+        "city_balykchy": MessageLookupByLibrary.simpleMessage("Балыкчы ш."),
+        "city_bishkek": MessageLookupByLibrary.simpleMessage("Бишкек ш."),
+        "city_cholpon_ata":
+            MessageLookupByLibrary.simpleMessage("Чолпон-Ата ш."),
+        "city_jalal_abad":
+            MessageLookupByLibrary.simpleMessage("Жалал-Абад ш."),
+        "city_kant": MessageLookupByLibrary.simpleMessage("Кант ш."),
+        "city_kara_balta":
+            MessageLookupByLibrary.simpleMessage("Кара-Балта ш."),
+        "city_karakol": MessageLookupByLibrary.simpleMessage("Каракол ш."),
+        "city_kyzyl_kiya": MessageLookupByLibrary.simpleMessage("Кызыл-Кыя ш."),
+        "city_naryn": MessageLookupByLibrary.simpleMessage("Нарын ш."),
+        "city_osh": MessageLookupByLibrary.simpleMessage("Ош ш."),
+        "city_talas": MessageLookupByLibrary.simpleMessage("Талас ш."),
+        "city_tokmok": MessageLookupByLibrary.simpleMessage("Токмок ш."),
+        "city_toktogul": MessageLookupByLibrary.simpleMessage("Токтогул ш."),
+        "city_uzgen": MessageLookupByLibrary.simpleMessage("Өзгөн ш."),
+        "doors_insulation_link":
+            MessageLookupByLibrary.simpleMessage("ЭШИКТЕРДИ ЖЫЛУУЛОО"),
+        "dot": MessageLookupByLibrary.simpleMessage("."),
+        "drawer_about": MessageLookupByLibrary.simpleMessage("Долбоор жөнүндө"),
+        "drawer_feedback":
+            MessageLookupByLibrary.simpleMessage("Артка байланыш"),
+        "drawer_main": MessageLookupByLibrary.simpleMessage("Башкы бет"),
+        "drawer_where":
+            MessageLookupByLibrary.simpleMessage("Кайсы жерди жылуулоо керек?"),
+        "floor": MessageLookupByLibrary.simpleMessage("Пол"),
+        "floor_cover_title":
+            MessageLookupByLibrary.simpleMessage("Полдун жабуусу"),
+        "floor_description": MessageLookupByLibrary.simpleMessage(
+            "Изоляцияланбаган жабуу жылуулуктун олуттуу бөлүгүн пайдубалга жана дубалдарга берет. Иш жүзүндөгү тажрыйба көрсөткөндөй, жылуулуктун чоң бөлүгү дубал менен полдун кошулган жеринде, бурчтагы сууктук көпүрөлөрү аркылуу кетет. Белгилүү бир температуралык шарттарда мындай бурчта жогорку нымдуулук пайда болуп, убакыттын өтүшү менен көк жана грибок өнүгөт."),
+        "floor_link_action":
+            MessageLookupByLibrary.simpleMessage("ПОЛДУ ЖЫЛУУЛОО"),
+        "floor_link_text": MessageLookupByLibrary.simpleMessage(
+            "Полду жылуулоо жөнүндө кененирээк маалыматты бул бөлүмдөн окуй аласыз: "),
+        "floor_reason_1": MessageLookupByLibrary.simpleMessage(
+            "имараттын конструкциялык өзгөчөлүктөрү;"),
+        "floor_reason_2": MessageLookupByLibrary.simpleMessage(
+            "жылуулук өткөрүмдүүлүк көрсөткүчтөрү ар кандай материалдарды колдонуу;"),
+        "floor_reason_3": MessageLookupByLibrary.simpleMessage(
+            "тыгыз эмес кошулган жерлер, жылчыктар жана башка курулуш кемчиликтери;"),
+        "floor_reason_4": MessageLookupByLibrary.simpleMessage(
+            "биринчи кабаттагы стяжканын жылуулук жана гидроизоляциясынын жоктугу же сапатсыздыгы."),
+        "floor_reasons_title": MessageLookupByLibrary.simpleMessage(
+            "Пол аймагындагы жылуулук жоготуунун негизги себептери болуп төмөнкүлөр саналат:"),
+        "floor_title": MessageLookupByLibrary.simpleMessage(
+            "Пол аркылуу жылуулук жоготуу"),
+        "fundament_description": MessageLookupByLibrary.simpleMessage(
+            "Бетон – пайдубал курууда эң көп колдонулган материал. Анын жогорку жылуулук өткөргүчтүгү жана топурак менен түздөн-түз байланышы имараттын бүткүл периметри боюнча жылуулук жоготуулардын 20 пайызына чейин берет. Пайдубал өзгөчө жер төлөдөн жана биринчи кабаттагы туура эмес орнотулган жылуу полдон жылуулукту абдан күчтүү өткөрөт.\nПайдубалды жылуулоо жөнүндө кененирээк маалыматты бул бөлүмдөн окуй аласыз: "),
+        "fundament_link":
+            MessageLookupByLibrary.simpleMessage("ПАЙДУБАЛДЫ ЖЫЛУУЛОО"),
+        "fundament_title": MessageLookupByLibrary.simpleMessage(
+            "Пайдубалдын жылуулук жоготуусу"),
+        "gas_concrete_title":
+            MessageLookupByLibrary.simpleMessage("Газобетон/Пенобетон"),
+        "granite": MessageLookupByLibrary.simpleMessage("Гранит"),
+        "home_categories": MessageLookupByLibrary.simpleMessage("Категориялар"),
+        "home_size": MessageLookupByLibrary.simpleMessage("Санаа"),
+        "house_title": MessageLookupByLibrary.simpleMessage("Үй"),
+        "humidity_description": MessageLookupByLibrary.simpleMessage(
+            "Имараттын коргоочу конструкциялары үйдө жылуулукту сактап, адам үчүн ыңгайлуу шарттарды камсыз кылышы керек. Дубалдар курулган материалдар төмөнкү жылуулук өткөрүмдүүлүккө ээ болушу керек (жылуулук өткөрүмдүүлүк – бул материалдын жылуулукту өткөрүү жөндөмдүүлүгү)."),
+        "humidity_title":
+            MessageLookupByLibrary.simpleMessage("Жогорку нымдуулук"),
+        "inside_insulation_text": MessageLookupByLibrary.simpleMessage(
+            "Артыкчылыгы – орнотуу салыштырмалуу оңой, ѳзгѳчѳ, эгер балкон буга чейин эле айнектелген болсо. Кемчилиги – жылуулоочу материалдардын эсебинен балкондун аянтынын азайышы.\n \nѲз колу менен жылуулоо үчүн курулуш жаатында  бир аз да болсо түпкү кѳндүмдѳргѳ жана керектүү материалдарды туура пайдалануу жѳндѳмүнѳ ээ болуу керек. \nКоопсуздук чараларын аткаруу менен процесстин ар бир кадамын кылдат аткаруу керек.\n"),
+        "inside_insulation_title": MessageLookupByLibrary.simpleMessage(
+            "Балконду/лоджияны \nичинен жылуулоо"),
+        "inside_insulation_title_1": MessageLookupByLibrary.simpleMessage(
+            "Балконду/лоджияны \nичинен жылуулоо\n"),
+        "insulation_balcony_loggia_title": MessageLookupByLibrary.simpleMessage(
+            "БАЛКОНДУ/ЛОДЖИЯНЫ ЖЫЛУУЛОО  "),
+        "linoleum": MessageLookupByLibrary.simpleMessage("Линолеум"),
+        "mat_clay": MessageLookupByLibrary.simpleMessage("Керамзит"),
+        "mat_mineral_wool":
+            MessageLookupByLibrary.simpleMessage("Минералдык пахта"),
+        "mat_pps": MessageLookupByLibrary.simpleMessage("Пенополистирол (ППС)"),
+        "mat_ppu": MessageLookupByLibrary.simpleMessage("Пенополиуретан (ППУ)"),
+        "mat_reeds": MessageLookupByLibrary.simpleMessage("Камыш"),
+        "mat_straw": MessageLookupByLibrary.simpleMessage("Саман"),
+        "mat_wool": MessageLookupByLibrary.simpleMessage("Жүн"),
+        "mat_xps": MessageLookupByLibrary.simpleMessage(
+            "Экструдияланган пенополистирол (XPS)"),
+        "on_ground": MessageLookupByLibrary.simpleMessage("Төшөлмө (грунтта)"),
+        "outside_insulation_text": MessageLookupByLibrary.simpleMessage(
+            "\nѳз алдынча аткаруу ѳтѳ кыйын. Андыктан, кѳп кабаттуу имараттардын тышкы дубалдары менен иш алып баруу тажрыйбасына ээ ѳнѳр жай альпинисттеринин жардамы керек. Мындан тышкары, бул сыяктуу процесстер имараттын бетин ѳзгѳртүүгѳ жергиликтүү администрациядан кошумча уруксат алууну талап кылышы мүмкүн, бул, албетте, кошумча чыгымдарга алып келет. Тышкы жылуулоонун артыкчылыгы – жылуулоочу катмар балкондун ансыз да чакан катмарын азайтып салбайт."),
+        "outside_insulation_title":
+            MessageLookupByLibrary.simpleMessage("Утепление\nбалкона снаружи"),
+        "outside_insulation_title_1": MessageLookupByLibrary.simpleMessage(
+            "Утепление\nбалкона снаружи\n"),
+        "parquet": MessageLookupByLibrary.simpleMessage("Паркет"),
+        "place_tyuya_ashu": MessageLookupByLibrary.simpleMessage("Төө-Ашуу"),
+        "planning": MessageLookupByLibrary.simpleMessage(
+            "1. Пландаштыруу жана даярдык кѳрүү"),
+        "planning_1":
+            MessageLookupByLibrary.simpleMessage("2.  Кыртышты даярдоо"),
+        "planning_2": MessageLookupByLibrary.simpleMessage("3. Грунттоо"),
+        "prep_work":
+            MessageLookupByLibrary.simpleMessage("Даярдык кѳрүү иштери"),
+        "preparation_inside_text":
+            MessageLookupByLibrary.simpleMessage("1. Даярдык кѳрүү иштери"),
+        "preparation_inside_text_1": MessageLookupByLibrary.simpleMessage(
+            "Жылуулоочтун жана материалдардын керектүү кѳлѳмүн баалаңыз. Сиз каалаган балкондун кѳлѳмүнѳ жана жылуулоо деңгээлине негизделиңиз. \nТѳмѳнкүлѳрдү сатып алыңыз:\n-  жылуулооч (мисалы, минералдык пахта, пенопласт же или экструзиялык  пенополистирол),\n- курулуш шаймандары, клей же монтаждык кѳбүк, жасалгоо үчүн декоративдик материалдар (плиткалар, панелдер).  "),
+        "preparation_outside_text": MessageLookupByLibrary.simpleMessage(""),
+        "preparation_outside_text_1": MessageLookupByLibrary.simpleMessage(""),
+        "qw": MessageLookupByLibrary.simpleMessage("Каптоо"),
+        "recommendationTitle":
+            MessageLookupByLibrary.simpleMessage("Сиз үчүн сунуш:"),
+        "recommendation_title":
+            MessageLookupByLibrary.simpleMessage("Сиз үчүн сунуш:"),
+        "regionBatken": MessageLookupByLibrary.simpleMessage("Баткен"),
+        "regionChui": MessageLookupByLibrary.simpleMessage("Чүй"),
+        "regionIssyk_kol": MessageLookupByLibrary.simpleMessage("Ысык-Көл"),
+        "regionJalal_abad": MessageLookupByLibrary.simpleMessage("Жалал-Абад"),
+        "regionNaryn": MessageLookupByLibrary.simpleMessage("Нарын"),
+        "regionOsh": MessageLookupByLibrary.simpleMessage("Ош"),
+        "regionTalas": MessageLookupByLibrary.simpleMessage("Талас"),
+        "regionTitle": MessageLookupByLibrary.simpleMessage("Облус"),
+        "region_batken": MessageLookupByLibrary.simpleMessage("Баткен"),
+        "region_chui": MessageLookupByLibrary.simpleMessage("Чүй"),
+        "region_issyk_kol": MessageLookupByLibrary.simpleMessage("Ысык-Көл"),
+        "region_jalal_abad": MessageLookupByLibrary.simpleMessage("Жалал-Абад"),
+        "region_naryn": MessageLookupByLibrary.simpleMessage("Нарын"),
+        "region_osh": MessageLookupByLibrary.simpleMessage("Ош"),
+        "region_talas": MessageLookupByLibrary.simpleMessage("Талас"),
+        "region_title": MessageLookupByLibrary.simpleMessage("Облус"),
+        "reinforced_concrete":
+            MessageLookupByLibrary.simpleMessage("Темир-бетон"),
+        "roof": MessageLookupByLibrary.simpleMessage("Чатырдын жабылышы"),
+        "roof_description_1": MessageLookupByLibrary.simpleMessage(
+            "Имараттын чатыры аркылуу жалпы жоготуулардын болжол менен 25-30 пайызы кетет. Бул үйлөрдө жылуулук көпүрөлөрү пайда болгон дагы бир жалпы жер. Эреже катары, мансардалардагы жана чердактардагы жылуулук жоготуулар тышкы дубалдар менен чатырдын көтөрүүчү конструкциясынын ортосундагы жылуулук изоляциясынын туура эмес туташтырылышынан келип чыгат."),
+        "roof_link_action":
+            MessageLookupByLibrary.simpleMessage("ЧАТЫРДЫ ЖЫЛУУЛОО"),
+        "roof_link_text": MessageLookupByLibrary.simpleMessage(
+            "Имараттын чатырын жылуулоо жөнүндө кененирээк маалыматты бул бөлүмдөн окуй аласыз: "),
+        "roof_reason_1": MessageLookupByLibrary.simpleMessage(
+            "Жылуу аба дайыма шыпка көтөрүлөт, ошондуктан эң чоң температура айырмасы чатырга туура келет. Эгерде анын ишенимдүү жылуулук изоляциясы жок болсо, энергия үйдөн эч кандай тоскоолдуксуз чыгып кетет."),
+        "roof_reason_2": MessageLookupByLibrary.simpleMessage(
+            "Чатырдагы жабуунун бүтүндүгүн жана калыңдыгын текшериңиз, дубалдарга чектеш жерлерге өзгөчө көңүл буруңуз."),
+        "roof_reason_3": MessageLookupByLibrary.simpleMessage(
+            "Чатырлар көп учурда агат: эгер шыптан тамчылап жатса, бул жылуулоочу материал сууга каныгып, нымдап жаткандыгынын биринчи белгиси (натыйжада жылуулук абдан тез кетет)."),
+        "roof_reasons_title":
+            MessageLookupByLibrary.simpleMessage("Мунун себептери көп:"),
+        "roof_title": MessageLookupByLibrary.simpleMessage(
+            "Имараттын чатыры аркылуу жылуулук жоготуу"),
+        "settlementTitle":
+            MessageLookupByLibrary.simpleMessage("Калктуу пункт"),
+        "settlement_title":
+            MessageLookupByLibrary.simpleMessage("Калктуу пункт"),
+        "silicate_brick": MessageLookupByLibrary.simpleMessage("Силикаттык"),
+        "solid_brick": MessageLookupByLibrary.simpleMessage("Тултагай"),
+        "text_about_proj": MessageLookupByLibrary.simpleMessage(
+            "«Жылуу үй» маалыматтык-окутуучу мобилдик тиркемеси «Таза Келечек» долбоорунун кичи гранттары программасы боюнча  «Атмосферанын зыяндуу заттар менен булгануусун кыскартуу, митигация жана климаттын ѳзгѳрүүсүнѳ ыңгайлашуусу максатында имараттардын энергиялык натыйжалуулугу маселеси боюнча Кыргызстандын калкынын маалымдуулугун жогорулатуу» демилгесин ишке ашыруунун алкагында иштелип чыккан.\nМобилдик тиркеменин максаты – катуу отунду колдонууну кыскартуу үчүн имараттардын энергиялык натыйжалуулугу боюнча ѳлкѳ калкынын маалымдуулук деңгээлин жогорулатуу. \nИмараттардын энергиялык натыйжалуулугуна карай алгачкы кадам катары иштелип чыккан тиркеме, негизинен, элди үйлѳрүн жылуулук менен изоляциялоонун зарылдыгы жана маанилүүлүгү тууралуу маалымдоого, ошондой эле элди үйдү жылытууга кеткен акча каражатын үнѳмдѳѳ үчүн жылуулукту изоляциялоонун негизги усулдарын үйрѳтүүгѳ багытталган. Узак мѳѳнѳттү максаттаган бул тиркеме Кыргыз Республикасындагы шаарларда абанын булгануу деңгээлин тѳмѳндѳтүүгѳ жана климаттын ѳзгѳрүүсүнүн кесепеттерин ыңгайлаштырууга жана жумшартууга багытталган. \nМобилдик тиркемедеги маалымат баарына түшүнүктүү болуш үчүн  жѳнѳкѳй тил менен берилген.  Булак иретинде тиркеменин мазмундук бѳлүгүндѳ жеке иштеп чыгуулар, чакырылган эксперттердин эсептѳѳлѳрү, ошондой эле имараттардын энергиялык натыйжалуулугу жаатындагы ишке ашырылган буга чейинки долбоорлордун алкагында жарыяланган материалдар, атап айтканда: Полдорду жана шыптарды жылуулоо боюнча монтаждоочулар үчүн колдонмо (“Имараттарда энергияны рационалдуу пайдалануу – кыргыз ассоциациясынын потенциалын чыңдоо - фаза II”, ЕБРР), Жеке турак үйлѳрдүн тышкы тосмо констуркцияларын жылуулоо боюнча техникалык чечимдердин каталогу (“КыргызНИИПСС”, ОФ “Camp alatoo”,  ГЭФ/ПРООН “Имараттардагы энергиялык натыйжалуулукту жакшыртуу” долбоору), СНиП КР 23-01-2013 Курулуш жылуулук техникасы (имараттардын жылуулук тосмосу), СП 23-101-2013 Имараттардын жылуулугун сактоону долбоорлоо, СНиП КР 23-02-00 Курулуштук климатология, ГОСТ 26602.2-99 Терезе жана эшик блоктору: аба ѳткѳрүмдүүлүгүн аныктоо усулу жана иликтѳѳгѳ алынган интернет-булактар колдонулду.    \n«Жылуу үй» мобилдик тиркемеси АКШ Мамлекеттик департаменти грантынын эсебинен каржыланды. Тиркемеде берилген пикирлер жана корутундулар авторлорго гана тиешелүү жана АКШнын Мамлекеттик департаментинин кѳз карашын чагылдырган эмес.   \n«Жылуу үй» мобилдик тиркемеси К. И. Скрябин атындагы КНАУ демилгелик тобу (А. В. Кенжебаева, Б. Анарбек), ошондой эле чакырылган эксперттердин командасы (А. Ч. Орозобекова, В. О. Греб, Р. А. Мигранов, О. И. Элеманов, Н. К. Рысмендеева) тарабынан түзүлдү. \nИштеп чыгуучулардын жана эксперттердин бирдиктүү командасына терең ыраазычылык билдиребиз.    "),
+        "text_planning": MessageLookupByLibrary.simpleMessage(
+            "Жылуулоочтун жана материалдардын керектүү кѳлѳмүн баалаңыз. Сиз каалаган балкондун кѳлѳмүнѳ жана жылуулоо деңгээлине негизделиңиз.\n"),
+        "text_planning_1_1": MessageLookupByLibrary.simpleMessage(
+            "Балконду/лоджияны кылдат карап чыгыңыз, зыянга учураган жерлерине, жаракаларга жана нымдуулуктун болуусуна кѳңүл бургула. Терезе менен эшикттердин абалын, алар герметикалуу жабылганына жана муздак абаны кирбегендигин текшериңиз."),
+        "text_planning_1_2": MessageLookupByLibrary.simpleMessage(
+            "Балкондун кирин, чаңын кетирип, ашыкча буюмдардан арылтып, дубалдардагы, полдогу эски боёкту, туз кагаздарды ж.б. алып таштаңыз. Дубал, шып, пол таза болсо, ал жаңы материалдардын мыкты адгезиясын (каптоочтун негиздин бети менен бекем жабышуу жѳндѳмү) камсыздайт."),
+        "text_planning_1_3": MessageLookupByLibrary.simpleMessage(
+            "Кошулган жерлерин жана жаракалардын баарын бүтѳгүлѳ. Майда жаракаларды жана жылчык-тешиктерди атмосферага туруктуу герметик менен жамаса болот. Ал эми чоңураак тешиктерди монтаждык кѳбүк менен бекитет. Бул жылуулооч үчүн бекем негизди камсыздоо жана нымдуулуктун кирүүсүн алдын алуу үчүн маанилүү."),
+        "text_planning_1_4": MessageLookupByLibrary.simpleMessage(
+            "Эгер сиз чатырдан же дубалдан, терезе же дагы башка нымдуулук булагынан суу кирүү, нымдуулук кѳйгѳйүнѳ кабылсаңыз, буларды жылуулоо мезгили башталганга чейин жоюуга тийишсиз. Нымдуулук жылуулоочко олуттуу зыян алып келип, аны кѳгѳрүп кетүүгѳ дуушар кылат."),
+        "text_planning_2_1": MessageLookupByLibrary.simpleMessage(
+            "Кыртышты даярдагандан кийин аны тегиздѳѳ, грунттоо керек. Бул кадамды калтырып кетпеш керек."),
+        "text_planning_2_2": MessageLookupByLibrary.simpleMessage(
+            "Алгач грунтту жакшылап аралаштырыш керек. Андан соң кисть же валик менен балкондун кыртышына грунтту шыбоо керек. Бир катмар шыбагандан кийин ал кургаганча күтүш керек."),
+        "text_planning_2_3": MessageLookupByLibrary.simpleMessage(
+            "Андан соң, болжолдуу бир саттан кийин экинчи катмарды шыбайт. Эки катмарды 3 сааттан кем эмес убакытта жакшылап кургатыш керек.  Грунтталгандан 1 сааттан кийин кармап кѳргѳндѳ кургак болот, бирок ал экинчи катмарды шыбоого али даяр эмес. Эгер ным болсо грунттоого болбойт. Эгер сиз муну жасай турган болсоңуз, анда кийинки каптоо жабышпайт, ошону менен бирге эле грунт катмары да бузулат."),
+        "text_planning_2_4": MessageLookupByLibrary.simpleMessage(
+            "Выравнивание поверхностей (стен, потолка, пола)"),
+        "text_planning_2_5": MessageLookupByLibrary.simpleMessage(
+            "выполняется при необходимости."),
+        "text_planning_3_1": MessageLookupByLibrary.simpleMessage("1. "),
+        "text_planning_3_2":
+            MessageLookupByLibrary.simpleMessage("1. Шыпты тегиздѳѳ"),
+        "text_planning_3_3": MessageLookupByLibrary.simpleMessage(
+            "– дубалга окшош (тѳмѳндѳ сүрѳттѳлдү) шыбак аралашмаларынын жардамы менен ишке ашырылат. Нымдуу процесстерди колдонууда шыпты тегиздѳѳнү дубал жана пол менен жүргүзүлүүчү иштерге чейин аткаруу сунушталат (Нымдуу процесс – гипс негизиндеги аралашманы, цемент шыбакты, плитканы колдонуу Катмарлары кургаганча убакыт талап кылынат)."),
+        "text_planning_4_1": MessageLookupByLibrary.simpleMessage("2. "),
+        "text_planning_4_2":
+            MessageLookupByLibrary.simpleMessage("Дубалдарды тегиздѳѳ"),
+        "text_planning_4_3": MessageLookupByLibrary.simpleMessage(
+            "– цемент-кум аралашмасынын жардамы менен жасалат. Аралашмалар даяр түрүндѳ, ошондой эле, түздѳн-түз иш ордунда даярдалышы мүмкүн.    \nТегиздѳѳчү аралашмалардын жардамы менен дубал бетин тегиздѳѳ үчүн Дубал тегиз болушу үчүн ын бетин тегиздѳѳ үчүн маяк усулун колдонуу сунушталат. Маяктарды бир бүтүн мейкиндикти түзүү үчүн орнотот. Маяктарды туура орнотуу үчүн вертикалдык абалды берип туруучу салмакташ (отвес) колдонулат. Туура кеткен бирдей мейкиндикти аныктоо үчүн негиздин бир четинен экинчи четине керилген жипти, же лазер деңгээлин колдонууга болот."),
+        "text_planning_4_4": MessageLookupByLibrary.simpleMessage(
+            "Шыбак менен коңшу маяктар ортосундагы мейкиндик толтурулат. Андан соң кеңдиги коңшу маяктардын ортосундагы аралыктан чоң түздѳѳчтүн жардамы менен шыбакты тегиздейт."),
+        "text_planning_4_5": MessageLookupByLibrary.simpleMessage(
+            "Маяки устанавливаются так, чтобы образовалась единая плоскость. Для правильной установки маяков применяются отвесы, которые задают вертикальное расположение. Для выведения единой плоскости по горизонтали можно использовать нитку, натянутую между крайними точками основания, либо воспользоваться лазерным уровнем. Штукатурным составом заполняется пространство между соседними маяками. Затем при помощи правила, ширина которого больше расстояния между соседними маяками, производится выравнивание нанесенной штукатурки. После нанесения выравнивающего слоя поверхность оставляют до полного отверждения штукатурной смеси."),
+        "text_planning_5_1": MessageLookupByLibrary.simpleMessage("3. "),
+        "text_planning_5_2":
+            MessageLookupByLibrary.simpleMessage("Полду тегиздѳѳ"),
+        "text_planning_5_3": MessageLookupByLibrary.simpleMessage(
+            "– текшилѳѳ (стяжка) аркылуу жасалат (текшилѳѳ – бул полдун негизи менен акыркы каптоочтун, мисалы, линолеум) ортосундагы аралык катмар. Текшилѳѳнүн түрлѳрү:\n- Кургак/жыйнак текшилѳѳ негизинен, жылуулукту изоляциялоочу катмардын үстүндѳгү толук бүтѳ элек катмар үчүн колдонулат.\n- Жарым кургак – стандарттык цемент-кум аралашмасы колдонулат, бирок аралашма бат кургасын үчүн суу аз кошулат.\n- Нымдуу – цемент-кум эритмесинен жасалат.\n- Ѳзү тегизделүүчү (куйма пол) – цементтен, гипстен, кумдан, клейден жана пластификаторлордон жасалган атайын аралашма. Аралашма негизги каптоонун кем жерлерин жакшы толтурат жана балкондун/лоджиянын бардык аянтына жайылат.\nПолду тегиздѳѳ үчүн жылуулук изоляциялоочуну орнотуу алдында жарым кургак, нымдуу жана ѳзүн ѳзү тегиздѳѳчү текшилѳѳ."),
+        "text_planning_5_4": MessageLookupByLibrary.simpleMessage(
+            "Жарым кургак/нымдуу текшилѳѳ:\n"),
+        "text_planning_5_5": MessageLookupByLibrary.simpleMessage(
+            "Жарым кургак/нымдуу текшилѳѳ аралашмасы бир тегиздикте орнотулган маяктар ортосуна тѳгүлүп, тууралооч менен тегизделет."),
+        "text_planning_5_6": MessageLookupByLibrary.simpleMessage(
+            "Ѳзүн ѳзү тегиздѳѳчү текшилѳѳ:\n"),
+        "text_planning_5_7": MessageLookupByLibrary.simpleMessage(
+            "Ѳзүн ѳзү тегиздѳѳчү текшилѳѳ (куйма пол) маяктарды колдонбостон орнотулат. Шликер түрүндѳгү эритме керектүү калыңдыкта полдун бетине тѳгүлѳт. Андан ары текшилѳѳ тийиштүү бекемдикке жеткенче белгилүү  убакытка чейин (3-7 сутка) кармалып, андан кийин гана кийинки ѳндүрүш иштери үчүн даяр болот."),
+        "uni": MessageLookupByLibrary.simpleMessage("КНАУ им. С.И. Скрябина"),
+        "unit_mm": MessageLookupByLibrary.simpleMessage("мм"),
+        "variants_balcony_ins_": MessageLookupByLibrary.simpleMessage("Ичинен"),
+        "variants_balcony_ins_1":
+            MessageLookupByLibrary.simpleMessage("(балкон жана лоджия)."),
+        "variants_balcony_out": MessageLookupByLibrary.simpleMessage("Тышынан"),
+        "variants_balcony_out_1":
+            MessageLookupByLibrary.simpleMessage("(балкон гана)."),
+        "variants_balcony_two":
+            MessageLookupByLibrary.simpleMessage("Эки жагынан те"),
+        "variants_balcony_two_1":
+            MessageLookupByLibrary.simpleMessage("(балкон гана)."),
+        "variants_of_insulation": MessageLookupByLibrary.simpleMessage(
+            "Балконду/лоджияны \nжылуулоонун варианттары:"),
+        "variants_two_side":
+            MessageLookupByLibrary.simpleMessage("Эки жагын тең жылуулоо \n"),
+        "variants_two_side_1": MessageLookupByLibrary.simpleMessage(
+            "чыгымдарды эки эсе жогорулатат, бирок жылуулуктун натыйжалуулугу жогорулабайт. Андыктан балконду/лоджияны же тышынан же ичинен гана жылуулоо жетиштүү."),
+        "village_ak_shiyrak":
+            MessageLookupByLibrary.simpleMessage("Ак-Шыйрак а."),
+        "village_ak_tash": MessageLookupByLibrary.simpleMessage("Ак-Таш а."),
+        "village_ak_terek": MessageLookupByLibrary.simpleMessage("Ак-Терек а."),
+        "village_at_bashy": MessageLookupByLibrary.simpleMessage("Ат-Башы а."),
+        "village_baitik": MessageLookupByLibrary.simpleMessage("Байтик а."),
+        "village_belovodskoe":
+            MessageLookupByLibrary.simpleMessage("Беловодское а."),
+        "village_chaar_tash":
+            MessageLookupByLibrary.simpleMessage("Чаар-таш а."),
+        "village_chatkal": MessageLookupByLibrary.simpleMessage("Чаткал а."),
+        "village_chon_aryk":
+            MessageLookupByLibrary.simpleMessage("Чоң-Арык а."),
+        "village_chon_kyzylsuu":
+            MessageLookupByLibrary.simpleMessage("Чоң-кызылсуу а."),
+        "village_chuyskaya": MessageLookupByLibrary.simpleMessage("Чүй а."),
+        "village_doorot_korgon":
+            MessageLookupByLibrary.simpleMessage("Дароот-Коргон а."),
+        "village_gulcha": MessageLookupByLibrary.simpleMessage("Гүлчө а."),
+        "village_irkeshtam":
+            MessageLookupByLibrary.simpleMessage("Эркеч-Там а."),
+        "village_isfana": MessageLookupByLibrary.simpleMessage("Исфана а."),
+        "village_kara_kudjur":
+            MessageLookupByLibrary.simpleMessage("Кара-кужур а."),
+        "village_karavan": MessageLookupByLibrary.simpleMessage("Караван а."),
+        "village_kazarman": MessageLookupByLibrary.simpleMessage("Казарман а."),
+        "village_khaidarkan":
+            MessageLookupByLibrary.simpleMessage("Айдаркен а."),
+        "village_kochkor": MessageLookupByLibrary.simpleMessage("Кочкор а."),
+        "village_koilyu": MessageLookupByLibrary.simpleMessage("Койлуу а."),
+        "village_konstantinovka":
+            MessageLookupByLibrary.simpleMessage("Константиновка а."),
+        "village_kyzyl_jar":
+            MessageLookupByLibrary.simpleMessage("Кызыл-жар а."),
+        "village_leninpol":
+            MessageLookupByLibrary.simpleMessage("Ленинполь а."),
+        "village_pacha_ata":
+            MessageLookupByLibrary.simpleMessage("Пача-Ата а."),
+        "village_pokrovka": MessageLookupByLibrary.simpleMessage("Покровка а."),
+        "village_ravat": MessageLookupByLibrary.simpleMessage("Рават а."),
+        "village_red_october":
+            MessageLookupByLibrary.simpleMessage("Кызыл октябрь а."),
+        "village_sary_tash":
+            MessageLookupByLibrary.simpleMessage("Сары-таш а."),
+        "village_shabdan": MessageLookupByLibrary.simpleMessage("Шабдан а."),
+        "village_suusamyr": MessageLookupByLibrary.simpleMessage("Суусамыр а."),
+        "village_tamga": MessageLookupByLibrary.simpleMessage("Тамга а."),
+        "village_taragai": MessageLookupByLibrary.simpleMessage("Тарагай а."),
+        "village_ters_mouth":
+            MessageLookupByLibrary.simpleMessage("Терс-Суу а."),
+        "village_yuryevka": MessageLookupByLibrary.simpleMessage("Юрьевка а."),
+        "wall": MessageLookupByLibrary.simpleMessage("Дубал"),
+        "wall_description_main": MessageLookupByLibrary.simpleMessage(
+            "Дубалдар жылуулук жоготуунун негизги булактарынын бири болуп саналат. Жалпы жылуулук жоготуулардын болжол менен 35% түзөт. Бул дубал материалдарынын жылуулук өткөргүчтүгүнө жана жаракалар же тыгыз эмес кошулган жерлер сыяктуу мүмкүн болгон кемчиликтерге байланыштуу болот.\nБул дубалдар жасалган материалдардын жылуулук өткөргүчтүгүнөн жана жылуулуктун сыртка чыгып кетишине шарт түзгөн кемчиликтердин болушунан келип чыгат.\n\nКээ бир курулуш материалдары жогорку жылуулук өткөргүчтүккө ээ, бул аларды жылуулук изоляциясы катары анча натыйжалуу эмес кылат. Кирпич, бетон же металл сыяктуу материалдар, жылуулоо үчүн иштелип чыккан атайын материалдарга (мисалы, минералдык пахта же пенополистирол) караганда жылуулукту начар кармайт.\nДубалдардагы жаракалар, боштуктар же тыгыз эмес жерлер да жылуулуктун жоголушуна алып келет. Бул материалдардын кошулган жерлеринин жетишсиз тыгыздыгынан же эскирүүдөн, аба ырайынан жана курулуштагы каталардан улам пайда болгон бузулуулардан келип чыгышы мүмкүн.\nДубал аркылуу жылуулук жоготууну азайтуу үчүн алардын жылуулук изоляциясына көңүл буруу зарыл. Сапаттуу жылуулоочу материалдарды орнотуу, кемчиликтерди оңдоо, жылчыктарды жана кошулган жерлерди бүтөө жылуулук жоготууну бир топ азайтат жана имараттын энергия натыйжалуулугун жогорулатат. Ошондой эле, дубалдарды сапаттуу жылуулоо бөлмө ичиндеги комфортту жакшыртууга, конденсаттын пайда болушун алдын алууга жана жылытуу менен муздатууга кеткен чыгымдарды үнөмдөөгө жардам берет.\nДубалдарды жылуулоо ыкмалары жөнүндө толук маалыматты бул бөлүмдөн окуй аласыз: "),
+        "wall_insulation_link":
+            MessageLookupByLibrary.simpleMessage("ДУБАЛДАРДЫ ЖЫЛУУЛОО"),
+        "wall_thickness_title":
+            MessageLookupByLibrary.simpleMessage("Дубалдын калыңдыгы"),
+        "wall_title": MessageLookupByLibrary.simpleMessage("Дубалдар"),
+        "what_buy": MessageLookupByLibrary.simpleMessage(
+            " - жылуулооч (мисалы, минералдык пахта, пенопласт же или экструзиялык  пенополистирол),\n - курулуш шаймандары, клей же монтаждык кѳбүк, жасалгоо үчүн декоративдик материалдар (плиткалар, панелдер)."),
+        "where_to_insulate_title":
+            MessageLookupByLibrary.simpleMessage("Кайсы жерди жылуулоо керек?"),
+        "windows_doors_description_part1": MessageLookupByLibrary.simpleMessage(
+            "Жылуулук жоготуунун дагы бир орчундуу чекиттери — тышкы дубалдардагы терезелер жана эшиктер, өзгөчө терезе үстүндөгү тосмолор жана терезенин имараттын дубалы менен түз бириккен жерлери.\nТерезе аркылуу жылуулук жоготуу бир нече каналдар боюнча жүрөт: терезе блогу жана алкактар аркылуу (сууктук көпүрөлөрү, тыгыз эмес жерлер), абанын жылуулук өткөргүчтүгү жана айнектердин ортосундагы конвективдик агымдардын эсебинен, ошондой эле жылуулук нурлануусу аркылуу. Терезе блогу аркылуу жылуулук жоготуулардын чоңдугу терезенин конструкциясына, колдонулган материалдарга жана даярдоо сапатына түздөн-түз көз каранды экени анык. Иш жүзүндө ал бөлмөдөгү жалпы жылуулук жоготуулардын болжол менен 10 % түзөт. Калган эки канал — бул түздөн-түз айнектөө аркылуу жоготуулар.\n\nБул учурда иштердин туура аткарылганын баалоо кыйла татаал.\nЭгерде каталар көрүнүп турса, биз тасмаларды жана герметизациялоочу фольганы колдонуу менен «жылуу терезелерди» орнотуу аркылуу кошулган жерлердеги жылуулук жоготууларды азайта алабыз.\nТерезелерди жана эшиктерди жылуулоо жөнүндө кененирээк маалыматты төмөнкү бөлүмдөн биле аласыз: "),
+        "windows_doors_title":
+            MessageLookupByLibrary.simpleMessage("Терезе жана эшик ойуктары"),
+        "windows_insulation_link":
+            MessageLookupByLibrary.simpleMessage("ТЕРЕЗЕЛЕРДИ ЖЫЛУУЛОО "),
+        "wood": MessageLookupByLibrary.simpleMessage("Жыгач"),
+        "your_list_title":
+            MessageLookupByLibrary.simpleMessage("Сиздин тизмеңиз:")
+      };
+}

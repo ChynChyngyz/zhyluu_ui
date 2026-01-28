@@ -6,6 +6,8 @@ import 'package:zhyluu_ui/features/appartment/screens/loggia_balcony/insulation_
 import 'package:zhyluu_ui/features/appartment/screens/loggia_balcony/preparatory_work_screen.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_image.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
+
 
 class LoggiaBalconyOutsideScreen extends StatelessWidget {
   static const routeName = "/loggia-balcony-outside";
@@ -14,9 +16,10 @@ class LoggiaBalconyOutsideScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
     return MyScaffoldCurveImage(
       imagePath: Assets.images.appartment.loggiaBalconyOutside.path,
-      title: "Утепление\nбалкона снаружи",
+      title: s.outside_insulation_title,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(
@@ -32,7 +35,7 @@ class LoggiaBalconyOutsideScreen extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: "Утепление балкона снаружи\n",
+                    text: s.outside_insulation_title_1,
                     style: GoogleFonts.poppins(
                       fontSize: 16,
                       color: Colors.black,
@@ -40,9 +43,9 @@ class LoggiaBalconyOutsideScreen extends StatelessWidget {
                       letterSpacing: 0.56,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                       text:
-                          "крайне сложно выполнить самостоятельно. Необходима помощь промышленных альпинистов, имеющих опыт работы с наружными стенами многоэтажных зданий. Кроме того, такой процесс может потребовать дополнительного разрешения местной администрации на изменение фасада, что может привести к дополнительным расходам. Преимущество внешнего утепления - слой утеплителя не забирает уже и так небольшую площадь балкона."),
+                          s.outside_insulation_text),
                 ],
               ),
             ),
@@ -59,7 +62,7 @@ class LoggiaBalconyOutsideScreen extends StatelessWidget {
                   ..onTap = () {
                     context.push(PreparatoryWorkScreen.routeName);
                   },
-                text: "1. Подготовительные работы",
+                text: s.preparation_outside_text,
               ),
             ),
             RichText(
@@ -74,7 +77,7 @@ class LoggiaBalconyOutsideScreen extends StatelessWidget {
                   ..onTap = () {
                     context.push(InsulationInstalationWorkScreen.routeName);
                   },
-                text: "2. Монтаж утеплителя",
+                text: s.preparation_outside_text_1,
               ),
             ),
           ],
