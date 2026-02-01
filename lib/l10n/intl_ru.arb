@@ -242,9 +242,10 @@
   "region_osh": "Ош",
   "region_batken": "Баткен",
 
+  "recommendation_title": "Рекомендация для вас:",
   "mat_straw": "Солома",
   "mat_wool": "Шерсть",
-  "mat_reeds": "Камыш",
+  "mat_reed": "Камыш",
   "mat_mineral_wool": "Минеральная вата",
   "mat_pps": "Пенополистирол (ППС)",
   "mat_ppu": "Пенополиуретан (ППУ)",

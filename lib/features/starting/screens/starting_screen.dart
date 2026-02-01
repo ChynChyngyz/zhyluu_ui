@@ -59,7 +59,7 @@ class StartingScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  "УТЕПЛЯЙТе дом и экономьте деньги!".toUpperCase(),
+                  "УТЕПЛЯЙТЕ дом и экономьте деньги!".toUpperCase(),
                   textAlign: TextAlign.center,
                   style: GoogleFonts.poppins(
                     fontSize: 16,

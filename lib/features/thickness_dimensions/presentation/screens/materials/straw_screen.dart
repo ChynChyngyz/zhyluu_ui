@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/material_base_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class StrawScreen extends StatelessWidget {
   static const name = "straw";

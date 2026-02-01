@@ -112,7 +112,7 @@ class MyDrawer extends StatelessWidget {
                     SizedBox(
                       width: 157,
                       child: Text(
-                        "Обратная связь",
+                        s.drawer_feedback,
                         textAlign: TextAlign.start,
                         style: GoogleFonts.poppins(
                           color: const Color(0xFF636363),

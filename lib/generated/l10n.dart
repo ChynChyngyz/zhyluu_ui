@@ -18,8 +18,10 @@ class S {
   static S? _current;
 
   static S get current {
-    assert(_current != null,
-        'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.');
+    assert(
+      _current != null,
+      'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.',
+    );
     return _current!;
   }
 
@@ -41,8 +43,10 @@ class S {
 
   static S of(BuildContext context) {
     final instance = S.maybeOf(context);
-    assert(instance != null,
-        'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?');
+    assert(
+      instance != null,
+      'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?',
+    );
     return instance!;
   }
 
@@ -52,12 +56,7 @@ class S {
 
   /// `Home`
   String get drawer_main {
-    return Intl.message(
-      'Home',
-      name: 'drawer_main',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Home', name: 'drawer_main', desc: '', args: []);
   }
 
   /// `About the project`
@@ -112,12 +111,7 @@ class S {
 
   /// `Проект жондо`
   String get about_proj {
-    return Intl.message(
-      'Проект жондо',
-      name: 'about_proj',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Проект жондо', name: 'about_proj', desc: '', args: []);
   }
 
   /// `КНАУ им. С.И. Скрябина`
@@ -252,12 +246,7 @@ class S {
 
   /// `Снаружи`
   String get button_outside {
-    return Intl.message(
-      'Снаружи',
-      name: 'button_outside',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Снаружи', name: 'button_outside', desc: '', args: []);
   }
 
   /// `Изнутри`
@@ -282,12 +271,7 @@ class S {
 
   /// `Изнутри`
   String get button_inside {
-    return Intl.message(
-      'Изнутри',
-      name: 'button_inside',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Изнутри', name: 'button_inside', desc: '', args: []);
   }
 
   /// `С обеих сторон`
@@ -462,12 +446,7 @@ class S {
 
   /// `Приобретите:\n`
   String get buy {
-    return Intl.message(
-      'Приобретите:\n',
-      name: 'buy',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Приобретите:\n', name: 'buy', desc: '', args: []);
   }
 
   /// `- утеплитель (например, минеральную вату, пенопласт или экструдированный пенополистирол),\n- строительные инструменты, клей или монтажную пену, декоративные материалы (плитки, панели) для отделки.`
@@ -592,12 +571,7 @@ class S {
 
   /// `1. `
   String get text_planning_3_1 {
-    return Intl.message(
-      '1. ',
-      name: 'text_planning_3_1',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('1. ', name: 'text_planning_3_1', desc: '', args: []);
   }
 
   /// `Выравнивание потолка `
@@ -622,12 +596,7 @@ class S {
 
   /// `2. `
   String get text_planning_4_1 {
-    return Intl.message(
-      '2. ',
-      name: 'text_planning_4_1',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('2. ', name: 'text_planning_4_1', desc: '', args: []);
   }
 
   /// `Выравнивание стен `
@@ -672,12 +641,7 @@ class S {
 
   /// `3. `
   String get text_planning_5_1 {
-    return Intl.message(
-      '3. ',
-      name: 'text_planning_5_1',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('3. ', name: 'text_planning_5_1', desc: '', args: []);
   }
 
   /// `Выравнивание пола `
@@ -742,12 +706,7 @@ class S {
 
   /// `Region`
   String get regionTitle {
-    return Intl.message(
-      'Region',
-      name: 'regionTitle',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Region', name: 'regionTitle', desc: '', args: []);
   }
 
   /// `Settlement`
@@ -772,12 +731,7 @@ class S {
 
   /// `Chui`
   String get regionChui {
-    return Intl.message(
-      'Chui',
-      name: 'regionChui',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Chui', name: 'regionChui', desc: '', args: []);
   }
 
   /// `Issyk-Kul`
@@ -792,22 +746,12 @@ class S {
 
   /// `Naryn`
   String get regionNaryn {
-    return Intl.message(
-      'Naryn',
-      name: 'regionNaryn',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Naryn', name: 'regionNaryn', desc: '', args: []);
   }
 
   /// `Talas`
   String get regionTalas {
-    return Intl.message(
-      'Talas',
-      name: 'regionTalas',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Talas', name: 'regionTalas', desc: '', args: []);
   }
 
   /// `Jalal-Abad`
@@ -822,22 +766,12 @@ class S {
 
   /// `Osh`
   String get regionOsh {
-    return Intl.message(
-      'Osh',
-      name: 'regionOsh',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Osh', name: 'regionOsh', desc: '', args: []);
   }
 
   /// `Batken`
   String get regionBatken {
-    return Intl.message(
-      'Batken',
-      name: 'regionBatken',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Batken', name: 'regionBatken', desc: '', args: []);
   }
 
   /// `Bishkek city`
@@ -892,22 +826,12 @@ class S {
 
   /// `Tokmok city`
   String get city_tokmok {
-    return Intl.message(
-      'Tokmok city',
-      name: 'city_tokmok',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Tokmok city', name: 'city_tokmok', desc: '', args: []);
   }
 
   /// `Kant city`
   String get city_kant {
-    return Intl.message(
-      'Kant city',
-      name: 'city_kant',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Kant city', name: 'city_kant', desc: '', args: []);
   }
 
   /// `Kara-Balta city`
@@ -1062,12 +986,7 @@ class S {
 
   /// `Naryn city`
   String get city_naryn {
-    return Intl.message(
-      'Naryn city',
-      name: 'city_naryn',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Naryn city', name: 'city_naryn', desc: '', args: []);
   }
 
   /// `At-Bashy village`
@@ -1122,12 +1041,7 @@ class S {
 
   /// `Talas city`
   String get city_talas {
-    return Intl.message(
-      'Talas city',
-      name: 'city_talas',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Talas city', name: 'city_talas', desc: '', args: []);
   }
 
   /// `Ak-Tash village`
@@ -1222,22 +1136,12 @@ class S {
 
   /// `Osh city`
   String get city_osh {
-    return Intl.message(
-      'Osh city',
-      name: 'city_osh',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Osh city', name: 'city_osh', desc: '', args: []);
   }
 
   /// `Uzgen city`
   String get city_uzgen {
-    return Intl.message(
-      'Uzgen city',
-      name: 'city_uzgen',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Uzgen city', name: 'city_uzgen', desc: '', args: []);
   }
 
   /// `Gulcha village`
@@ -1342,52 +1246,27 @@ class S {
 
   /// `Coating`
   String get qw {
-    return Intl.message(
-      'Coating',
-      name: 'qw',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Coating', name: 'qw', desc: '', args: []);
   }
 
   /// `House`
   String get house_title {
-    return Intl.message(
-      'House',
-      name: 'house_title',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('House', name: 'house_title', desc: '', args: []);
   }
 
   /// `Wall`
   String get wall {
-    return Intl.message(
-      'Wall',
-      name: 'wall',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Wall', name: 'wall', desc: '', args: []);
   }
 
   /// `Floor`
   String get floor {
-    return Intl.message(
-      'Floor',
-      name: 'floor',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Floor', name: 'floor', desc: '', args: []);
   }
 
   /// `Roof covering`
   String get roof {
-    return Intl.message(
-      'Roof covering',
-      name: 'roof',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Roof covering', name: 'roof', desc: '', args: []);
   }
 
   /// `Floor covering`
@@ -1402,12 +1281,7 @@ class S {
 
   /// `Brick`
   String get brick_title {
-    return Intl.message(
-      'Brick',
-      name: 'brick_title',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Brick', name: 'brick_title', desc: '', args: []);
   }
 
   /// `Aerated concrete/foam concrete`
@@ -1422,52 +1296,27 @@ class S {
 
   /// `Adobe/Clay`
   String get adobe_title {
-    return Intl.message(
-      'Adobe/Clay',
-      name: 'adobe_title',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Adobe/Clay', name: 'adobe_title', desc: '', args: []);
   }
 
   /// `Ceramic`
   String get ceramic_brick {
-    return Intl.message(
-      'Ceramic',
-      name: 'ceramic_brick',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Ceramic', name: 'ceramic_brick', desc: '', args: []);
   }
 
   /// `Solid`
   String get solid_brick {
-    return Intl.message(
-      'Solid',
-      name: 'solid_brick',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Solid', name: 'solid_brick', desc: '', args: []);
   }
 
   /// `Silicate`
   String get silicate_brick {
-    return Intl.message(
-      'Silicate',
-      name: 'silicate_brick',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Silicate', name: 'silicate_brick', desc: '', args: []);
   }
 
   /// `On the ground`
   String get on_ground {
-    return Intl.message(
-      'On the ground',
-      name: 'on_ground',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('On the ground', name: 'on_ground', desc: '', args: []);
   }
 
   /// `Reinforced concrete`
@@ -1482,42 +1331,22 @@ class S {
 
   /// `Granite`
   String get granite {
-    return Intl.message(
-      'Granite',
-      name: 'granite',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Granite', name: 'granite', desc: '', args: []);
   }
 
   /// `Wood`
   String get wood {
-    return Intl.message(
-      'Wood',
-      name: 'wood',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Wood', name: 'wood', desc: '', args: []);
   }
 
   /// `Linoleum`
   String get linoleum {
-    return Intl.message(
-      'Linoleum',
-      name: 'linoleum',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Linoleum', name: 'linoleum', desc: '', args: []);
   }
 
   /// `Parquet`
   String get parquet {
-    return Intl.message(
-      'Parquet',
-      name: 'parquet',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Parquet', name: 'parquet', desc: '', args: []);
   }
 
   /// `Ceiling-to-Wall Connection`
@@ -1572,32 +1401,17 @@ class S {
 
   /// `Walls`
   String get card_walls {
-    return Intl.message(
-      'Walls',
-      name: 'card_walls',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Walls', name: 'card_walls', desc: '', args: []);
   }
 
   /// `Roof`
   String get card_roof {
-    return Intl.message(
-      'Roof',
-      name: 'card_roof',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Roof', name: 'card_roof', desc: '', args: []);
   }
 
   /// `Floor`
   String get card_floor {
-    return Intl.message(
-      'Floor',
-      name: 'card_floor',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Floor', name: 'card_floor', desc: '', args: []);
   }
 
   /// `Foundation`
@@ -1652,12 +1466,7 @@ class S {
 
   /// `and `
   String get and_conjunction {
-    return Intl.message(
-      'and ',
-      name: 'and_conjunction',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('and ', name: 'and_conjunction', desc: '', args: []);
   }
 
   /// `DOOR INSULATION`
@@ -1672,22 +1481,12 @@ class S {
 
   /// `.`
   String get dot {
-    return Intl.message(
-      '.',
-      name: 'dot',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('.', name: 'dot', desc: '', args: []);
   }
 
   /// `Walls`
   String get wall_title {
-    return Intl.message(
-      'Walls',
-      name: 'wall_title',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Walls', name: 'wall_title', desc: '', args: []);
   }
 
   /// `Walls are one of the main sources of heat loss, accounting for approximately 35% of total heat loss. This occurs due to the thermal conductivity of wall materials and possible defects such as cracks or loose sealing.\nThis happens due to the thermal conductivity of the materials the walls are made of and the presence of possible defects that can contribute to heat leakage.\n\nSome building materials have higher thermal conductivity, making them less effective as thermal insulation. Materials such as brick, concrete, or metal can be less insulating than special materials designed for insulation, such as mineral wool or expanded polystyrene.\nDefects in walls, such as cracks, gaps, or loose sealing, can also lead to heat leakage through the walls. This can occur due to insufficient density between material joints or due to wall damage resulting from aging, weather conditions, or construction errors.\nTo reduce heat loss through walls, it is necessary to pay attention to their thermal insulation. Installing high-quality insulation, repairing defects, eliminating gaps, and sealing joints will help significantly reduce heat loss and increase the energy efficiency of the building. It is also worth considering that high-quality wall thermal insulation will help improve indoor comfort, prevent condensation, and save on heating and cooling costs.\nDetailed information on wall insulation methods can be found in the section `
@@ -1942,12 +1741,7 @@ class S {
 
   /// `mm`
   String get unit_mm {
-    return Intl.message(
-      'mm',
-      name: 'unit_mm',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('mm', name: 'unit_mm', desc: '', args: []);
   }
 
   /// `Your list:`
@@ -1962,22 +1756,12 @@ class S {
 
   /// `Confirm`
   String get button_confirm {
-    return Intl.message(
-      'Confirm',
-      name: 'button_confirm',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Confirm', name: 'button_confirm', desc: '', args: []);
   }
 
   /// `Region`
   String get region_title {
-    return Intl.message(
-      'Region',
-      name: 'region_title',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Region', name: 'region_title', desc: '', args: []);
   }
 
   /// `Settlement`
@@ -2002,12 +1786,7 @@ class S {
 
   /// `Chui`
   String get region_chui {
-    return Intl.message(
-      'Chui',
-      name: 'region_chui',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Chui', name: 'region_chui', desc: '', args: []);
   }
 
   /// `Issyk-Kul`
@@ -2022,22 +1801,12 @@ class S {
 
   /// `Naryn`
   String get region_naryn {
-    return Intl.message(
-      'Naryn',
-      name: 'region_naryn',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Naryn', name: 'region_naryn', desc: '', args: []);
   }
 
   /// `Talas`
   String get region_talas {
-    return Intl.message(
-      'Talas',
-      name: 'region_talas',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Talas', name: 'region_talas', desc: '', args: []);
   }
 
   /// `Jalal-Abad`
@@ -2052,52 +1821,27 @@ class S {
 
   /// `Osh`
   String get region_osh {
-    return Intl.message(
-      'Osh',
-      name: 'region_osh',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Osh', name: 'region_osh', desc: '', args: []);
   }
 
   /// `Batken`
   String get region_batken {
-    return Intl.message(
-      'Batken',
-      name: 'region_batken',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Batken', name: 'region_batken', desc: '', args: []);
   }
 
   /// `Straw`
   String get mat_straw {
-    return Intl.message(
-      'Straw',
-      name: 'mat_straw',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Straw', name: 'mat_straw', desc: '', args: []);
   }
 
   /// `Wool`
   String get mat_wool {
-    return Intl.message(
-      'Wool',
-      name: 'mat_wool',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Wool', name: 'mat_wool', desc: '', args: []);
   }
 
   /// `Reeds`
-  String get mat_reeds {
-    return Intl.message(
-      'Reeds',
-      name: 'mat_reeds',
-      desc: '',
-      args: [],
-    );
+  String get mat_reed {
+    return Intl.message('Reeds', name: 'mat_reed', desc: '', args: []);
   }
 
   /// `Mineral wool`
@@ -2142,12 +1886,7 @@ class S {
 
   /// `Expanded clay`
   String get mat_clay {
-    return Intl.message(
-      'Expanded clay',
-      name: 'mat_clay',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Expanded clay', name: 'mat_clay', desc: '', args: []);
   }
 }
 

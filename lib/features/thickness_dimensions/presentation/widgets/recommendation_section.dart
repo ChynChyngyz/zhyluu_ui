@@ -11,6 +11,7 @@ import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/mat
 import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/straw_screen.dart';
 import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/wool_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class RecommendationSection extends StatelessWidget {
   const RecommendationSection({
@@ -26,6 +27,56 @@ class RecommendationSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
+    Widget card({
+      required String title,
+      required String imagePath,
+      required VoidCallback onTap,
+    }) {
+      return Container(
+        height: 47,
+        clipBehavior: Clip.antiAliasWithSaveLayer,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5),
+          border: Border.all(
+            width: 5,
+            color: const Color(0xFF50D88C),
+            strokeAlign: BorderSide.strokeAlignOutside,
+          ),
+        ),
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: onTap,
+            child: Row(
+              children: [
+                const SizedBox(width: 15),
+                Image.asset(
+                  imagePath,
+                  width: 34,
+                  height: 34,
+                ),
+                const SizedBox(width: 20),
+                Expanded(
+                  child: Text(
+                    title,
+                    textAlign: TextAlign.start,
+                    style: GoogleFonts.poppins(
+                      fontSize: 15,
+                      color: Colors.black,
+                      letterSpacing: 0.63,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+
     return Container(
       decoration: const BoxDecoration(
         color: AppColors.primary,
@@ -41,8 +92,7 @@ class RecommendationSection extends StatelessWidget {
           children: [
             const SizedBox(height: 19),
             Text(
-              "Рекомендация для вас:",
-              textAlign: TextAlign.start,
+              s.recommendation_title,
               style: GoogleFonts.poppins(
                 fontSize: 18,
                 color: Colors.black,
@@ -51,10 +101,11 @@ class RecommendationSection extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 14),
-            RecommendationCard(
-              title: "Солома",
+
+            card(
+              title: s.mat_straw,
               imagePath: Assets.images.howToInsulate.straw.path,
-              onTap: (data) {
+              onTap: () {
                 context.pushNamed(
                   StrawScreen.name,
                   pathParameters: {
@@ -65,10 +116,11 @@ class RecommendationSection extends StatelessWidget {
               },
             ),
             const SizedBox(height: 30),
-            RecommendationCard(
-              title: "Шерсть",
+
+            card(
+              title: s.mat_wool,
               imagePath: Assets.images.howToInsulate.wool.path,
-              onTap: (data) {
+              onTap: () {
                 context.pushNamed(
                   WoolScreen.name,
                   pathParameters: {
@@ -79,10 +131,11 @@ class RecommendationSection extends StatelessWidget {
               },
             ),
             const SizedBox(height: 30),
-            RecommendationCard(
-              title: "Камыш",
+
+            card(
+              title: s.mat_reed,
               imagePath: Assets.images.howToInsulate.slab.path,
-              onTap: (data) {
+              onTap: () {
                 context.pushNamed(
                   SlabsScreen.name,
                   pathParameters: {
@@ -93,10 +146,11 @@ class RecommendationSection extends StatelessWidget {
               },
             ),
             const SizedBox(height: 30),
-            RecommendationCard(
-              title: "Минеральная вата",
+
+            card(
+              title: s.mat_mineral_wool,
               imagePath: Assets.images.howToInsulate.mineral.path,
-              onTap: (data) {
+              onTap: () {
                 context.pushNamed(
                   MineralScreen.name,
                   pathParameters: {
@@ -107,10 +161,11 @@ class RecommendationSection extends StatelessWidget {
               },
             ),
             const SizedBox(height: 30),
-            RecommendationCard(
-              title: "Пенополистирол (ППС)",
+
+            card(
+              title: s.mat_pps,
               imagePath: Assets.images.howToInsulate.penopolisterol.path,
-              onTap: (data) {
+              onTap: () {
                 context.pushNamed(
                   PenopolisterolScreen.name,
                   pathParameters: {
@@ -121,10 +176,11 @@ class RecommendationSection extends StatelessWidget {
               },
             ),
             const SizedBox(height: 30),
-            RecommendationCard(
-              title: "Пенополиуретан (ППУ)",
+
+            card(
+              title: s.mat_ppu,
               imagePath: Assets.images.howToInsulate.penopoliuretanPu.path,
-              onTap: (data) {
+              onTap: () {
                 context.pushNamed(
                   PenopoliuretanPuScreen.name,
                   pathParameters: {
@@ -135,10 +191,11 @@ class RecommendationSection extends StatelessWidget {
               },
             ),
             const SizedBox(height: 30),
-            RecommendationCard(
-              title: "Экструдированный пенополистирол (XPS)",
+
+            card(
+              title: s.mat_xps,
               imagePath: Assets.images.howToInsulate.penopolisterolXps.path,
-              onTap: (data) {
+              onTap: () {
                 context.pushNamed(
                   PenopolisterolXpsScreen.name,
                   pathParameters: {
@@ -148,12 +205,13 @@ class RecommendationSection extends StatelessWidget {
                 );
               },
             ),
+
             if (includeClay) ...[
               const SizedBox(height: 30),
-              RecommendationCard(
-                title: "Керамзит",
+              card(
+                title: s.mat_clay,
                 imagePath: Assets.images.howToInsulate.clay.path,
-                onTap: (data) {
+                onTap: () {
                   context.pushNamed(
                     ClayScreen.name,
                     pathParameters: {
@@ -164,68 +222,9 @@ class RecommendationSection extends StatelessWidget {
                 },
               ),
             ],
+
             const SizedBox(height: 100),
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class RecommendationCard extends StatelessWidget {
-  const RecommendationCard({
-    super.key,
-    required this.title,
-    required this.imagePath,
-    this.onTap,
-  });
-
-  final String title;
-  final String imagePath;
-  final Function(String)? onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 47,
-      clipBehavior: Clip.antiAliasWithSaveLayer,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(5),
-        border: Border.all(
-          width: 5,
-          color: const Color(0xFF50D88C),
-          strokeAlign: BorderSide.strokeAlignOutside,
-        ),
-      ),
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: () {
-            onTap?.call(title);
-          },
-          child: Row(
-            children: [
-              const SizedBox(width: 15),
-              Image.asset(
-                imagePath,
-                width: 34,
-                height: 34,
-              ),
-              const SizedBox(width: 20),
-              Expanded(
-                child: Text(
-                  title,
-                  textAlign: TextAlign.start,
-                  style: GoogleFonts.poppins(
-                    fontSize: 15,
-                    color: Colors.black,
-                    letterSpacing: 0.63,
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-              ),
-            ],
-          ),
         ),
       ),
     );
