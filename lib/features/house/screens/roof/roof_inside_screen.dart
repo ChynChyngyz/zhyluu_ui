@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_image.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class RoofInsideScreen extends StatelessWidget {
   static const routeName = "/roof-inside";
@@ -10,8 +11,10 @@ class RoofInsideScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldCurveImage(
-      title: "УТЕПЛЕНИЕ ИЗНУТРИ",
+      title: s.roof_inside_title,
       imagePath: Assets.images.roof.image20.path,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
@@ -19,7 +22,7 @@ class RoofInsideScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "1. Сначала надо установить контробрешётку, для обеспечения движения воздуха в подкровельном пространстве. Это очень важный момент, пренебрегать им не следует.",
+              s.roof_inside_step_1,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 15),
@@ -31,8 +34,7 @@ class RoofInsideScreen extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             Text(
-              """2. Монтаж пароизоляции осуществляется изнутри помещения путем крепления скобами к нижним торцам стропил. Видов гидроизоляционных мембран или плёнок существует немало, использование той или иной диктуется возможностями пользователя.
-3. Далее крепится слой утеплителя — минваты или пенополистирола, нарезанного точно по размеру промежутков между стропилами. Утеплитель может временно удерживаться между досками за счёт собственной упругости, но для надёжности можно крепить его леской, для чего надо набить в стропила гвоздики.""",
+              s.roof_inside_step_2_3,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 15),
@@ -44,7 +46,7 @@ class RoofInsideScreen extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             Text(
-              "4. После укрепления утеплителя накладывается слой пароизолятора. Это плёночный материал, препятствующий накоплению конденсата и намоканию утеплителя. Часто применяют пергамин, полиэтиленовую или полипропиленовую плёнку. Полосы крепятся к стропилам степлером и соединяются между собой скотчем для достижения герметичности.",
+              s.roof_inside_step_4,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 15),

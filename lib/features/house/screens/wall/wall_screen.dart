@@ -8,6 +8,7 @@ import 'package:zhyluu_ui/features/house/screens/wall/wall_material_screen.dart'
 import 'package:zhyluu_ui/features/house/screens/wall/wall_preparation_screen.dart';
 import 'package:zhyluu_ui/features/house/screens/wall/wall_process/wall_process_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class WallScreen extends StatelessWidget {
   static const routeName = "/wall";
@@ -16,15 +17,17 @@ class WallScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldCurveGradient(
-      title: "УТЕПЛЕНИЕ\nСТЕН",
-      body: Padding(
+      title: s.wall_title,
+      body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Теплоизоляция стен — это процесс улучшения теплозащитных свойств стен здания, позволит снизить потери тепла, тем самым повысит энергоэффективность здания. Это особенно важно для жилых зданий, чтобы обеспечить комфортные условия проживания, а также сократить затраты на отопление и кондиционирование воздуха.",
+              s.wall_intro_1,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 30),
@@ -36,7 +39,7 @@ class WallScreen extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             Text(
-              "Потери тепла через стены составляют 35-40% от общих потерь. При укладке на стены они создают дополнительный слой изоляции, который препятствует прохождению тепла изнутри помещения наружу зимой и от наружного тепла внутрь летом.",
+              s.wall_intro_2,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 30),
@@ -48,11 +51,7 @@ class WallScreen extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             Text(
-              """Процесс теплоизоляции стен 
-включает:
-- выбор материала для теплоизоляции
-- подготовку поверхности
-- сам процесс утепления.""",
+              s.wall_process_overview,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 30),
@@ -60,10 +59,8 @@ class WallScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyButton(
-                  onTap: () {
-                    context.push(WallMaterialScreen.routeName);
-                  },
-                  text: "ВЫБОР\nМАТЕРИАЛА",
+                  onTap: () => context.push(WallMaterialScreen.routeName),
+                  text: s.wall_btn_material,
                 ),
               ],
             ),
@@ -72,10 +69,8 @@ class WallScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyButton(
-                  onTap: () {
-                    context.push(WallPreparationScreen.routeName);
-                  },
-                  text: "ПОДГОТОВКА",
+                  onTap: () => context.push(WallPreparationScreen.routeName),
+                  text: s.wall_btn_preparation,
                 ),
               ],
             ),
@@ -84,10 +79,8 @@ class WallScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyButton(
-                  onTap: () {
-                    context.push(WallProcessScreen.routeName);
-                  },
-                  text: "ПРОЦЕСС",
+                  onTap: () => context.push(WallProcessScreen.routeName),
+                  text: s.wall_btn_process,
                 ),
               ],
             ),
@@ -96,13 +89,12 @@ class WallScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyButton(
-                  onTap: () {
-                    context.push(WallInsideScreen.routeName);
-                  },
-                  text: "УТЕПЛЕНИЕ\nИЗНУТРИ",
+                  onTap: () => context.push(WallInsideScreen.routeName),
+                  text: s.wall_btn_inside,
                 ),
               ],
             ),
+            const SizedBox(height: 30),
           ],
         ),
       ),

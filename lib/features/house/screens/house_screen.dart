@@ -12,6 +12,7 @@ import 'package:zhyluu_ui/features/house/screens/fundament/fundament_screen.dart
 import 'package:zhyluu_ui/features/house/screens/roof/roof_screen.dart';
 import 'package:zhyluu_ui/features/house/screens/wall/wall_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class HouseScreen extends StatelessWidget {
   static const routeName = "/house";
@@ -20,6 +21,8 @@ class HouseScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldColor(
       appBar: MyAppBar(
         myMenuButtonType: MyMenuButtonType.inverted,
@@ -44,7 +47,7 @@ class HouseScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 28),
                 child: Text(
-                  "Хочу утеплить:",
+                  s.house_want_to_insulate,
                   textAlign: TextAlign.start,
                   style: GoogleFonts.poppins(
                     fontSize: 18,
@@ -69,28 +72,28 @@ class HouseScreen extends StatelessWidget {
                       context.push(RoofScreen.routeName);
                     },
                     iconPath: Assets.icons.house.roof.path,
-                    text: "Крышу",
+                    text: s.house_card_roof,
                   ),
                   MyHouseAppartmentCard(
                     onTap: () {
                       context.push(WallScreen.routeName);
                     },
                     iconPath: Assets.icons.house.wall.path,
-                    text: "Стены",
+                    text: s.house_card_walls,
                   ),
                   MyHouseAppartmentCard(
                     onTap: () {
                       context.push(FloorScreen.routeName);
                     },
                     iconPath: Assets.icons.house.floor.path,
-                    text: "Пол",
+                    text: s.house_card_floor,
                   ),
                   MyHouseAppartmentCard(
                     onTap: () {
                       context.push(FundamentScreen.routeName);
                     },
                     iconPath: Assets.icons.house.fundament.path,
-                    text: "Фундамент",
+                    text: s.house_card_foundation,
                   ),
                 ],
               ),

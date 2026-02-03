@@ -1489,9 +1489,14 @@ class S {
     return Intl.message('.', name: 'dot', desc: '', args: []);
   }
 
-  /// `Walls`
+  /// `WALL\nINSULATION`
   String get wall_title {
-    return Intl.message('Walls', name: 'wall_title', desc: '', args: []);
+    return Intl.message(
+      'WALL\nINSULATION',
+      name: 'wall_title',
+      desc: '',
+      args: [],
+    );
   }
 
   /// `Walls are one of the main sources of heat loss, accounting for approximately 35% of total heat loss. This occurs due to the thermal conductivity of wall materials and possible defects such as cracks or loose sealing.\nThis happens due to the thermal conductivity of the materials the walls are made of and the presence of possible defects that can contribute to heat leakage.\n\nSome building materials have higher thermal conductivity, making them less effective as thermal insulation. Materials such as brick, concrete, or metal can be less insulating than special materials designed for insulation, such as mineral wool or expanded polystyrene.\nDefects in walls, such as cracks, gaps, or loose sealing, can also lead to heat leakage through the walls. This can occur due to insufficient density between material joints or due to wall damage resulting from aging, weather conditions, or construction errors.\nTo reduce heat loss through walls, it is necessary to pay attention to their thermal insulation. Installing high-quality insulation, repairing defects, eliminating gaps, and sealing joints will help significantly reduce heat loss and increase the energy efficiency of the building. It is also worth considering that high-quality wall thermal insulation will help improve indoor comfort, prevent condensation, and save on heating and cooling costs.\nDetailed information on wall insulation methods can be found in the section `
@@ -1514,10 +1519,10 @@ class S {
     );
   }
 
-  /// `Heat loss through the roof of the building`
+  /// `ROOF INSULATION`
   String get roof_title {
     return Intl.message(
-      'Heat loss through the roof of the building',
+      'ROOF INSULATION',
       name: 'roof_title',
       desc: '',
       args: [],
@@ -1604,20 +1609,20 @@ class S {
     );
   }
 
-  /// `Building structures must retain heat in the house and provide comfortable conditions for humans. The materials from which the walls are built must have low thermal conductivity (thermal conductivity is the ability of a material to conduct heat).`
+  /// `Building envelope structures must retain heat inside the house and provide comfortable living conditions. The materials used for walls should have low thermal conductivity. Thermal conductivity is the ability of a material to transfer heat.\n\nThe presence of moisture in building materials is one of the key factors affecting their thermal conductivity. Water conducts heat about 25 times better than air. Therefore, the more moisture present in the pores of a material, the higher its thermal conductivity and the greater the heat loss of the building.\n\nHigh moisture levels in enclosing structures reduce thermal insulation performance and shorten the service life of buildings. This is especially critical under repeated freeze–thaw cycles, which lead to material degradation.\n\nThe main causes of excessive humidity include construction moisture, ground moisture, atmospheric precipitation, operational moisture, and condensation.\n\nTo address high humidity issues, waterproofing systems, proper ventilation, drainage solutions, effective insulation, and regular building maintenance are required.`
   String get humidity_description {
     return Intl.message(
-      'Building structures must retain heat in the house and provide comfortable conditions for humans. The materials from which the walls are built must have low thermal conductivity (thermal conductivity is the ability of a material to conduct heat).',
+      'Building envelope structures must retain heat inside the house and provide comfortable living conditions. The materials used for walls should have low thermal conductivity. Thermal conductivity is the ability of a material to transfer heat.\n\nThe presence of moisture in building materials is one of the key factors affecting their thermal conductivity. Water conducts heat about 25 times better than air. Therefore, the more moisture present in the pores of a material, the higher its thermal conductivity and the greater the heat loss of the building.\n\nHigh moisture levels in enclosing structures reduce thermal insulation performance and shorten the service life of buildings. This is especially critical under repeated freeze–thaw cycles, which lead to material degradation.\n\nThe main causes of excessive humidity include construction moisture, ground moisture, atmospheric precipitation, operational moisture, and condensation.\n\nTo address high humidity issues, waterproofing systems, proper ventilation, drainage solutions, effective insulation, and regular building maintenance are required.',
       name: 'humidity_description',
       desc: '',
       args: [],
     );
   }
 
-  /// `Heat loss of the foundation`
+  /// `FOUNDATION\nINSULATION`
   String get fundament_title {
     return Intl.message(
-      'Heat loss of the foundation',
+      'FOUNDATION\nINSULATION',
       name: 'fundament_title',
       desc: '',
       args: [],
@@ -1644,20 +1649,20 @@ class S {
     );
   }
 
-  /// `Heat loss through the floor`
+  /// `FLOOR\nINSULATION`
   String get floor_title {
     return Intl.message(
-      'Heat loss through the floor',
+      'FLOOR\nINSULATION',
       name: 'floor_title',
       desc: '',
       args: [],
     );
   }
 
-  /// `An uninsulated floor slab gives off a significant part of the heat to the foundation and walls. As practical experience shows, a significant part of the heat escapes at the junction of the wall and the floor, through thermal bridges in the corner. Under certain temperature conditions, high humidity appears in such a corner, and over time, mold and fungus develop.`
+  /// `Floor insulation is the process of adding thermal insulation materials beneath floors to reduce heat loss and improve indoor comfort. Floor insulation is especially important in cold climates or on ground floors where floors are in contact with the ground or cold spaces.`
   String get floor_description {
     return Intl.message(
-      'An uninsulated floor slab gives off a significant part of the heat to the foundation and walls. As practical experience shows, a significant part of the heat escapes at the junction of the wall and the floor, through thermal bridges in the corner. Under certain temperature conditions, high humidity appears in such a corner, and over time, mold and fungus develop.',
+      'Floor insulation is the process of adding thermal insulation materials beneath floors to reduce heat loss and improve indoor comfort. Floor insulation is especially important in cold climates or on ground floors where floors are in contact with the ground or cold spaces.',
       name: 'floor_description',
       desc: '',
       args: [],
@@ -3797,6 +3802,2431 @@ class S {
   /// `Door`
   String get appartment_door {
     return Intl.message('Door', name: 'appartment_door', desc: '', args: []);
+  }
+
+  /// `BACKFILL\nMETHOD`
+  String get floor_billing_title {
+    return Intl.message(
+      'BACKFILL\nMETHOD',
+      name: 'floor_billing_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Expanded clay is used for floor thermal and sound insulation on concrete, wooden, or ground bases.\nIt can be applied as dry backfill or as part of a cement-sand screed.\nIts main drawback is moisture retention, which can be eliminated by proper waterproofing.\nSurface preparation begins with cleaning and checking level differences.\nThe optimal layer thickness is 80–100 mm.\nThe required volume is calculated by multiplying the room area by the average layer height. It is recommended to purchase 10% extra material.\nBefore installation, the concrete base must be covered with waterproofing film or roll material.`
+  String get floor_billing_text_1 {
+    return Intl.message(
+      'Expanded clay is used for floor thermal and sound insulation on concrete, wooden, or ground bases.\nIt can be applied as dry backfill or as part of a cement-sand screed.\nIts main drawback is moisture retention, which can be eliminated by proper waterproofing.\nSurface preparation begins with cleaning and checking level differences.\nThe optimal layer thickness is 80–100 mm.\nThe required volume is calculated by multiplying the room area by the average layer height. It is recommended to purchase 10% extra material.\nBefore installation, the concrete base must be covered with waterproofing film or roll material.',
+      name: 'floor_billing_text_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A 10–15 cm layer of expanded clay is poured over the waterproofing and leveled using metal guides.`
+  String get floor_billing_text_2 {
+    return Intl.message(
+      'A 10–15 cm layer of expanded clay is poured over the waterproofing and leveled using metal guides.',
+      name: 'floor_billing_text_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After drying, reinforcing mesh is laid and a cement-sand screed is poured. Once fully cured, the final floor covering is installed.`
+  String get floor_billing_text_3 {
+    return Intl.message(
+      'After drying, reinforcing mesh is laid and a cement-sand screed is poured. Once fully cured, the final floor covering is installed.',
+      name: 'floor_billing_text_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `IMPORTANT! Walking on thermal insulation layers is prohibited.`
+  String get floor_billing_warning {
+    return Intl.message(
+      'IMPORTANT! Walking on thermal insulation layers is prohibited.',
+      name: 'floor_billing_warning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `CONCRETE\nFLOOR INSULATION`
+  String get floor_concrete_title {
+    return Intl.message(
+      'CONCRETE\nFLOOR INSULATION',
+      name: 'floor_concrete_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This method is used for concrete floors with cement-sand screed. Thermal insulation materials are laid directly on the ground or screed before installing the floor covering.\nFirst, the concrete slab is cleaned of old screed, debris, and dust. Gaps between the walls and floor are sealed with cement mortar or sealant.\nThen waterproofing is applied using polymer-bitumen solutions applied with a roller or brush. An alternative option is laying a vapor barrier film overlapping onto the walls. For budget solutions, regular polyethylene film may be used.`
+  String get floor_concrete_text_1 {
+    return Intl.message(
+      'This method is used for concrete floors with cement-sand screed. Thermal insulation materials are laid directly on the ground or screed before installing the floor covering.\nFirst, the concrete slab is cleaned of old screed, debris, and dust. Gaps between the walls and floor are sealed with cement mortar or sealant.\nThen waterproofing is applied using polymer-bitumen solutions applied with a roller or brush. An alternative option is laying a vapor barrier film overlapping onto the walls. For budget solutions, regular polyethylene film may be used.',
+      name: 'floor_concrete_text_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next, wooden joists are installed at intervals of no more than 0.9 m. If the spacing is larger, the floor may sag. When using loose insulation, metal guides are installed instead of joists.`
+  String get floor_concrete_text_2 {
+    return Intl.message(
+      'Next, wooden joists are installed at intervals of no more than 0.9 m. If the spacing is larger, the floor may sag. When using loose insulation, metal guides are installed instead of joists.',
+      name: 'floor_concrete_text_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Then the selected insulation is installed: mineral wool, foam plastic, or loose thermal insulation materials. Sheet and roll insulation is laid tightly between joists without gaps. Loose materials (e.g., expanded clay) are poured between guides and leveled with a metal rule.\nAfter that, a subfloor made of plywood, gypsum fiber board, OSB, or chipboard (10–15 mm thick) is installed. It is recommended to lay two layers with offset joints to avoid cold bridges. Sheets are fixed to the joists or guides with screws.\nFinally, the finishing floor covering is installed.`
+  String get floor_concrete_text_3 {
+    return Intl.message(
+      'Then the selected insulation is installed: mineral wool, foam plastic, or loose thermal insulation materials. Sheet and roll insulation is laid tightly between joists without gaps. Loose materials (e.g., expanded clay) are poured between guides and leveled with a metal rule.\nAfter that, a subfloor made of plywood, gypsum fiber board, OSB, or chipboard (10–15 mm thick) is installed. It is recommended to lay two layers with offset joints to avoid cold bridges. Sheets are fixed to the joists or guides with screws.\nFinally, the finishing floor covering is installed.',
+      name: 'floor_concrete_text_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `VAPOR\nBARRIER FILM\nMETHOD`
+  String get floor_film_title {
+    return Intl.message(
+      'VAPOR\nBARRIER FILM\nMETHOD',
+      name: 'floor_film_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If there is no subfloor, you can use a vapor barrier film laid over a wooden batten frame. Then an insulation layer is installed, preferably using lightweight materials such as boards or roll insulation. After that, another vapor barrier layer is placed on top and covered with wooden planks.\nThe vapor barrier should be installed with at least a 10 cm overlap and fixed with a construction stapler. Next, plywood or OSB sheets are laid on the wooden joists. Then the final floor covering is installed, for example laminate with an underlay. The installation is finished by mounting baseboards.`
+  String get floor_film_text_1 {
+    return Intl.message(
+      'If there is no subfloor, you can use a vapor barrier film laid over a wooden batten frame. Then an insulation layer is installed, preferably using lightweight materials such as boards or roll insulation. After that, another vapor barrier layer is placed on top and covered with wooden planks.\nThe vapor barrier should be installed with at least a 10 cm overlap and fixed with a construction stapler. Next, plywood or OSB sheets are laid on the wooden joists. Then the final floor covering is installed, for example laminate with an underlay. The installation is finished by mounting baseboards.',
+      name: 'floor_film_text_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Some floor\ninsulation methods:`
+  String get floor_methods_title {
+    return Intl.message(
+      'Some floor\ninsulation methods:',
+      name: 'floor_methods_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation under\njoists`
+  String get floor_method_under {
+    return Intl.message(
+      'Insulation under\njoists',
+      name: 'floor_method_under',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vapor barrier\nfilm method`
+  String get floor_method_film {
+    return Intl.message(
+      'Vapor barrier\nfilm method',
+      name: 'floor_method_film',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Concrete floor\ninsulation`
+  String get floor_method_concrete {
+    return Intl.message(
+      'Concrete floor\ninsulation',
+      name: 'floor_method_concrete',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Loose-fill\nmethod`
+  String get floor_method_billing {
+    return Intl.message(
+      'Loose-fill\nmethod',
+      name: 'floor_method_billing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `INSULATION\nUNDER JOISTS`
+  String get floor_under_title {
+    return Intl.message(
+      'INSULATION\nUNDER JOISTS',
+      name: 'floor_under_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This method is suitable for wooden floors. Thermal insulation materials such as `
+  String get floor_under_text_1 {
+    return Intl.message(
+      'This method is suitable for wooden floors. Thermal insulation materials such as ',
+      name: 'floor_under_text_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `polystyrene or mineral wool boards `
+  String get floor_under_text_2 {
+    return Intl.message(
+      'polystyrene or mineral wool boards ',
+      name: 'floor_under_text_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `are placed between the joists, which act as the supporting structure for the floor. Then the floor covering is installed (e.g., parquet, laminate, or wooden boards).\nThere are two main types of such floor structures: single-layer and double-layer systems, which are installed over a subfloor. All types of wooden floors require installation on supporting joists, which raises the floor level significantly above a concrete screed, a subfloor, or compacted soil. This is especially relevant for ground floors when dealing with the foundation or soil.`
+  String get floor_under_text_3 {
+    return Intl.message(
+      'are placed between the joists, which act as the supporting structure for the floor. Then the floor covering is installed (e.g., parquet, laminate, or wooden boards).\nThere are two main types of such floor structures: single-layer and double-layer systems, which are installed over a subfloor. All types of wooden floors require installation on supporting joists, which raises the floor level significantly above a concrete screed, a subfloor, or compacted soil. This is especially relevant for ground floors when dealing with the foundation or soil.',
+      name: 'floor_under_text_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ATTIC FLOOR\nINSULATION`
+  String get roof_attic_title {
+    return Intl.message(
+      'ATTIC FLOOR\nINSULATION',
+      name: 'roof_attic_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `     Insulating the attic floor helps keep more heat inside the living space instead of wasting it on heating a cold attic. That is why it is worth insulating the floor of a cold attic using thermal insulation materials. It is best to do this during construction or right before final interior finishing. However, even during regular use of the house, there is no reason not to insulate the ceiling from the attic side.`
+  String get roof_attic_intro {
+    return Intl.message(
+      '     Insulating the attic floor helps keep more heat inside the living space instead of wasting it on heating a cold attic. That is why it is worth insulating the floor of a cold attic using thermal insulation materials. It is best to do this during construction or right before final interior finishing. However, even during regular use of the house, there is no reason not to insulate the ceiling from the attic side.',
+      name: 'roof_attic_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vapour barrier.\n`
+  String get roof_attic_section_vapor_title {
+    return Intl.message(
+      'Vapour barrier.\n',
+      name: 'roof_attic_section_vapor_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The work starts with installing a vapour barrier film. The film helps remove/stop vapour rising from the warm living area into the cold attic. To install the film correctly, carefully follow the markings on it. A 100 mm overlap must be provided.\nIf insulation is done along wooden beams, the film should wrap around all protruding elements. Otherwise, the beams may rot over time.\nWhere the film meets walls or other protruding surfaces, lift it to the height equal to the insulation thickness plus 50 mm, then tape it or wrap it onto the insulation boards.`
+  String get roof_attic_section_vapor_text {
+    return Intl.message(
+      'The work starts with installing a vapour barrier film. The film helps remove/stop vapour rising from the warm living area into the cold attic. To install the film correctly, carefully follow the markings on it. A 100 mm overlap must be provided.\nIf insulation is done along wooden beams, the film should wrap around all protruding elements. Otherwise, the beams may rot over time.\nWhere the film meets walls or other protruding surfaces, lift it to the height equal to the insulation thickness plus 50 mm, then tape it or wrap it onto the insulation boards.',
+      name: 'roof_attic_section_vapor_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation.\n`
+  String get roof_attic_section_insulation_title {
+    return Intl.message(
+      'Insulation.\n',
+      name: 'roof_attic_section_insulation_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This step involves laying insulation (mineral wool, foam plastic, or extruded polystyrene). It is a fairly simple process: boards or strips are easily cut to size with a utility knife.\nWhen placing sheets, make sure there are no gaps and the mineral wool is not overly compressed. Both issues reduce insulation quality. Typical mistakes are shown in the photo.`
+  String get roof_attic_section_insulation_text {
+    return Intl.message(
+      'This step involves laying insulation (mineral wool, foam plastic, or extruded polystyrene). It is a fairly simple process: boards or strips are easily cut to size with a utility knife.\nWhen placing sheets, make sure there are no gaps and the mineral wool is not overly compressed. Both issues reduce insulation quality. Typical mistakes are shown in the photo.',
+      name: 'roof_attic_section_insulation_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulating with expanded clay (claydite).\n`
+  String get roof_attic_section_claydite_title {
+    return Intl.message(
+      'Insulating with expanded clay (claydite).\n',
+      name: 'roof_attic_section_claydite_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Inspect the slab for cracks and gaps. Seal them with mortar or cover with thick paper. Protruding elements do not cause difficulties when pouring expanded clay.\nInstall a timber lathing frame; later a subfloor will be laid on it.\nPour the loose insulation onto the slab and level it with a regular rake. Recommended layer thickness is 250–300 mm. You can walk on expanded clay without restrictions.\nTip: it is better to combine granules of different sizes to avoid voids.\nFinally, install a subfloor or pour a sand-cement screed.`
+  String get roof_attic_section_claydite_text {
+    return Intl.message(
+      'Inspect the slab for cracks and gaps. Seal them with mortar or cover with thick paper. Protruding elements do not cause difficulties when pouring expanded clay.\nInstall a timber lathing frame; later a subfloor will be laid on it.\nPour the loose insulation onto the slab and level it with a regular rake. Recommended layer thickness is 250–300 mm. You can walk on expanded clay without restrictions.\nTip: it is better to combine granules of different sizes to avoid voids.\nFinally, install a subfloor or pour a sand-cement screed.',
+      name: 'roof_attic_section_claydite_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Waterproofing.\n`
+  String get roof_attic_section_waterproof_title {
+    return Intl.message(
+      'Waterproofing.\n',
+      name: 'roof_attic_section_waterproof_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Attic floor insulation is finished by adding waterproofing and building a subfloor. Since mineral wool absorbs moisture, a waterproofing layer should be laid over it. This is also necessary if a concrete screed will be poured over the insulation.\nIf the attic is used regularly, you can make a subfloor over the insulation “pie” (for example, a concrete screed or OSB boards). If the attic is rarely used, you can simply lay boards over the existing beams so that climbing up and moving around is easier when needed.`
+  String get roof_attic_section_waterproof_text {
+    return Intl.message(
+      'Attic floor insulation is finished by adding waterproofing and building a subfloor. Since mineral wool absorbs moisture, a waterproofing layer should be laid over it. This is also necessary if a concrete screed will be poured over the insulation.\nIf the attic is used regularly, you can make a subfloor over the insulation “pie” (for example, a concrete screed or OSB boards). If the attic is rarely used, you can simply lay boards over the existing beams so that climbing up and moving around is easier when needed.',
+      name: 'roof_attic_section_waterproof_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `INSULATION\nFROM INSIDE`
+  String get roof_inside_title {
+    return Intl.message(
+      'INSULATION\nFROM INSIDE',
+      name: 'roof_inside_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. First, a counter-batten must be installed to ensure air circulation in the under-roof space. This is a very important step and should not be neglected.`
+  String get roof_inside_step_1 {
+    return Intl.message(
+      '1. First, a counter-batten must be installed to ensure air circulation in the under-roof space. This is a very important step and should not be neglected.',
+      name: 'roof_inside_step_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. Vapour barrier installation is carried out from inside the room by fixing it with staples to the lower edges of the rafters. There are many types of waterproofing membranes and films; the choice depends on the user's possibilities.\n3. Next, a layer of insulation is installed — mineral wool or polystyrene, cut exactly to fit the spaces between the rafters. The insulation can temporarily stay in place due to its elasticity, but for reliability it is recommended to secure it with string by hammering small nails into the rafters.`
+  String get roof_inside_step_2_3 {
+    return Intl.message(
+      '2. Vapour barrier installation is carried out from inside the room by fixing it with staples to the lower edges of the rafters. There are many types of waterproofing membranes and films; the choice depends on the user\'s possibilities.\n3. Next, a layer of insulation is installed — mineral wool or polystyrene, cut exactly to fit the spaces between the rafters. The insulation can temporarily stay in place due to its elasticity, but for reliability it is recommended to secure it with string by hammering small nails into the rafters.',
+      name: 'roof_inside_step_2_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `4. After fixing the insulation, a vapour barrier layer is applied. This film material prevents condensation buildup and moisture absorption by the insulation. Glassine, polyethylene, or polypropylene films are commonly used. The sheets are attached to the rafters with a stapler and joined together with tape to ensure airtightness.`
+  String get roof_inside_step_4 {
+    return Intl.message(
+      '4. After fixing the insulation, a vapour barrier layer is applied. This film material prevents condensation buildup and moisture absorption by the insulation. Glassine, polyethylene, or polypropylene films are commonly used. The sheets are attached to the rafters with a stapler and joined together with tape to ensure airtightness.',
+      name: 'roof_inside_step_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OUTSIDE\nINSULATION`
+  String get roof_outside_title {
+    return Intl.message(
+      'OUTSIDE\nINSULATION',
+      name: 'roof_outside_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `   It is more convenient to insulate the sloped part of the roof before installing the final roof covering.`
+  String get roof_outside_intro {
+    return Intl.message(
+      '   It is more convenient to insulate the sloped part of the roof before installing the final roof covering.',
+      name: 'roof_outside_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. Vapour barrier. `
+  String get roof_outside_block_1_title {
+    return Intl.message(
+      '1. Vapour barrier. ',
+      name: 'roof_outside_block_1_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before laying the thermal insulation material, a vapour barrier must be installed.\nA vapour barrier is essential when building a roofing “pie”. Its main purpose is to prevent moisture from forming and accumulating inside the roof structure. If moisture builds up, the roof can literally start rotting and deteriorating from the inside, causing its performance to drop significantly.\nIt is very important to place the vapour barrier below the insulation layer; otherwise the insulation will absorb vapour coming from below, swell, and become damp.\nFor vapour barrier, roll materials can be used — polyethylene, polypropylene, foil-faced, and diffusion films.\nAll film materials used for vapour barrier should be elastic, tear-resistant, and easy to work with. It is crucial that the film does not tear during fastening and properly wraps around the fasteners. Even if the roof is accidentally damaged (for example, by a tree branch during a storm), the vapour barrier should remain intact and minimize losses. Ideally, the vapour barrier thickness should be such that it can withstand the load of thermal and waterproofing layers if the battens and rafters fail.`
+  String get roof_outside_block_1_text {
+    return Intl.message(
+      'Before laying the thermal insulation material, a vapour barrier must be installed.\nA vapour barrier is essential when building a roofing “pie”. Its main purpose is to prevent moisture from forming and accumulating inside the roof structure. If moisture builds up, the roof can literally start rotting and deteriorating from the inside, causing its performance to drop significantly.\nIt is very important to place the vapour barrier below the insulation layer; otherwise the insulation will absorb vapour coming from below, swell, and become damp.\nFor vapour barrier, roll materials can be used — polyethylene, polypropylene, foil-faced, and diffusion films.\nAll film materials used for vapour barrier should be elastic, tear-resistant, and easy to work with. It is crucial that the film does not tear during fastening and properly wraps around the fasteners. Even if the roof is accidentally damaged (for example, by a tree branch during a storm), the vapour barrier should remain intact and minimize losses. Ideally, the vapour barrier thickness should be such that it can withstand the load of thermal and waterproofing layers if the battens and rafters fail.',
+      name: 'roof_outside_block_1_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. Installing insulation.\n`
+  String get roof_outside_block_2_title {
+    return Intl.message(
+      '2. Installing insulation.\n',
+      name: 'roof_outside_block_2_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation is laid between wooden beams. It must be installed tightly, without gaps or voids.\nInsulation can be installed from the ridge downward (top to bottom) or from the base upward (bottom to top).\nWhen installing bottom-up, press the insulation boards tightly against each other to avoid gaps. For two-layer insulation, make sure the joints of the lower layer are covered by boards of the upper layer (staggered layout). If gaps are found, they must be filled with the same material through the entire thickness of the insulation layer. Cut a piece 1 cm larger in width and length than the gap and fit it tightly into place. After all insulation is installed in its design position, the waterproofing layer is mounted.`
+  String get roof_outside_block_2_text {
+    return Intl.message(
+      'Insulation is laid between wooden beams. It must be installed tightly, without gaps or voids.\nInsulation can be installed from the ridge downward (top to bottom) or from the base upward (bottom to top).\nWhen installing bottom-up, press the insulation boards tightly against each other to avoid gaps. For two-layer insulation, make sure the joints of the lower layer are covered by boards of the upper layer (staggered layout). If gaps are found, they must be filled with the same material through the entire thickness of the insulation layer. Cut a piece 1 cm larger in width and length than the gap and fit it tightly into place. After all insulation is installed in its design position, the waterproofing layer is mounted.',
+      name: 'roof_outside_block_2_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `3. Waterproofing.\n`
+  String get roof_outside_block_3_title {
+    return Intl.message(
+      '3. Waterproofing.\n',
+      name: 'roof_outside_block_3_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The function of hydro/vapour-proof materials is to protect the insulation layer from moisture that reduces its performance. Installing a waterproofing film on the roof and creating ventilation gaps significantly increases the service life of the roofing system.\nHorizontal and vertical overlaps must be observed. Overlap areas may be taped with butyl-rubber-based tapes. At junctions where waterproofing meets structural elements, sealing with butyl-rubber tape is mandatory. The ridge overlap is 200 mm.\nDo not stretch the waterproofing film tightly; install it with a slight sag between rafters. This will compensate for rafter system deformation and prevent tearing when dimensions change in cold weather.\nThe waterproofing film is fixed using a counter-batten, which creates a ventilation gap for roof ventilation. The ventilation gap above the waterproofing must be at least 50 mm. The counter-batten is fixed with roofing nails with wide heads. Do not use staples or nails directly through the membrane without a wooden strip on top at fastening points.\nAfter that, the roof covering can be installed.`
+  String get roof_outside_block_3_text {
+    return Intl.message(
+      'The function of hydro/vapour-proof materials is to protect the insulation layer from moisture that reduces its performance. Installing a waterproofing film on the roof and creating ventilation gaps significantly increases the service life of the roofing system.\nHorizontal and vertical overlaps must be observed. Overlap areas may be taped with butyl-rubber-based tapes. At junctions where waterproofing meets structural elements, sealing with butyl-rubber tape is mandatory. The ridge overlap is 200 mm.\nDo not stretch the waterproofing film tightly; install it with a slight sag between rafters. This will compensate for rafter system deformation and prevent tearing when dimensions change in cold weather.\nThe waterproofing film is fixed using a counter-batten, which creates a ventilation gap for roof ventilation. The ventilation gap above the waterproofing must be at least 50 mm. The counter-batten is fixed with roofing nails with wide heads. Do not use staples or nails directly through the membrane without a wooden strip on top at fastening points.\nAfter that, the roof covering can be installed.',
+      name: 'roof_outside_block_3_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `    Heat loss through the roof during the cold season is about 30–35% in one- and two-story houses and 5–10% in multi-story buildings. Using efficient thermal insulation systems can reduce heating energy consumption by up to 10 times. Indoors, depending on the functional or technological purpose of the rooms, an appropriate heat-and-humidity operating mode must be maintained.`
+  String get roof_intro {
+    return Intl.message(
+      '    Heat loss through the roof during the cold season is about 30–35% in one- and two-story houses and 5–10% in multi-story buildings. Using efficient thermal insulation systems can reduce heating energy consumption by up to 10 times. Indoors, depending on the functional or technological purpose of the rooms, an appropriate heat-and-humidity operating mode must be maintained.',
+      name: 'roof_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Roof insulation provides:`
+  String get roof_benefits_title {
+    return Intl.message(
+      'Roof insulation provides:',
+      name: 'roof_benefits_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Protection of the roof covering and the interior from the effects of changing outdoor temperatures.`
+  String get roof_benefits_1 {
+    return Intl.message(
+      'Protection of the roof covering and the interior from the effects of changing outdoor temperatures.',
+      name: 'roof_benefits_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Balancing temperature fluctuations within the main roof structure, which helps prevent cracks caused by uneven thermal changes.`
+  String get roof_benefits_2 {
+    return Intl.message(
+      'Balancing temperature fluctuations within the main roof structure, which helps prevent cracks caused by uneven thermal changes.',
+      name: 'roof_benefits_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shifting the dew point into the outer insulation layer, preventing moisture in concrete or reinforced-concrete coverings.`
+  String get roof_benefits_3 {
+    return Intl.message(
+      'Shifting the dew point into the outer insulation layer, preventing moisture in concrete or reinforced-concrete coverings.',
+      name: 'roof_benefits_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Creating a comfortable indoor microclimate by increasing the temperature of the inner roof surface (ceiling) and reducing the temperature difference between indoor air and the ceiling surface, including attic spaces.`
+  String get roof_benefits_4 {
+    return Intl.message(
+      'Creating a comfortable indoor microclimate by increasing the temperature of the inner roof surface (ceiling) and reducing the temperature difference between indoor air and the ceiling surface, including attic spaces.',
+      name: 'roof_benefits_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `    Heat loss through the roof during the cold season is about 30–35% in one- and two-story houses and 5–10% in multi-story buildings. Using efficient thermal insulation systems can reduce heating energy consumption by up to 10 times. Indoors, depending on the functional or technological purpose of the rooms, an appropriate heat-and-humidity operating mode must be maintained.`
+  String get roof_intro_repeat {
+    return Intl.message(
+      '    Heat loss through the roof during the cold season is about 30–35% in one- and two-story houses and 5–10% in multi-story buildings. Using efficient thermal insulation systems can reduce heating energy consumption by up to 10 times. Indoors, depending on the functional or technological purpose of the rooms, an appropriate heat-and-humidity operating mode must be maintained.',
+      name: 'roof_intro_repeat',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Preparation stage for roof insulation`
+  String get roof_prep_title {
+    return Intl.message(
+      'Preparation stage for roof insulation',
+      name: 'roof_prep_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. Ensure proper ventilation in the area where you will work and make sure the workspace is well lit. If necessary, add extra light sources.\n2. Before starting, carefully inspect the rafter system. If there are joints made by overlapping elements, check that there are no gaps between them. Such gaps often become cold bridges. If needed, carefully fill them using foam sealant.\n3. Check the wooden structure for protruding nails and screws to avoid injuries during DIY roof insulation.\n4. Unpack several packs of insulation. Modern insulation materials are heavily compressed in packaging, so they need some time to regain their shape.\n5. Do not use insulation with visible defects in density or geometry. Avoid damaging the insulation structure and do not place heavy objects on it.`
+  String get roof_prep_text {
+    return Intl.message(
+      '1. Ensure proper ventilation in the area where you will work and make sure the workspace is well lit. If necessary, add extra light sources.\n2. Before starting, carefully inspect the rafter system. If there are joints made by overlapping elements, check that there are no gaps between them. Such gaps often become cold bridges. If needed, carefully fill them using foam sealant.\n3. Check the wooden structure for protruding nails and screws to avoid injuries during DIY roof insulation.\n4. Unpack several packs of insulation. Modern insulation materials are heavily compressed in packaging, so they need some time to regain their shape.\n5. Do not use insulation with visible defects in density or geometry. Avoid damaging the insulation structure and do not place heavy objects on it.',
+      name: 'roof_prep_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `General recommendations`
+  String get roof_general_title {
+    return Intl.message(
+      'General recommendations',
+      name: 'roof_general_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- For insulating roofs and ceilings, use materials with density up to 250 kg/m³ and thermal conductivity up to 0.06 W/(m·°C). Insulation materials must meet fire-safety requirements, have hygienic certificates, and must not emit toxic substances.\n- Roof insulation is done when an attic with living rooms is planned. If not, it is enough to insulate only above the top floor slab (above the ceiling).\n- For sloped and vertical attic surfaces, board insulation is recommended to prevent roll insulation from sliding along the slope and blocking the ventilated gap. Mineral wool boards are installed with a tight fit.\n- Insulation can be installed either before the final covering (from the outside) or after (from the inside), depending on weather and installation conditions. Low ridge roofs are easier to insulate from inside; high and steep roofs are easier from outside.\n- It is easier to lay boards from above than to carry them up. In autumn and winter, insulating from inside is often more convenient. Rafter spacing is commonly designed as 600 mm, matching the width/thickness standards of many insulation boards.\nThe method below is described for mineral wool, but the technology is similar for other insulation types.`
+  String get roof_general_text {
+    return Intl.message(
+      '- For insulating roofs and ceilings, use materials with density up to 250 kg/m³ and thermal conductivity up to 0.06 W/(m·°C). Insulation materials must meet fire-safety requirements, have hygienic certificates, and must not emit toxic substances.\n- Roof insulation is done when an attic with living rooms is planned. If not, it is enough to insulate only above the top floor slab (above the ceiling).\n- For sloped and vertical attic surfaces, board insulation is recommended to prevent roll insulation from sliding along the slope and blocking the ventilated gap. Mineral wool boards are installed with a tight fit.\n- Insulation can be installed either before the final covering (from the outside) or after (from the inside), depending on weather and installation conditions. Low ridge roofs are easier to insulate from inside; high and steep roofs are easier from outside.\n- It is easier to lay boards from above than to carry them up. In autumn and winter, insulating from inside is often more convenient. Rafter spacing is commonly designed as 600 mm, matching the width/thickness standards of many insulation boards.\nThe method below is described for mineral wool, but the technology is similar for other insulation types.',
+      name: 'roof_general_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation\noutside`
+  String get roof_btn_outside {
+    return Intl.message(
+      'Insulation\noutside',
+      name: 'roof_btn_outside',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation\ninside`
+  String get roof_btn_inside {
+    return Intl.message(
+      'Insulation\ninside',
+      name: 'roof_btn_inside',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation\nattic\nfloor`
+  String get roof_btn_attic {
+    return Intl.message(
+      'Insulation\nattic\nfloor',
+      name: 'roof_btn_attic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Foundation insulation is the process of adding thermal insulation materials around a building’s foundation to reduce heat loss and improve energy efficiency. It can be an important part of construction or renovation, especially in cold climates.`
+  String get fundament_intro {
+    return Intl.message(
+      'Foundation insulation is the process of adding thermal insulation materials around a building’s foundation to reduce heat loss and improve energy efficiency. It can be an important part of construction or renovation, especially in cold climates.',
+      name: 'fundament_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Benefits of foundation\ninsulation:`
+  String get fundament_benefits_title {
+    return Intl.message(
+      'Benefits of foundation\ninsulation:',
+      name: 'fundament_benefits_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. Energy efficiency:`
+  String get fundament_benefit_1_title {
+    return Intl.message(
+      '1. Energy efficiency:',
+      name: 'fundament_benefit_1_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An insulated foundation reduces energy consumption for heating and cooling, which ultimately lowers utility costs.`
+  String get fundament_benefit_1_text {
+    return Intl.message(
+      'An insulated foundation reduces energy consumption for heating and cooling, which ultimately lowers utility costs.',
+      name: 'fundament_benefit_1_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. Protection from overcooling:`
+  String get fundament_benefit_2_title {
+    return Intl.message(
+      '2. Protection from overcooling:',
+      name: 'fundament_benefit_2_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation prevents the foundation from cooling down in cold seasons, helping reduce soil freezing and lowering the risk of frost-related foundation damage.`
+  String get fundament_benefit_2_text {
+    return Intl.message(
+      'Insulation prevents the foundation from cooling down in cold seasons, helping reduce soil freezing and lowering the risk of frost-related foundation damage.',
+      name: 'fundament_benefit_2_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `3. Improved comfort:`
+  String get fundament_benefit_3_title {
+    return Intl.message(
+      '3. Improved comfort:',
+      name: 'fundament_benefit_3_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An insulated foundation helps maintain a more stable indoor temperature, creating more comfortable living or working conditions.`
+  String get fundament_benefit_3_text {
+    return Intl.message(
+      'An insulated foundation helps maintain a more stable indoor temperature, creating more comfortable living or working conditions.',
+      name: 'fundament_benefit_3_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `4. Moisture protection:`
+  String get fundament_benefit_4_title {
+    return Intl.message(
+      '4. Moisture protection:',
+      name: 'fundament_benefit_4_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Waterproofing materials used to protect the foundation from moisture penetration help extend the overall service life of the building.`
+  String get fundament_benefit_4_text {
+    return Intl.message(
+      'Waterproofing materials used to protect the foundation from moisture penetration help extend the overall service life of the building.',
+      name: 'fundament_benefit_4_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `! If the house is already built and has been in use for a long time, exposing the foundation is a highly responsible process that requires careful planning and extensive preparation.`
+  String get fundament_warning {
+    return Intl.message(
+      '! If the house is already built and has been in use for a long time, exposing the foundation is a highly responsible process that requires careful planning and extensive preparation.',
+      name: 'fundament_warning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation\noutside`
+  String get fundament_btn_outside {
+    return Intl.message(
+      'Insulation\noutside',
+      name: 'fundament_btn_outside',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation\ninside`
+  String get fundament_btn_inside {
+    return Intl.message(
+      'Insulation\ninside',
+      name: 'fundament_btn_inside',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `INSULATION\nINSIDE`
+  String get fundament_inside_title {
+    return Intl.message(
+      'INSULATION\nINSIDE',
+      name: 'fundament_inside_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `In some cases, when exterior insulation is not possible or not effective, insulating the foundation from the inside can be a good option. One of the most effective approaches is spraying polyurethane foam.\n\n`
+  String get fundament_inside_intro {
+    return Intl.message(
+      'In some cases, when exterior insulation is not possible or not effective, insulating the foundation from the inside can be a good option. One of the most effective approaches is spraying polyurethane foam.\n\n',
+      name: 'fundament_inside_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Surface preparation: `
+  String get fundament_inside_prep_title {
+    return Intl.message(
+      'Surface preparation: ',
+      name: 'fundament_inside_prep_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `As with any insulation method, the foundation surface must be thoroughly cleaned from dirt, dust, and debris. If needed, foundation damage is repaired and waterproofing is applied.\n\n`
+  String get fundament_inside_prep_text {
+    return Intl.message(
+      'As with any insulation method, the foundation surface must be thoroughly cleaned from dirt, dust, and debris. If needed, foundation damage is repaired and waterproofing is applied.\n\n',
+      name: 'fundament_inside_prep_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Waterproofing: `
+  String get fundament_inside_waterproof_title {
+    return Intl.message(
+      'Waterproofing: ',
+      name: 'fundament_inside_waterproof_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `In addition to insulation, it is recommended to waterproof the inner surfaces of the foundation to prevent moisture and dampness from penetrating.\n\n`
+  String get fundament_inside_waterproof_text {
+    return Intl.message(
+      'In addition to insulation, it is recommended to waterproof the inner surfaces of the foundation to prevent moisture and dampness from penetrating.\n\n',
+      name: 'fundament_inside_waterproof_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wall insulation: `
+  String get fundament_inside_walls_title {
+    return Intl.message(
+      'Wall insulation: ',
+      name: 'fundament_inside_walls_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation is done by installing thermal insulation materials on the inner surface of the foundation walls. Typically, polystyrene foam boards or mineral wool boards are used and fixed to the walls with adhesive or special fasteners.\nBackfilling: Then you can backfill with soil, expanded clay, or sand up to floor level.\n\n`
+  String get fundament_inside_walls_text {
+    return Intl.message(
+      'Insulation is done by installing thermal insulation materials on the inner surface of the foundation walls. Typically, polystyrene foam boards or mineral wool boards are used and fixed to the walls with adhesive or special fasteners.\nBackfilling: Then you can backfill with soil, expanded clay, or sand up to floor level.\n\n',
+      name: 'fundament_inside_walls_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `It is important to note that insulating the foundation from the inside may be less effective than insulating it from the outside, because it does not prevent heat loss through the foundation structure itself and does not protect it from moisture and environmental impacts. However, in some situations, it may be the only available option or it can be used together with other insulation methods.`
+  String get fundament_inside_note {
+    return Intl.message(
+      'It is important to note that insulating the foundation from the inside may be less effective than insulating it from the outside, because it does not prevent heat loss through the foundation structure itself and does not protect it from moisture and environmental impacts. However, in some situations, it may be the only available option or it can be used together with other insulation methods.',
+      name: 'fundament_inside_note',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. Backfill insulation method for the foundation: process`
+  String get fundament_billing_title {
+    return Intl.message(
+      '2. Backfill insulation method for the foundation: process',
+      name: 'fundament_billing_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The backfill method of insulating a foundation using expanded clay (LECA) and other materials is one option that relies on lightweight fillers. Expanded clay and similar lightweight materials are used to create an insulating layer around the foundation of a building or structure.`
+  String get fundament_billing_intro {
+    return Intl.message(
+      'The backfill method of insulating a foundation using expanded clay (LECA) and other materials is one option that relies on lightweight fillers. Expanded clay and similar lightweight materials are used to create an insulating layer around the foundation of a building or structure.',
+      name: 'fundament_billing_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Surface preparation: `
+  String get fundament_billing_prep_title {
+    return Intl.message(
+      'Surface preparation: ',
+      name: 'fundament_billing_prep_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `As with any insulation method, the foundation surface must be thoroughly cleaned from dirt, dust, and debris. If necessary, foundation damage is repaired and waterproofing is applied.\n\n`
+  String get fundament_billing_prep_text {
+    return Intl.message(
+      'As with any insulation method, the foundation surface must be thoroughly cleaned from dirt, dust, and debris. If necessary, foundation damage is repaired and waterproofing is applied.\n\n',
+      name: 'fundament_billing_prep_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Material selection: `
+  String get fundament_billing_material_title {
+    return Intl.message(
+      'Material selection: ',
+      name: 'fundament_billing_material_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `For the backfill insulation method, various lightweight materials can be used, such as expanded clay, gravel, and sand.`
+  String get fundament_billing_material_text {
+    return Intl.message(
+      'For the backfill insulation method, various lightweight materials can be used, such as expanded clay, gravel, and sand.',
+      name: 'fundament_billing_material_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. A trench at least 80 cm wide is dug along the foundation to its full depth. Then the foundation walls are cleaned from dirt, sand, and dust. The foundation is dried.\n2. It is important to remember that expanded clay can absorb moisture, so a waterproofing layer (synthetic film, roofing felt, etc.) should be placed inside the formwork. Waterproofing is done either by bonding (sheet/roll) or coating methods. Bitumen mastic is used for coating. The bonding method involves attaching roofing felt or other membrane coverings using a suitable adhesive.\n3. The trench is filled: first, a sand layer of about 20 cm is placed and compacted, then construction expanded clay or gravel is poured. The level is aligned with the ground surface or slightly above.\n4. Lightweight insulation (e.g., expanded clay) is evenly distributed around the foundation to the required height. Backfilling can be done manually or with special equipment.`
+  String get fundament_billing_steps_1_4 {
+    return Intl.message(
+      '1. A trench at least 80 cm wide is dug along the foundation to its full depth. Then the foundation walls are cleaned from dirt, sand, and dust. The foundation is dried.\n2. It is important to remember that expanded clay can absorb moisture, so a waterproofing layer (synthetic film, roofing felt, etc.) should be placed inside the formwork. Waterproofing is done either by bonding (sheet/roll) or coating methods. Bitumen mastic is used for coating. The bonding method involves attaching roofing felt or other membrane coverings using a suitable adhesive.\n3. The trench is filled: first, a sand layer of about 20 cm is placed and compacted, then construction expanded clay or gravel is poured. The level is aligned with the ground surface or slightly above.\n4. Lightweight insulation (e.g., expanded clay) is evenly distributed around the foundation to the required height. Backfilling can be done manually or with special equipment.',
+      name: 'fundament_billing_steps_1_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `5. Compaction. After backfilling, the insulation layer should be compacted to prevent voids and ensure uniform insulation.\n6. After completing the exterior insulation work, a blind area (apron) 50–80 cm wide is made around the building with a slight slope away from the house. This helps enhance the insulation effect of the expanded clay layer. To build it, formwork 10–15 cm high is installed around the perimeter, covered with reinforcing mesh, and filled with concrete. A special additive can be added to the concrete to improve waterproofing properties.`
+  String get fundament_billing_steps_5_6 {
+    return Intl.message(
+      '5. Compaction. After backfilling, the insulation layer should be compacted to prevent voids and ensure uniform insulation.\n6. After completing the exterior insulation work, a blind area (apron) 50–80 cm wide is made around the building with a slight slope away from the house. This helps enhance the insulation effect of the expanded clay layer. To build it, formwork 10–15 cm high is installed around the perimeter, covered with reinforcing mesh, and filled with concrete. A special additive can be added to the concrete to improve waterproofing properties.',
+      name: 'fundament_billing_steps_5_6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The advantages of the backfill insulation method using expanded clay and other lightweight materials include simplicity and lower cost compared to some other methods. However, it may be less effective than using dedicated thermal insulation materials such as foam boards or extruded polystyrene (XPS), especially when higher insulation performance is required.\nAs with other insulation methods, it is recommended to consult experienced specialists or professionals to properly insulate the foundation and select the most suitable materials and approach for your specific project.`
+  String get fundament_billing_outro {
+    return Intl.message(
+      'The advantages of the backfill insulation method using expanded clay and other lightweight materials include simplicity and lower cost compared to some other methods. However, it may be less effective than using dedicated thermal insulation materials such as foam boards or extruded polystyrene (XPS), especially when higher insulation performance is required.\nAs with other insulation methods, it is recommended to consult experienced specialists or professionals to properly insulate the foundation and select the most suitable materials and approach for your specific project.',
+      name: 'fundament_billing_outro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `INSULATION\nOUTSIDE`
+  String get fundament_outside_title {
+    return Intl.message(
+      'INSULATION\nOUTSIDE',
+      name: 'fundament_outside_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Foundation walls can be insulated in three main ways:`
+  String get fundament_outside_intro {
+    return Intl.message(
+      'Foundation walls can be insulated in three main ways:',
+      name: 'fundament_outside_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `FOAM-BASED\nINSULATION\nMATERIALS`
+  String get fundament_outside_btn_foam {
+    return Intl.message(
+      'FOAM-BASED\nINSULATION\nMATERIALS',
+      name: 'fundament_outside_btn_foam',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `BACKFILL\nMETHOD`
+  String get fundament_outside_btn_backfill {
+    return Intl.message(
+      'BACKFILL\nMETHOD',
+      name: 'fundament_outside_btn_backfill',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `FOUNDATION\nPOLYURETHANE\nFOAM INSULATION`
+  String get fundament_outside_btn_pu {
+    return Intl.message(
+      'FOUNDATION\nPOLYURETHANE\nFOAM INSULATION',
+      name: 'fundament_outside_btn_pu',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. Exterior foundation insulation\nwith foam-based\ninsulation material`
+  String get fundament_plastic_title {
+    return Intl.message(
+      '1. Exterior foundation insulation\nwith foam-based\ninsulation material',
+      name: 'fundament_plastic_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The first step is to expose the foundation by digging a trench around the entire perimeter of the building, about 1–1.5 meters wide. Dig down to the full depth of the foundation, which depends on the local soil freezing depth.`
+  String get fundament_plastic_p1 {
+    return Intl.message(
+      'The first step is to expose the foundation by digging a trench around the entire perimeter of the building, about 1–1.5 meters wide. Dig down to the full depth of the foundation, which depends on the local soil freezing depth.',
+      name: 'fundament_plastic_p1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next, clean the foundation surface using a stiff brush with metal bristles. Also, the surface (foundation and plinth) should be leveled to ensure the durability of the waterproofing material. The walls are leveled with plaster applied over a pre-fixed mesh and guide beacons. After finishing, wait until the plaster dries completely.`
+  String get fundament_plastic_p2 {
+    return Intl.message(
+      'Next, clean the foundation surface using a stiff brush with metal bristles. Also, the surface (foundation and plinth) should be leveled to ensure the durability of the waterproofing material. The walls are leveled with plaster applied over a pre-fixed mesh and guide beacons. After finishing, wait until the plaster dries completely.',
+      name: 'fundament_plastic_p2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Then apply waterproofing to the outer foundation walls and the plinth: cover them with a layer of bitumen mastic, and glue roll or sheet waterproofing on top (with about 10 cm overlap). Smooth the sheets carefully to remove trapped air, and treat the joints with bitumen or bitumen mastic.`
+  String get fundament_plastic_p3 {
+    return Intl.message(
+      'Then apply waterproofing to the outer foundation walls and the plinth: cover them with a layer of bitumen mastic, and glue roll or sheet waterproofing on top (with about 10 cm overlap). Smooth the sheets carefully to remove trapped air, and treat the joints with bitumen or bitumen mastic.',
+      name: 'fundament_plastic_p3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Now work with the insulation: glue insulation boards (e.g., Penoplex or another material) to the foundation using acrylic adhesive or another inorganic-based adhesive. Apply the adhesive in spots, at least 5–6 points per board. Do not use dowel fixing on the foundation, as it can damage the waterproofing.`
+  String get fundament_plastic_p4 {
+    return Intl.message(
+      'Now work with the insulation: glue insulation boards (e.g., Penoplex or another material) to the foundation using acrylic adhesive or another inorganic-based adhesive. Apply the adhesive in spots, at least 5–6 points per board. Do not use dowel fixing on the foundation, as it can damage the waterproofing.',
+      name: 'fundament_plastic_p4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After attaching each board, wait until the glue sets—about a minute (this time is usually spent preparing the next board). Install Penoplex using the tongue-and-groove system. If foam is used, fill joints and gaps with монтаж foam (or adhesive). Apply foam in an arbitrary pattern to the back of the board and press it to the wall. In this case, the boards must be fixed immediately with umbrella dowels; otherwise, the foam will expand and the board may move away from the wall.`
+  String get fundament_plastic_p5 {
+    return Intl.message(
+      'After attaching each board, wait until the glue sets—about a minute (this time is usually spent preparing the next board). Install Penoplex using the tongue-and-groove system. If foam is used, fill joints and gaps with монтаж foam (or adhesive). Apply foam in an arbitrary pattern to the back of the board and press it to the wall. In this case, the boards must be fixed immediately with umbrella dowels; otherwise, the foam will expand and the board may move away from the wall.',
+      name: 'fundament_plastic_p5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Umbrella dowels are installed simply: on average, at least 5 fixing points per 1 m² are required. Using a rotary hammer, drill a blind hole in the concrete through the insulation board, insert the dowel stem, and finally hammer in the central\nexpansion pin.`
+  String get fundament_plastic_p6 {
+    return Intl.message(
+      'Umbrella dowels are installed simply: on average, at least 5 fixing points per 1 m² are required. Using a rotary hammer, drill a blind hole in the concrete through the insulation board, insert the dowel stem, and finally hammer in the central\nexpansion pin.',
+      name: 'fundament_plastic_p6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Then apply a second insulation layer on top of the first. Install it with an offset so that the joints of the first layer are covered. After fixing the insulation, reinforce the surface with plaster (especially for foam boards), applied onto a reinforcing mesh\n(preferably fiberglass).`
+  String get fundament_plastic_p7 {
+    return Intl.message(
+      'Then apply a second insulation layer on top of the first. Install it with an offset so that the joints of the first layer are covered. After fixing the insulation, reinforce the surface with plaster (especially for foam boards), applied onto a reinforcing mesh\n(preferably fiberglass).',
+      name: 'fundament_plastic_p7',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After the mortar dries, the trench is backfilled with river sand. The exposed part of the foundation is finished, and a blind area (apron) is made.\nInsulating the blind area with Penoplex differs from expanded-clay installation only in that Penoplex is laid on the sand-gravel base, and then a reinforced concrete blind area is poured on top. The blind area slope should be about 2–3 cm per 1 running meter.`
+  String get fundament_plastic_p8 {
+    return Intl.message(
+      'After the mortar dries, the trench is backfilled with river sand. The exposed part of the foundation is finished, and a blind area (apron) is made.\nInsulating the blind area with Penoplex differs from expanded-clay installation only in that Penoplex is laid on the sand-gravel base, and then a reinforced concrete blind area is poured on top. The blind area slope should be about 2–3 cm per 1 running meter.',
+      name: 'fundament_plastic_p8',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `3. Foundation insulation with polyurethane foam: process`
+  String get fundament_pu_title {
+    return Intl.message(
+      '3. Foundation insulation with polyurethane foam: process',
+      name: 'fundament_pu_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Important! The information about polyurethane foam is provided for informational purposes only. Special equipment is required to prepare and apply this material. Such equipment is quite expensive, and purchasing it for a single use is usually not practical. It is more cost-effective to rent the device, or even better, to hire a professional, because proper use of spray equipment requires specific knowledge and skills.`
+  String get fundament_pu_warning {
+    return Intl.message(
+      'Important! The information about polyurethane foam is provided for informational purposes only. Special equipment is required to prepare and apply this material. Such equipment is quite expensive, and purchasing it for a single use is usually not practical. It is more cost-effective to rent the device, or even better, to hire a professional, because proper use of spray equipment requires specific knowledge and skills.',
+      name: 'fundament_pu_warning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exterior foundation insulation can also be done by applying polyurethane foam to the foundation walls. This work is typically possible only when the temperature is above +10°C. However, this material serves not only as thermal insulation but also provides waterproofing.`
+  String get fundament_pu_intro {
+    return Intl.message(
+      'Exterior foundation insulation can also be done by applying polyurethane foam to the foundation walls. This work is typically possible only when the temperature is above +10°C. However, this material serves not only as thermal insulation but also provides waterproofing.',
+      name: 'fundament_pu_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All work is carried out in four stages:\n1. Preparing the foundation surface (cleaning from dirt, dust, etc.).\n2. Applying polyurethane foam.\n3. Plastering the surface.\n4. Backfilling the trench and building the blind area (apron).\nA key advantage of this technology is time savings and the lack of need for additional waterproofing work.`
+  String get fundament_pu_steps {
+    return Intl.message(
+      'All work is carried out in four stages:\n1. Preparing the foundation surface (cleaning from dirt, dust, etc.).\n2. Applying polyurethane foam.\n3. Plastering the surface.\n4. Backfilling the trench and building the blind area (apron).\nA key advantage of this technology is time savings and the lack of need for additional waterproofing work.',
+      name: 'fundament_pu_steps',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wall insulation is the process of improving the thermal protection properties of a building’s walls. It helps reduce heat loss and increases overall energy efficiency. This is especially important for residential buildings to ensure comfortable living conditions and to reduce heating and cooling costs.`
+  String get wall_intro_1 {
+    return Intl.message(
+      'Wall insulation is the process of improving the thermal protection properties of a building’s walls. It helps reduce heat loss and increases overall energy efficiency. This is especially important for residential buildings to ensure comfortable living conditions and to reduce heating and cooling costs.',
+      name: 'wall_intro_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Heat loss through walls accounts for about 35–40% of total heat loss. When insulation is installed on walls, it creates an additional barrier that prevents indoor heat from escaping outside in winter and blocks external heat from entering in summer.`
+  String get wall_intro_2 {
+    return Intl.message(
+      'Heat loss through walls accounts for about 35–40% of total heat loss. When insulation is installed on walls, it creates an additional barrier that prevents indoor heat from escaping outside in winter and blocks external heat from entering in summer.',
+      name: 'wall_intro_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The wall insulation process\nincludes:\n- choosing insulation material\n- surface preparation\n- the insulation process itself.`
+  String get wall_process_overview {
+    return Intl.message(
+      'The wall insulation process\nincludes:\n- choosing insulation material\n- surface preparation\n- the insulation process itself.',
+      name: 'wall_process_overview',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `MATERIAL\nSELECTION`
+  String get wall_btn_material {
+    return Intl.message(
+      'MATERIAL\nSELECTION',
+      name: 'wall_btn_material',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PREPARATION`
+  String get wall_btn_preparation {
+    return Intl.message(
+      'PREPARATION',
+      name: 'wall_btn_preparation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PROCESS`
+  String get wall_btn_process {
+    return Intl.message(
+      'PROCESS',
+      name: 'wall_btn_process',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `INSULATION\nINSIDE`
+  String get wall_btn_inside {
+    return Intl.message(
+      'INSULATION\nINSIDE',
+      name: 'wall_btn_inside',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PREPARATION`
+  String get wall_prep_title {
+    return Intl.message(
+      'PREPARATION',
+      name: 'wall_prep_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Preparation work for wall insulation`
+  String get wall_prep_list_title {
+    return Intl.message(
+      'Preparation work for wall insulation',
+      name: 'wall_prep_list_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `It is recommended to perform the work at an average daily temperature from +5 to +30°C and wind speed below 10 m/s.`
+  String get wall_prep_01 {
+    return Intl.message(
+      'It is recommended to perform the work at an average daily temperature from +5 to +30°C and wind speed below 10 m/s.',
+      name: 'wall_prep_01',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `When carrying out installation work in winter, the scaffolding must be covered with one or two layers of film around the entire perimeter and heat guns should be installed to maintain a positive temperature not lower than +5°C.`
+  String get wall_prep_02 {
+    return Intl.message(
+      'When carrying out installation work in winter, the scaffolding must be covered with one or two layers of film around the entire perimeter and heat guns should be installed to maintain a positive temperature not lower than +5°C.',
+      name: 'wall_prep_02',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `With each change of construction operations, and especially before applying the final decorative layer, it is necessary to ensure cleanliness on the platforms. This prevents dirt and dust from getting into wet layers of the system.`
+  String get wall_prep_03 {
+    return Intl.message(
+      'With each change of construction operations, and especially before applying the final decorative layer, it is necessary to ensure cleanliness on the platforms. This prevents dirt and dust from getting into wet layers of the system.',
+      name: 'wall_prep_03',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before starting the facade insulation system installation, all interior wet processes (concrete work, plastering, flooring, etc.) must be completed, window and door openings filled, and the roofing completed.`
+  String get wall_prep_04 {
+    return Intl.message(
+      'Before starting the facade insulation system installation, all interior wet processes (concrete work, plastering, flooring, etc.) must be completed, window and door openings filled, and the roofing completed.',
+      name: 'wall_prep_04',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before starting work, determine the actual deviations of the facade surface in the vertical plane and the condition of these surfaces.`
+  String get wall_prep_05 {
+    return Intl.message(
+      'Before starting work, determine the actual deviations of the facade surface in the vertical plane and the condition of these surfaces.',
+      name: 'wall_prep_05',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before installing thermal insulation, prepare the base and dismantle all auxiliary elements. In new construction, brickwork and mineral plasters must be at least 28 days old, and concrete must be at least 3 months old.`
+  String get wall_prep_06 {
+    return Intl.message(
+      'Before installing thermal insulation, prepare the base and dismantle all auxiliary elements. In new construction, brickwork and mineral plasters must be at least 28 days old, and concrete must be at least 3 months old.',
+      name: 'wall_prep_06',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before facade installation, remove all elements that prevent full bonding of insulation boards: downpipes, drip edges, lamps, outdoor AC units, brackets, etc.`
+  String get wall_prep_07 {
+    return Intl.message(
+      'Before facade installation, remove all elements that prevent full bonding of insulation boards: downpipes, drip edges, lamps, outdoor AC units, brackets, etc.',
+      name: 'wall_prep_07',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Relocation of utilities: gas pipes, anodic-cathodic protection blocks, power cables, or other utilities located on the facade must be moved according to the design solution and in the presence of a representative of the specialized organization responsible for operating these utilities.`
+  String get wall_prep_08 {
+    return Intl.message(
+      'Relocation of utilities: gas pipes, anodic-cathodic protection blocks, power cables, or other utilities located on the facade must be moved according to the design solution and in the presence of a representative of the specialized organization responsible for operating these utilities.',
+      name: 'wall_prep_08',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Protection of windows and doors: during work, window and door units must be protected from contamination with transparent films.`
+  String get wall_prep_09 {
+    return Intl.message(
+      'Protection of windows and doors: during work, window and door units must be protected from contamination with transparent films.',
+      name: 'wall_prep_09',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mechanical cleaning of the facade: dust, dirt, efflorescence, cement and lime mortars, as well as paint residues must be removed from the facade surface using a hammer, brush, and water. If necessary, use special compounds to remove heavy contamination.`
+  String get wall_prep_10 {
+    return Intl.message(
+      'Mechanical cleaning of the facade: dust, dirt, efflorescence, cement and lime mortars, as well as paint residues must be removed from the facade surface using a hammer, brush, and water. If necessary, use special compounds to remove heavy contamination.',
+      name: 'wall_prep_10',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Removal of crumbling and weak areas of the base: remove concrete/mortar build-ups. Level cracks and depressions. Old plaster in satisfactory condition may be left. Weak areas of old plaster must be removed before installing the insulation system. Old plaster should be checked by tapping over the entire surface, removed where voids are found, and restored (during building restoration).`
+  String get wall_prep_11 {
+    return Intl.message(
+      'Removal of crumbling and weak areas of the base: remove concrete/mortar build-ups. Level cracks and depressions. Old plaster in satisfactory condition may be left. Weak areas of old plaster must be removed before installing the insulation system. Old plaster should be checked by tapping over the entire surface, removed where voids are found, and restored (during building restoration).',
+      name: 'wall_prep_11',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Base leveling: irregularities deeper than 10 mm should be filled with leveling mortar. Irregularities deeper than 15 mm with an area from 0.5 m² should be leveled using mortar and stone wool. When choosing leveling materials, consider strength requirements.`
+  String get wall_prep_12 {
+    return Intl.message(
+      'Base leveling: irregularities deeper than 10 mm should be filled with leveling mortar. Irregularities deeper than 15 mm with an area from 0.5 m² should be leveled using mortar and stone wool. When choosing leveling materials, consider strength requirements.',
+      name: 'wall_prep_12',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cleaning biological contamination: removing fungus and moss is possible using special antiseptic compounds. To prevent re-infection, identify and eliminate the root cause.`
+  String get wall_prep_13 {
+    return Intl.message(
+      'Cleaning biological contamination: removing fungus and moss is possible using special antiseptic compounds. To prevent re-infection, identify and eliminate the root cause.',
+      name: 'wall_prep_13',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Preservation of metal elements: all metal parts left under insulation must be cleaned from rust and treated with anti-corrosion primer.`
+  String get wall_prep_14 {
+    return Intl.message(
+      'Preservation of metal elements: all metal parts left under insulation must be cleaned from rust and treated with anti-corrosion primer.',
+      name: 'wall_prep_14',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Checking the bearing capacity of old plaster: to check strength in dry and damp conditions, rub it with a wire brush. If it crumbles, it must be removed. To check hardness, run the flat side of a screwdriver over the surface, pressing firmly. If deep scratches remain, the old plaster must be removed.`
+  String get wall_prep_15 {
+    return Intl.message(
+      'Checking the bearing capacity of old plaster: to check strength in dry and damp conditions, rub it with a wire brush. If it crumbles, it must be removed. To check hardness, run the flat side of a screwdriver over the surface, pressing firmly. If deep scratches remain, the old plaster must be removed.',
+      name: 'wall_prep_15',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Detecting voids under the old plaster layer: carefully inspect the entire surface, especially in crack areas. Tap the surface with a hammer or metal rod; where voids are present (dull sound), remove the old plaster.`
+  String get wall_prep_16 {
+    return Intl.message(
+      'Detecting voids under the old plaster layer: carefully inspect the entire surface, especially in crack areas. Tap the surface with a hammer or metal rod; where voids are present (dull sound), remove the old plaster.',
+      name: 'wall_prep_16',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Priming the base: if water is quickly absorbed during facade cleaning, it indicates high absorbency, which negatively affects adhesive strength. To strengthen the base and ensure required adhesion, the facade surface must be coated with primer. The primer is applied with a special brush in two passes.`
+  String get wall_prep_17 {
+    return Intl.message(
+      'Priming the base: if water is quickly absorbed during facade cleaning, it indicates high absorbency, which negatively affects adhesive strength. To strengthen the base and ensure required adhesion, the facade surface must be coated with primer. The primer is applied with a special brush in two passes.',
+      name: 'wall_prep_17',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `! When working with impregnations, it is forbidden to eat, drink, or smoke. Spraying the solution is not allowed`
+  String get wall_prep_warning {
+    return Intl.message(
+      '! When working with impregnations, it is forbidden to eat, drink, or smoke. Spraying the solution is not allowed',
+      name: 'wall_prep_warning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `MATERIAL\nSELECTION`
+  String get wall_material_title {
+    return Intl.message(
+      'MATERIAL\nSELECTION',
+      name: 'wall_material_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `When choosing a material`
+  String get wall_material_heading {
+    return Intl.message(
+      'When choosing a material',
+      name: 'wall_material_heading',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `pay attention to the thermal conductivity coefficient and the thickness, which is selected depending on the main structural material and the climate of the construction area. The price of the material and its availability on the market are also important.\nThe most common wall insulation materials on our market are:\n- mineral wool\n- foam plastic\n- extruded polystyrene (XPS).\nThe insulation method described below using mineral wool as an example is also suitable for other board materials such as foam plastic and extruded polystyrene. The difference may only be in choosing the type and length of the dowel (fastener).`
+  String get wall_material_text {
+    return Intl.message(
+      'pay attention to the thermal conductivity coefficient and the thickness, which is selected depending on the main structural material and the climate of the construction area. The price of the material and its availability on the market are also important.\nThe most common wall insulation materials on our market are:\n- mineral wool\n- foam plastic\n- extruded polystyrene (XPS).\nThe insulation method described below using mineral wool as an example is also suitable for other board materials such as foam plastic and extruded polystyrene. The difference may only be in choosing the type and length of the dowel (fastener).',
+      name: 'wall_material_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `INSULATION\nINSIDE`
+  String get wall_inside_title {
+    return Intl.message(
+      'INSULATION\nINSIDE',
+      name: 'wall_inside_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Internal wall insulation process`
+  String get wall_inside_heading {
+    return Intl.message(
+      'Internal wall insulation process',
+      name: 'wall_inside_heading',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Internal wall insulation is used when external insulation is not possible or not practical—for example, when the building is already constructed and its exterior appearance must not be changed. Internal insulation can be done at any time of the year.\n\nAt first glance, internal insulation seems easier and faster than external insulation. However, this approach has several drawbacks:`
+  String get wall_inside_intro {
+    return Intl.message(
+      'Internal wall insulation is used when external insulation is not possible or not practical—for example, when the building is already constructed and its exterior appearance must not be changed. Internal insulation can be done at any time of the year.\n\nAt first glance, internal insulation seems easier and faster than external insulation. However, this approach has several drawbacks:',
+      name: 'wall_inside_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Moisture build-up. Because the wall will no longer warm up, a cooled surface appears under the insulation layer. If indoor air (which always contains moisture) gets there, condensation forms, leading to dampness, mold, and fungus.`
+  String get wall_inside_dot_1 {
+    return Intl.message(
+      'Moisture build-up. Because the wall will no longer warm up, a cooled surface appears under the insulation layer. If indoor air (which always contains moisture) gets there, condensation forms, leading to dampness, mold, and fungus.',
+      name: 'wall_inside_dot_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reduced thermal mass of the room. Normally, a brick wall stores heat and releases it slowly, but with an internal insulation layer it loses this ability. As a result, mainly the air warms up, and the room cools down quickly when a window/door is opened or heating is turned off.`
+  String get wall_inside_dot_2 {
+    return Intl.message(
+      'Reduced thermal mass of the room. Normally, a brick wall stores heat and releases it slowly, but with an internal insulation layer it loses this ability. As a result, mainly the air warms up, and the room cools down quickly when a window/door is opened or heating is turned off.',
+      name: 'wall_inside_dot_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Higher costs. High-quality internal insulation often costs more than external insulation because it may require more expensive vapor-tight materials and stronger moisture protection.`
+  String get wall_inside_dot_3 {
+    return Intl.message(
+      'Higher costs. High-quality internal insulation often costs more than external insulation because it may require more expensive vapor-tight materials and stronger moisture protection.',
+      name: 'wall_inside_dot_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Loss of usable space. On average, an insulation layer of only 5–10 cm reduces the room area by about 0.5 to 1.5 m².`
+  String get wall_inside_dot_4 {
+    return Intl.message(
+      'Loss of usable space. On average, an insulation layer of only 5–10 cm reduces the room area by about 0.5 to 1.5 m².',
+      name: 'wall_inside_dot_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Interior changes or a complete interior renovation.`
+  String get wall_inside_dot_5 {
+    return Intl.message(
+      'Interior changes or a complete interior renovation.',
+      name: 'wall_inside_dot_5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation technologies: dry, wet, combined.\nMethods of installing internal wall insulation:\n1. Frameless,\n2. Framed.\nWith the frameless method, insulation is attached to the base wall using adhesive. The way sheets (panels) are fixed depends on the unevenness of the base. The cladding height is determined by the insulation height.`
+  String get wall_inside_tech {
+    return Intl.message(
+      'Insulation technologies: dry, wet, combined.\nMethods of installing internal wall insulation:\n1. Frameless,\n2. Framed.\nWith the frameless method, insulation is attached to the base wall using adhesive. The way sheets (panels) are fixed depends on the unevenness of the base. The cladding height is determined by the insulation height.',
+      name: 'wall_inside_tech',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Preparing the wall for gluing insulation`
+  String get wall_inside_prep_title {
+    return Intl.message(
+      'Preparing the wall for gluing insulation',
+      name: 'wall_inside_prep_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The frameless method requires a relatively even surface without major dents.\nWhen insulating and finishing walls with drywall, start by removing wallpaper, plaster, and paint. If you need to glue insulation onto an unplastered brick wall, remove all protruding masonry mortar.\nFill dents and cracks with a cement-sand mortar. Mix it on site or buy a ready-made bagged mix.`
+  String get wall_inside_prep_text {
+    return Intl.message(
+      'The frameless method requires a relatively even surface without major dents.\nWhen insulating and finishing walls with drywall, start by removing wallpaper, plaster, and paint. If you need to glue insulation onto an unplastered brick wall, remove all protruding masonry mortar.\nFill dents and cracks with a cement-sand mortar. Mix it on site or buy a ready-made bagged mix.',
+      name: 'wall_inside_prep_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation installation\n`
+  String get wall_inside_mount_title {
+    return Intl.message(
+      'Insulation installation\n',
+      name: 'wall_inside_mount_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Regardless of the material used, the installation process includes several mandatory steps.`
+  String get wall_inside_mount_intro {
+    return Intl.message(
+      'Regardless of the material used, the installation process includes several mandatory steps.',
+      name: 'wall_inside_mount_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before gluing, treat the board surface with a stiff brush to increase adhesion between the wall and the insulation.`
+  String get wall_inside_mount_step_1 {
+    return Intl.message(
+      'Before gluing, treat the board surface with a stiff brush to increase adhesion between the wall and the insulation.',
+      name: 'wall_inside_mount_step_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apply adhesive in a thin layer over the entire area using a notched trowel.`
+  String get wall_inside_mount_step_2 {
+    return Intl.message(
+      'Apply adhesive in a thin layer over the entire area using a notched trowel.',
+      name: 'wall_inside_mount_step_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start from the bottom corner. Place the board, press slightly, hold for a few seconds, then release.`
+  String get wall_inside_mount_step_3 {
+    return Intl.message(
+      'Start from the bottom corner. Place the board, press slightly, hold for a few seconds, then release.',
+      name: 'wall_inside_mount_step_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Seal butt joints with silicone adhesive. If the joint width is more than 5 mm, fill it with монтаж foam.`
+  String get wall_inside_mount_step_4 {
+    return Intl.message(
+      'Seal butt joints with silicone adhesive. If the joint width is more than 5 mm, fill it with монтаж foam.',
+      name: 'wall_inside_mount_step_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Additionally, the insulation can be fixed with plastic dowels. The number of fixing points is 3–4 per 1 m².`
+  String get wall_inside_mount_step_5 {
+    return Intl.message(
+      'Additionally, the insulation can be fixed with plastic dowels. The number of fixing points is 3–4 per 1 m².',
+      name: 'wall_inside_mount_step_5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After you finish gluing the insulation, the surface is ready for final finishing.`
+  String get wall_inside_after {
+    return Intl.message(
+      'After you finish gluing the insulation, the surface is ready for final finishing.',
+      name: 'wall_inside_after',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Framed `
+  String get wall_inside_frame_title {
+    return Intl.message(
+      'Framed ',
+      name: 'wall_inside_frame_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `claddings are mounted onto a pre-installed frame. This method is used for significantly uneven walls, as well as in rooms higher than 3 meters. The frame is typically made of galvanized steel profiles or wooden bars, and then covered with one or several layers of gypsum boards (GKL/GVL).`
+  String get wall_inside_frame_text {
+    return Intl.message(
+      'claddings are mounted onto a pre-installed frame. This method is used for significantly uneven walls, as well as in rooms higher than 3 meters. The frame is typically made of galvanized steel profiles or wooden bars, and then covered with one or several layers of gypsum boards (GKL/GVL).',
+      name: 'wall_inside_frame_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation installation\n`
+  String get wall_inside_frame_mount_title {
+    return Intl.message(
+      'Insulation installation\n',
+      name: 'wall_inside_frame_mount_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A vapor barrier film is installed around the perimeter of the wall (only when using mineral wool).\nOn top of the vapor barrier, a wooden frame is mounted. Using metal profiles is not recommended: metal conducts heat well and becomes an artificial thermal bridge.`
+  String get wall_inside_frame_mount_text {
+    return Intl.message(
+      'A vapor barrier film is installed around the perimeter of the wall (only when using mineral wool).\nOn top of the vapor barrier, a wooden frame is mounted. Using metal profiles is not recommended: metal conducts heat well and becomes an artificial thermal bridge.',
+      name: 'wall_inside_frame_mount_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `!!! A metal frame should be used for internal insulation of facilities with increased fire-safety requirements together with basalt wool. This includes wooden buildings such as baths, saunas, etc. !!!`
+  String get wall_inside_frame_warning {
+    return Intl.message(
+      '!!! A metal frame should be used for internal insulation of facilities with increased fire-safety requirements together with basalt wool. This includes wooden buildings such as baths, saunas, etc. !!!',
+      name: 'wall_inside_frame_warning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The joints between the frame and the vapor barrier are taped, because fixing elements create holes in the vapor barrier.`
+  String get wall_inside_frame_dot_1 {
+    return Intl.message(
+      'The joints between the frame and the vapor barrier are taped, because fixing elements create holes in the vapor barrier.',
+      name: 'wall_inside_frame_dot_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wool is placed into the frame and compacted carefully to avoid any gaps.`
+  String get wall_inside_frame_dot_2 {
+    return Intl.message(
+      'Wool is placed into the frame and compacted carefully to avoid any gaps.',
+      name: 'wall_inside_frame_dot_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A second vapor barrier layer is installed on top of the frame. This creates a double vapor barrier between the wall insulation and the room.`
+  String get wall_inside_frame_dot_3 {
+    return Intl.message(
+      'A second vapor barrier layer is installed on top of the frame. This creates a double vapor barrier between the wall insulation and the room.',
+      name: 'wall_inside_frame_dot_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fastening points and joints of the vapor barrier are sealed with aluminum tape.`
+  String get wall_inside_frame_dot_4 {
+    return Intl.message(
+      'Fastening points and joints of the vapor barrier are sealed with aluminum tape.',
+      name: 'wall_inside_frame_dot_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Then the frame is sheathed with the preferred boards—drywall, chipboard, etc.`
+  String get wall_inside_frame_finish {
+    return Intl.message(
+      'Then the frame is sheathed with the preferred boards—drywall, chipboard, etc.',
+      name: 'wall_inside_frame_finish',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PROCESS`
+  String get wall_process_title {
+    return Intl.message(
+      'PROCESS',
+      name: 'wall_process_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wall insulation process`
+  String get wall_process_list_title {
+    return Intl.message(
+      'Wall insulation process',
+      name: 'wall_process_list_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choosing insulation: the thickness of the thermal insulation layer is determined based on heat-engineering calculations, according to the required thermal resistance of the building envelope, taking into account the climate of the construction area and fire-safety requirements.`
+  String get wall_process_01 {
+    return Intl.message(
+      'Choosing insulation: the thickness of the thermal insulation layer is determined based on heat-engineering calculations, according to the required thermal resistance of the building envelope, taking into account the climate of the construction area and fire-safety requirements.',
+      name: 'wall_process_01',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choosing an adhesive: special facade adhesive mixes or universal plaster-adhesive compositions can be used both for bonding insulation boards to the substrate and for forming the base plaster layer over insulation. Foam adhesive for polystyrene is intended for fixing XPS and polystyrene boards when insulating exterior and interior walls, roofs, basements, foundations, and floors in new and renovated buildings. When selecting a mix, pay attention to its application area depending on the insulation type.`
+  String get wall_process_02 {
+    return Intl.message(
+      'Choosing an adhesive: special facade adhesive mixes or universal plaster-adhesive compositions can be used both for bonding insulation boards to the substrate and for forming the base plaster layer over insulation. Foam adhesive for polystyrene is intended for fixing XPS and polystyrene boards when insulating exterior and interior walls, roofs, basements, foundations, and floors in new and renovated buildings. When selecting a mix, pay attention to its application area depending on the insulation type.',
+      name: 'wall_process_02',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Preparing the adhesive mix: to obtain a high-quality mortar, use an accurately measured amount of clean cold water (15–20°C). Prepare or buy a container with a volume scale (at least 10 L). Pour the required amount of water into the mixing bucket. Gradually add the dry mix to the water and stir until a uniform, lump-free mass is obtained. After reaching the desired consistency, let it rest for 5 minutes, then mix again. Mixing is done using a drill with a paddle attachment for viscous mixes at 400–800 rpm or with a construction mixer. The mix must be used within 1.5 hours after preparation. Do not add water during work. To maintain plasticity, you may mix the compound again.`
+  String get wall_process_03 {
+    return Intl.message(
+      'Preparing the adhesive mix: to obtain a high-quality mortar, use an accurately measured amount of clean cold water (15–20°C). Prepare or buy a container with a volume scale (at least 10 L). Pour the required amount of water into the mixing bucket. Gradually add the dry mix to the water and stir until a uniform, lump-free mass is obtained. After reaching the desired consistency, let it rest for 5 minutes, then mix again. Mixing is done using a drill with a paddle attachment for viscous mixes at 400–800 rpm or with a construction mixer. The mix must be used within 1.5 hours after preparation. Do not add water during work. To maintain plasticity, you may mix the compound again.',
+      name: 'wall_process_03',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `THIN-LAYER\nPLASTER`
+  String get wall_process_btn_thin {
+    return Intl.message(
+      'THIN-LAYER\nPLASTER',
+      name: 'wall_process_btn_thin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `THICK-LAYER\nPLASTER`
+  String get wall_process_btn_thick {
+    return Intl.message(
+      'THICK-LAYER\nPLASTER',
+      name: 'wall_process_btn_thick',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `External facade insulation systems with a thin-layer plaster finish`
+  String get thin_plaster_title {
+    return Intl.message(
+      'External facade insulation systems with a thin-layer plaster finish',
+      name: 'thin_plaster_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thin-layer plaster systems are multi-layer structures consisting of thermal insulation, a reinforced base plaster layer, and a protective декоративative plaster layer.\nThese systems are highly effective because they do not contain rigid ties that could become thermal bridges.`
+  String get thin_plaster_intro {
+    return Intl.message(
+      'Thin-layer plaster systems are multi-layer structures consisting of thermal insulation, a reinforced base plaster layer, and a protective декоративative plaster layer.\nThese systems are highly effective because they do not contain rigid ties that could become thermal bridges.',
+      name: 'thin_plaster_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1 — load-bearing wall; 2 — adhesive for insulation boards; 3 — strengthening primer; 4 — mineral wool insulation; 5 — decorative plaster; 6 — fiberglass mesh; 7 — disc facade anchor; 8 — base reinforced layer; 9 — quartz primer; 10 — facade paint (if needed)`
+  String get thin_plaster_legend {
+    return Intl.message(
+      '1 — load-bearing wall; 2 — adhesive for insulation boards; 3 — strengthening primer; 4 — mineral wool insulation; 5 — decorative plaster; 6 — fiberglass mesh; 7 — disc facade anchor; 8 — base reinforced layer; 9 — quartz primer; 10 — facade paint (if needed)',
+      name: 'thin_plaster_legend',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The system can be applied to load-bearing or self-supporting walls made of unit materials (brick, stone, aerated concrete and concrete blocks with density not less than 800 kg/m3).`
+  String get thin_plaster_base {
+    return Intl.message(
+      'The system can be applied to load-bearing or self-supporting walls made of unit materials (brick, stone, aerated concrete and concrete blocks with density not less than 800 kg/m3).',
+      name: 'thin_plaster_base',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Facade system installation:`
+  String get thin_plaster_laying_title {
+    return Intl.message(
+      'Facade system installation:',
+      name: 'thin_plaster_laying_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `On a предварительно primed surface, insulation boards are bonded with adhesive to the facade with a contact area of at least 40% of the board area, then fixed with disc dowels. The fixing scheme depends on the thickness of the reinforced base layer and changes by tiers depending on the building height.`
+  String get thin_plaster_laying_01 {
+    return Intl.message(
+      'On a предварительно primed surface, insulation boards are bonded with adhesive to the facade with a contact area of at least 40% of the board area, then fixed with disc dowels. The fixing scheme depends on the thickness of the reinforced base layer and changes by tiers depending on the building height.',
+      name: 'thin_plaster_laying_01',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The reinforced base plaster layer is formed by applying mortar over the insulation surface, embedding reinforcing mesh into it, and then leveling the surface.`
+  String get thin_plaster_laying_02 {
+    return Intl.message(
+      'The reinforced base plaster layer is formed by applying mortar over the insulation surface, embedding reinforcing mesh into it, and then leveling the surface.',
+      name: 'thin_plaster_laying_02',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The protective-decorative plaster layer protects the structure from климатic воздействий and defines the facade’s color and texture. Mineral plaster mixes (cement, lime, or цемент-lime) with high vapor permeability are used. Polymer plaster mixes may also be used, allowing combination with stone-wool boards.`
+  String get thin_plaster_laying_03 {
+    return Intl.message(
+      'The protective-decorative plaster layer protects the structure from климатic воздействий and defines the facade’s color and texture. Mineral plaster mixes (cement, lime, or цемент-lime) with high vapor permeability are used. Polymer plaster mixes may also be used, allowing combination with stone-wool boards.',
+      name: 'thin_plaster_laying_03',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installing the first row of insulation using starter (base) profiles`
+  String get thin_plaster_first_row_title {
+    return Intl.message(
+      'Installing the first row of insulation using starter (base) profiles',
+      name: 'thin_plaster_first_row_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A supporting starter profile is installed strictly along the marking line. Profiles are fixed with anchors or dowels.`
+  String get thin_plaster_first_row_dot_01 {
+    return Intl.message(
+      'A supporting starter profile is installed strictly along the marking line. Profiles are fixed with anchors or dowels.',
+      name: 'thin_plaster_first_row_dot_01',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At profile fixing points, wall unevenness is compensated with plastic spacers (fixing step not more than 300 mm). Profiles are joined without overlaps using special соединители.`
+  String get thin_plaster_first_row_dot_02 {
+    return Intl.message(
+      'At profile fixing points, wall unevenness is compensated with plastic spacers (fixing step not more than 300 mm). Profiles are joined without overlaps using special соединители.',
+      name: 'thin_plaster_first_row_dot_02',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Corner starter profiles are used on building corners.`
+  String get thin_plaster_first_row_dot_03 {
+    return Intl.message(
+      'Corner starter profiles are used on building corners.',
+      name: 'thin_plaster_first_row_dot_03',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installing the first row of insulation without starter profiles`
+  String get thin_plaster_first_row_no_plank_title {
+    return Intl.message(
+      'Installing the first row of insulation without starter profiles',
+      name: 'thin_plaster_first_row_no_plank_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Instead of a starter profile, a temporary support (a batten) can be used along the lower edge of insulation. Along it, adhesive mass is applied as a continuous strip to a height of 150 mm.`
+  String get thin_plaster_first_row_no_plank_01 {
+    return Intl.message(
+      'Instead of a starter profile, a temporary support (a batten) can be used along the lower edge of insulation. Along it, adhesive mass is applied as a continuous strip to a height of 150 mm.',
+      name: 'thin_plaster_first_row_no_plank_01',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At profile fixing points, wall unevenness is compensated with plastic spacers (fixing step not more than 300 mm). Profiles are joined without overlaps using special connectors.`
+  String get thin_plaster_first_row_no_plank_02 {
+    return Intl.message(
+      'At profile fixing points, wall unevenness is compensated with plastic spacers (fixing step not more than 300 mm). Profiles are joined without overlaps using special connectors.',
+      name: 'thin_plaster_first_row_no_plank_02',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mineral wool boards are cut into 300 mm strips. A special adhesive for mineral wool is applied continuously to each strip with a notched trowel, and the insulation is bonded to the wall.`
+  String get thin_plaster_first_row_no_plank_03 {
+    return Intl.message(
+      'Mineral wool boards are cut into 300 mm strips. A special adhesive for mineral wool is applied continuously to each strip with a notched trowel, and the insulation is bonded to the wall.',
+      name: 'thin_plaster_first_row_no_plank_03',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `When using battens, the free edge of the mesh is folded and fixed onto the insulation while forming the base reinforced layer. (After installing the boards, the temporary support is removed.)`
+  String get thin_plaster_no_plank_dot_01 {
+    return Intl.message(
+      'When using battens, the free edge of the mesh is folded and fixed onto the insulation while forming the base reinforced layer. (After installing the boards, the temporary support is removed.)',
+      name: 'thin_plaster_no_plank_dot_01',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Then a hole is drilled through the insulation strip into the wall and a dowel is installed (3 dowels per strip; 100 mm from the strip edge; spacing between dowels not more than 400 mm). After a day, the dowels are driven in with metal nails.`
+  String get thin_plaster_no_plank_dot_02 {
+    return Intl.message(
+      'Then a hole is drilled through the insulation strip into the wall and a dowel is installed (3 dowels per strip; 100 mm from the strip edge; spacing between dowels not more than 400 mm). After a day, the dowels are driven in with metal nails.',
+      name: 'thin_plaster_no_plank_dot_02',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Joints between mineral wool strips are filled with insulation offcuts.`
+  String get thin_plaster_no_plank_dot_03 {
+    return Intl.message(
+      'Joints between mineral wool strips are filled with insulation offcuts.',
+      name: 'thin_plaster_no_plank_dot_03',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installing a typical row of mineral wool insulation\n`
+  String get thin_plaster_typical_row_title {
+    return Intl.message(
+      'Installing a typical row of mineral wool insulation\n',
+      name: 'thin_plaster_typical_row_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `To increase adhesion (`
+  String get thin_plaster_typical_row_before {
+    return Intl.message(
+      'To increase adhesion (',
+      name: 'thin_plaster_typical_row_before',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `the coating’s ability to firmly bond with the base surface`
+  String get thin_plaster_typical_row_italic {
+    return Intl.message(
+      'the coating’s ability to firmly bond with the base surface',
+      name: 'thin_plaster_typical_row_italic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `), surface preparation of the insulation is mandatory.`
+  String get thin_plaster_typical_row_after {
+    return Intl.message(
+      '), surface preparation of the insulation is mandatory.',
+      name: 'thin_plaster_typical_row_after',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before applying the main layer, a layer of adhesive is applied to the mineral wool board and pressed and rubbed over the entire surface with the flat edge of a steel float.`
+  String get thin_plaster_typical_row_dot_01 {
+    return Intl.message(
+      'Before applying the main layer, a layer of adhesive is applied to the mineral wool board and pressed and rubbed over the entire surface with the flat edge of a steel float.',
+      name: 'thin_plaster_typical_row_dot_01',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Adhesive can be applied using a continuous (full-surface) or spot method.`
+  String get thin_plaster_glue_methods {
+    return Intl.message(
+      'Adhesive can be applied using a continuous (full-surface) or spot method.',
+      name: 'thin_plaster_glue_methods',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continuous method `
+  String get thin_plaster_solid_title {
+    return Intl.message(
+      'Continuous method ',
+      name: 'thin_plaster_solid_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `is used for bonding boards and lamellas when the base unevenness is up to 3 mm. The main adhesive layer is applied over the entire prepared board surface (with a 20–30 mm setback from the edge) using a steel notched trowel with 10–12 mm teeth.`
+  String get thin_plaster_solid_text {
+    return Intl.message(
+      'is used for bonding boards and lamellas when the base unevenness is up to 3 mm. The main adhesive layer is applied over the entire prepared board surface (with a 20–30 mm setback from the edge) using a steel notched trowel with 10–12 mm teeth.',
+      name: 'thin_plaster_solid_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Spot method `
+  String get thin_plaster_point_title {
+    return Intl.message(
+      'Spot method ',
+      name: 'thin_plaster_point_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `is used when the base unevenness exceeds 3 mm. The adhesive strip applied along the board contour must have breaks to avoid air pockets; when bonding, the adhesive should join to prevent air circulation under the insulation. The adhesion contact area must be ≥ 40% of the монтаж surface.\n· Next, mineral wool boards are bonded with staggered joints relative to the lower row. Bonding should start from building corners and from openings and meet on a continuous wall (between openings or corners).`
+  String get thin_plaster_point_text {
+    return Intl.message(
+      'is used when the base unevenness exceeds 3 mm. The adhesive strip applied along the board contour must have breaks to avoid air pockets; when bonding, the adhesive should join to prevent air circulation under the insulation. The adhesion contact area must be ≥ 40% of the монтаж surface.\n· Next, mineral wool boards are bonded with staggered joints relative to the lower row. Bonding should start from building corners and from openings and meet on a continuous wall (between openings or corners).',
+      name: 'thin_plaster_point_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Then holes are drilled through the insulation board and dowels are installed (4 dowels per 1 m2, or according to the design depending on the number of floors and base type).`
+  String get thin_plaster_dowels_dot {
+    return Intl.message(
+      'Then holes are drilled through the insulation board and dowels are installed (4 dowels per 1 m2, or according to the design depending on the number of floors and base type).',
+      name: 'thin_plaster_dowels_dot',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After a day, metal nails or bolts are driven into the dowels. Joints between insulation boards are filled with insulation offcuts.`
+  String get thin_plaster_after_dowels {
+    return Intl.message(
+      'After a day, metal nails or bolts are driven into the dowels. Joints between insulation boards are filled with insulation offcuts.',
+      name: 'thin_plaster_after_dowels',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installing mineral wool insulation around window and door openings`
+  String get thin_plaster_openings_title {
+    return Intl.message(
+      'Installing mineral wool insulation around window and door openings',
+      name: 'thin_plaster_openings_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `First, corner reinforcing mesh is cut into 500 mm strips. Adhesive is applied around the opening perimeter as a continuous 150 mm wide strip.`
+  String get thin_plaster_openings_01 {
+    return Intl.message(
+      'First, corner reinforcing mesh is cut into 500 mm strips. Adhesive is applied around the opening perimeter as a continuous 150 mm wide strip.',
+      name: 'thin_plaster_openings_01',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Then corner mesh strips (500 mm wide) are pressed into the adhesive with a 100 mm overlap.`
+  String get thin_plaster_openings_02 {
+    return Intl.message(
+      'Then corner mesh strips (500 mm wide) are pressed into the adhesive with a 100 mm overlap.',
+      name: 'thin_plaster_openings_02',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Adhesive is applied continuously with a notched trowel onto mineral wool strips (200 mm wide). Mineral wool strips are installed around the window perimeter.`
+  String get thin_plaster_openings_03 {
+    return Intl.message(
+      'Adhesive is applied continuously with a notched trowel onto mineral wool strips (200 mm wide). Mineral wool strips are installed around the window perimeter.',
+      name: 'thin_plaster_openings_03',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Then the insulation is fixed with dowels using the same technology as for a typical row. The distance from the strip edge to a dowel is not less than 100 mm.`
+  String get thin_plaster_openings_04 {
+    return Intl.message(
+      'Then the insulation is fixed with dowels using the same technology as for a typical row. The distance from the strip edge to a dowel is not less than 100 mm.',
+      name: 'thin_plaster_openings_04',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Finishing the insulation installation`
+  String get thin_plaster_finish_title {
+    return Intl.message(
+      'Finishing the insulation installation',
+      name: 'thin_plaster_finish_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After installing the insulation boards, тщательно check the plane for gaps. If found, fill them with insulation strips cut to the gap size.\n· Also check for bulges using a long level or straightedge. All unevenness should be sanded with a special abrasive float.`
+  String get thin_plaster_finish_01 {
+    return Intl.message(
+      'After installing the insulation boards, тщательно check the plane for gaps. If found, fill them with insulation strips cut to the gap size.\n· Also check for bulges using a long level or straightedge. All unevenness should be sanded with a special abrasive float.',
+      name: 'thin_plaster_finish_01',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reinforcing facade elements\n`
+  String get thin_plaster_reinforce_title {
+    return Intl.message(
+      'Reinforcing facade elements\n',
+      name: 'thin_plaster_reinforce_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Internal stresses caused by expansion and shrinkage of facade layers can lead to diagonal cracks extending from opening edges toward the outer side. Therefore, external vertical and horizontal building corners, as well as window and door opening corners, must be reinforced.\nTo prevent such cracks, an aluminum corner bead is used: it is bonded onto insulation at building corners, openings, expansion joints, together with corner reinforcing mesh.`
+  String get thin_plaster_reinforce_text {
+    return Intl.message(
+      'Internal stresses caused by expansion and shrinkage of facade layers can lead to diagonal cracks extending from opening edges toward the outer side. Therefore, external vertical and horizontal building corners, as well as window and door opening corners, must be reinforced.\nTo prevent such cracks, an aluminum corner bead is used: it is bonded onto insulation at building corners, openings, expansion joints, together with corner reinforcing mesh.',
+      name: 'thin_plaster_reinforce_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Base reinforced layer: `
+  String get thin_plaster_base_layer_title {
+    return Intl.message(
+      'Base reinforced layer: ',
+      name: 'thin_plaster_base_layer_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `adhesive is applied to the insulation plane, then alkali-resistant fiberglass mesh is embedded with a 100 mm overlap at vertical and horizontal joints. Excess adhesive is removed. After drying, a leveling adhesive coat is applied with a шпатель or brush, fully covering the mesh and creating a smooth surface. After drying, irregularities are sanded with sandpaper.`
+  String get thin_plaster_base_layer_text {
+    return Intl.message(
+      'adhesive is applied to the insulation plane, then alkali-resistant fiberglass mesh is embedded with a 100 mm overlap at vertical and horizontal joints. Excess adhesive is removed. After drying, a leveling adhesive coat is applied with a шпатель or brush, fully covering the mesh and creating a smooth surface. After drying, irregularities are sanded with sandpaper.',
+      name: 'thin_plaster_base_layer_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Decorative layer: `
+  String get thin_plaster_decor_layer_title {
+    return Intl.message(
+      'Decorative layer: ',
+      name: 'thin_plaster_decor_layer_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `the plastered surface is cleaned from dust, then a primer coat is applied over the entire surface using a roller/sprayer, and then a paint coat is applied in two passes. In systems with mineral wool insulation, acrylic decorative plasters must not be used because they have low vapor permeability; they are limited to systems with polystyrene insulation. Gaps between the insulation system and building structures are filled with a sealing cord along the seam and sealed with sealant.`
+  String get thin_plaster_decor_layer_text {
+    return Intl.message(
+      'the plastered surface is cleaned from dust, then a primer coat is applied over the entire surface using a roller/sprayer, and then a paint coat is applied in two passes. In systems with mineral wool insulation, acrylic decorative plasters must not be used because they have low vapor permeability; they are limited to systems with polystyrene insulation. Gaps between the insulation system and building structures are filled with a sealing cord along the seam and sealed with sealant.',
+      name: 'thin_plaster_decor_layer_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `External facade insulation systems with a thick-layer plaster finish (reinforced)`
+  String get thick_plaster_title {
+    return Intl.message(
+      'External facade insulation systems with a thick-layer plaster finish (reinforced)',
+      name: 'thick_plaster_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A thick-layer plaster insulation system includes a thermal insulation layer and a reinforced base plaster layer. A key feature of this system is the separate work of the base wall, the insulation layer, and the base layer reinforced with steel mesh. Load transfer through hinged floating anchors helps compensate thermal and mechanical деformations of the plaster layers and reduces their impact on the substrate.`
+  String get thick_plaster_intro {
+    return Intl.message(
+      'A thick-layer plaster insulation system includes a thermal insulation layer and a reinforced base plaster layer. A key feature of this system is the separate work of the base wall, the insulation layer, and the base layer reinforced with steel mesh. Load transfer through hinged floating anchors helps compensate thermal and mechanical деformations of the plaster layers and reduces their impact on the substrate.',
+      name: 'thick_plaster_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1 — load-bearing wall; 2 — insulation: mineral wool boards or XPS boards; 3 — primer layer; 4 — leveling layer; 5 — decorative plaster; 6 — steel mesh; 7 — steel anchor fastener; 8 — facade paint (if needed)`
+  String get thick_plaster_legend {
+    return Intl.message(
+      '1 — load-bearing wall; 2 — insulation: mineral wool boards or XPS boards; 3 — primer layer; 4 — leveling layer; 5 — decorative plaster; 6 — steel mesh; 7 — steel anchor fastener; 8 — facade paint (if needed)',
+      name: 'thick_plaster_legend',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Marking the facade plane: using a colored line, the wall should be divided into 500 mm squares, starting from the corner, with the first line drawn 150 mm from the corner. At line intersections where fastener holes will be drilled, clear marks are made.`
+  String get thick_plaster_marking {
+    return Intl.message(
+      'Marking the facade plane: using a colored line, the wall should be divided into 500 mm squares, starting from the corner, with the first line drawn 150 mm from the corner. At line intersections where fastener holes will be drilled, clear marks are made.',
+      name: 'thick_plaster_marking',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Around window, door, and other openings, drilling points for fasteners are marked separately with special chalk. Marks are placed 150 mm from the opening edges. Drilling in the marked points begins taking into account the required drilling depth for the anchor dowels.`
+  String get thick_plaster_openings_marks {
+    return Intl.message(
+      'Around window, door, and other openings, drilling points for fasteners are marked separately with special chalk. Marks are placed 150 mm from the opening edges. Drilling in the marked points begins taking into account the required drilling depth for the anchor dowels.',
+      name: 'thick_plaster_openings_marks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Brackets are installed at the marked points and fixed to the wall with suitable anchor dowels. A pendulum lever is inserted into the bracket and fixed in the upper position at a 90° angle for easier insulation installation.`
+  String get thick_plaster_brackets {
+    return Intl.message(
+      'Brackets are installed at the marked points and fixed to the wall with suitable anchor dowels. A pendulum lever is inserted into the bracket and fixed in the upper position at a 90° angle for easier insulation installation.',
+      name: 'thick_plaster_brackets',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fastener installation: before installing the fasteners, a dowel selected according to the wall type is driven into the hole.\n\nThe screw is threaded into the dowel using a special tool supplied with the fasteners, either manually or with a power drill.\n\nWhen threading the screw, the specified embedment depth must be observed.\nTurn the screw so that the loop is vertical, and insert the hook into the loop so that it locks in place.\n\nNumber of fasteners — at least 5 pcs/m2 if insulation thickness ≤ 100 mm, with spacing not more than 500 mm.\n\nNumber of fasteners must be at least 6 pcs/m2 if insulation thickness > 100 mm, with spacing not more than 400 mm. This also applies to edge zones and upper floors of high-rise buildings where wind dynamic loads increase.\n\nDistance from a fastener to a corner must be not more than 150 mm; to a window opening — not more than 150 mm; to an expansion joint — not more than 250 mm.\n\nFastener layout scheme on the wall plane`
+  String get thick_plaster_fasteners_block {
+    return Intl.message(
+      'Fastener installation: before installing the fasteners, a dowel selected according to the wall type is driven into the hole.\n\nThe screw is threaded into the dowel using a special tool supplied with the fasteners, either manually or with a power drill.\n\nWhen threading the screw, the specified embedment depth must be observed.\nTurn the screw so that the loop is vertical, and insert the hook into the loop so that it locks in place.\n\nNumber of fasteners — at least 5 pcs/m2 if insulation thickness ≤ 100 mm, with spacing not more than 500 mm.\n\nNumber of fasteners must be at least 6 pcs/m2 if insulation thickness > 100 mm, with spacing not more than 400 mm. This also applies to edge zones and upper floors of high-rise buildings where wind dynamic loads increase.\n\nDistance from a fastener to a corner must be not more than 150 mm; to a window opening — not more than 150 mm; to an expansion joint — not more than 250 mm.\n\nFastener layout scheme on the wall plane',
+      name: 'thick_plaster_fasteners_block',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installing the support for the first insulation row: `
+  String get thick_plaster_first_row_support_title {
+    return Intl.message(
+      'Installing the support for the first insulation row: ',
+      name: 'thick_plaster_first_row_support_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `the first row of stone wool boards is placed into a mesh trough installed along the plinth line. The main purpose of the mesh starter profile is to set clear geometry for the facade system.`
+  String get thick_plaster_first_row_support_text {
+    return Intl.message(
+      'the first row of stone wool boards is placed into a mesh trough installed along the plinth line. The main purpose of the mesh starter profile is to set clear geometry for the facade system.',
+      name: 'thick_plaster_first_row_support_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installing insulation boards: `
+  String get thick_plaster_install_boards_title {
+    return Intl.message(
+      'Installing insulation boards: ',
+      name: 'thick_plaster_install_boards_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `stone wool boards are impaled onto the pendulum levers set in the upper position so that the hooks pass through the board. Boards are installed from bottom to top. At corners, a toothed bond is used and horizontal joints are staggered. Around window and door openings, full elements are cut from boards. The first row is placed into the mesh trough along the plinth line; the mesh starter profile sets the system geometry.`
+  String get thick_plaster_install_boards_text {
+    return Intl.message(
+      'stone wool boards are impaled onto the pendulum levers set in the upper position so that the hooks pass through the board. Boards are installed from bottom to top. At corners, a toothed bond is used and horizontal joints are staggered. Around window and door openings, full elements are cut from boards. The first row is placed into the mesh trough along the plinth line; the mesh starter profile sets the system geometry.',
+      name: 'thick_plaster_install_boards_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At building corners, only full and half insulation boards may be used. Fitting pieces ≥ 150 mm made of the same insulation material may be used only in the central field area and never at edges. Wet or damaged boards must not be installed.\n\nThe installed insulation board is fixed with a locking element that holds the board in place. A cut is made at an angle of 30–45°. The pendulum lever is moved to the lower position, which allows the load to be distributed evenly onto the fastener.`
+  String get thick_plaster_corners_note {
+    return Intl.message(
+      'At building corners, only full and half insulation boards may be used. Fitting pieces ≥ 150 mm made of the same insulation material may be used only in the central field area and never at edges. Wet or damaged boards must not be installed.\n\nThe installed insulation board is fixed with a locking element that holds the board in place. A cut is made at an angle of 30–45°. The pendulum lever is moved to the lower position, which allows the load to be distributed evenly onto the fastener.',
+      name: 'thick_plaster_corners_note',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Staggered bonding of boards at internal and external building corners`
+  String get thick_plaster_tying_title {
+    return Intl.message(
+      'Staggered bonding of boards at internal and external building corners',
+      name: 'thick_plaster_tying_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installing the reinforcing mesh: `
+  String get thick_plaster_mesh_title {
+    return Intl.message(
+      'Installing the reinforcing mesh: ',
+      name: 'thick_plaster_mesh_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before installing the mesh, make sure all hooks (part of the fastening system) are released from the locking position and set to the specified angle of at least 30°.\n\nThe mesh is stretched in strips equal to the roll width. The roll is unrolled from top to bottom. Mesh overlap must be at least 50 mm.\n\nThe mesh is slightly tensioned top-down and fixed with a locking pin (or by placing two locking plates over the mesh on each hook). Locking pins can be removed and reinstalled, for example during mesh installation. Locking plates must not be pressed too hard to avoid dents in the insulation board.\n\nThe mesh must be positioned within the thickness of the first plaster layer. For this, plastic spacers are placed between the mesh and the insulation.`
+  String get thick_plaster_mesh_text {
+    return Intl.message(
+      'Before installing the mesh, make sure all hooks (part of the fastening system) are released from the locking position and set to the specified angle of at least 30°.\n\nThe mesh is stretched in strips equal to the roll width. The roll is unrolled from top to bottom. Mesh overlap must be at least 50 mm.\n\nThe mesh is slightly tensioned top-down and fixed with a locking pin (or by placing two locking plates over the mesh on each hook). Locking pins can be removed and reinstalled, for example during mesh installation. Locking plates must not be pressed too hard to avoid dents in the insulation board.\n\nThe mesh must be positioned within the thickness of the first plaster layer. For this, plastic spacers are placed between the mesh and the insulation.',
+      name: 'thick_plaster_mesh_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Base plaster layer installation: `
+  String get thick_plaster_base_layer_title {
+    return Intl.message(
+      'Base plaster layer installation: ',
+      name: 'thick_plaster_base_layer_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The purpose of the first layer is to serve as a structural frame reinforced with plaster mesh. Therefore it is critical that the mesh is completely covered with mortar on both sides. Mortar consumption for the first layer is 15–20 kg/m2 (dry mix is prepared according to the manufacturer’s instructions).\n\nPlaster mortar can be applied mechanically (pump) or manually with a steel шпатель, pressing it into the mesh and insulation. If necessary, the mesh is pulled slightly away from the mineral wool board so that the mortar fully covers it from both sides. If the mesh swells or protrudes in some places, it is pressed into the mortar and fixed with special galvanized nails.`
+  String get thick_plaster_base_layer_text {
+    return Intl.message(
+      'The purpose of the first layer is to serve as a structural frame reinforced with plaster mesh. Therefore it is critical that the mesh is completely covered with mortar on both sides. Mortar consumption for the first layer is 15–20 kg/m2 (dry mix is prepared according to the manufacturer’s instructions).\n\nPlaster mortar can be applied mechanically (pump) or manually with a steel шпатель, pressing it into the mesh and insulation. If necessary, the mesh is pulled slightly away from the mineral wool board so that the mortar fully covers it from both sides. If the mesh swells or protrudes in some places, it is pressed into the mortar and fixed with special galvanized nails.',
+      name: 'thick_plaster_base_layer_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `! The mesh must be fully covered with mortar. To prevent the mesh from bulging out, plastering is better done from bottom to top.`
+  String get thick_plaster_warning {
+    return Intl.message(
+      '! The mesh must be fully covered with mortar. To prevent the mesh from bulging out, plastering is better done from bottom to top.',
+      name: 'thick_plaster_warning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `When leveling the first layer, its thickness must be checked across the entire surface and mortar added where needed. After applying the first plaster layer, keep the surface moist during setting (about 1–3 days), depending on temperature and humidity. In dry and warm weather, the plastered surface should be moistened.\nThe first layer should be applied continuously, including window and door reveals, so that there are no working joints at corners. Wall corners are also plastered continuously, applying mortar 100–300 mm around the corner.`
+  String get thick_plaster_after_first_layer {
+    return Intl.message(
+      'When leveling the first layer, its thickness must be checked across the entire surface and mortar added where needed. After applying the first plaster layer, keep the surface moist during setting (about 1–3 days), depending on temperature and humidity. In dry and warm weather, the plastered surface should be moistened.\nThe first layer should be applied continuously, including window and door reveals, so that there are no working joints at corners. Wall corners are also plastered continuously, applying mortar 100–300 mm around the corner.',
+      name: 'thick_plaster_after_first_layer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installing the leveling plaster layer: `
+  String get thick_plaster_leveling_title {
+    return Intl.message(
+      'Installing the leveling plaster layer: ',
+      name: 'thick_plaster_leveling_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `the purpose of the second plaster layer is to level the wall structure and create a straight, even base for the final protective-decorative layer. Mortar consumption for the second layer is 15–20 kg/m2.`
+  String get thick_plaster_leveling_text {
+    return Intl.message(
+      'the purpose of the second plaster layer is to level the wall structure and create a straight, even base for the final protective-decorative layer. Mortar consumption for the second layer is 15–20 kg/m2.',
+      name: 'thick_plaster_leveling_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before applying the second layer, the first layer should be moistened 1–2 hours before starting work. The second layer may be applied manually or mechanically, pressing firmly to the base with strong pressure using a steel шпатель. The thickness of the reinforced base plaster layer is 20–60 mm. The density of the hardened plaster layer should be not less than 1000 kg/m and not more than 1300 kg/m.`
+  String get thick_plaster_second_layer_text {
+    return Intl.message(
+      'Before applying the second layer, the first layer should be moistened 1–2 hours before starting work. The second layer may be applied manually or mechanically, pressing firmly to the base with strong pressure using a steel шпатель. The thickness of the reinforced base plaster layer is 20–60 mm. The density of the hardened plaster layer should be not less than 1000 kg/m and not more than 1300 kg/m.',
+      name: 'thick_plaster_second_layer_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Surface finishing (rubbing): `
+  String get thick_plaster_grinding_title {
+    return Intl.message(
+      'Surface finishing (rubbing): ',
+      name: 'thick_plaster_grinding_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Let the mortar set for 1–3 hours (depending on the weather), then rub the leveled surface using a float with a polyurethane coating. Rubbing is performed according to the requirements for the final surface. If the finish layer will be applied by spraying colored mortar, the rubbed surface should not be too smooth.`
+  String get thick_plaster_grinding_text {
+    return Intl.message(
+      'Let the mortar set for 1–3 hours (depending on the weather), then rub the leveled surface using a float with a polyurethane coating. Rubbing is performed according to the requirements for the final surface. If the finish layer will be applied by spraying colored mortar, the rubbed surface should not be too smooth.',
+      name: 'thick_plaster_grinding_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `I want to insulate:`
+  String get house_want_to_insulate {
+    return Intl.message(
+      'I want to insulate:',
+      name: 'house_want_to_insulate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Roof`
+  String get house_card_roof {
+    return Intl.message('Roof', name: 'house_card_roof', desc: '', args: []);
+  }
+
+  /// `Walls`
+  String get house_card_walls {
+    return Intl.message('Walls', name: 'house_card_walls', desc: '', args: []);
+  }
+
+  /// `Floor`
+  String get house_card_floor {
+    return Intl.message('Floor', name: 'house_card_floor', desc: '', args: []);
+  }
+
+  /// `Foundation`
+  String get house_card_foundation {
+    return Intl.message(
+      'Foundation',
+      name: 'house_card_foundation',
+      desc: '',
+      args: [],
+    );
   }
 }
 

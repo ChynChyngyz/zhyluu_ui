@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_image.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class FloorFilmScreen extends StatelessWidget {
   static const routeName = "/floor-film";
@@ -10,8 +11,10 @@ class FloorFilmScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldCurveImage(
-      title: "МЕТОД\nПАРАИЗОЛЯЦИОННОЙ\nПЛЕНКОЙ",
+      title: s.floor_film_title,
       imagePath: Assets.images.floor.image20.path,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
@@ -19,8 +22,7 @@ class FloorFilmScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              """Если нет чернового пола, можно использовать пароизоляционную пленку, которую расстилают на обрешетку из деревянных брусьев. Затем укладывается слой утеплителя, выбирая материал с минимальным весом, такие как плиты или рулонные материалы. После этого поверх укладывается еще один слой пароизоляции и закрывается дощатым настилом.
-Пароизоляционный слой необходимо прокладывать на хлест минимум на 10 см, далее необходимо закрепить строительным степлером. Далее по деревянным лагам кладем листы фанеры или листы ОСБ. Далее укладывается чистовое покрытие пола, например, ламинат по подложке. Монтаж завершается установкой плинтусов.""",
+              s.floor_film_text_1,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 30),

@@ -7,6 +7,7 @@ import 'package:zhyluu_ui/features/house/screens/floor/floor_billing_screen.dart
 import 'package:zhyluu_ui/features/house/screens/floor/floor_concrete_screen.dart';
 import 'package:zhyluu_ui/features/house/screens/floor/floor_film_screen.dart';
 import 'package:zhyluu_ui/features/house/screens/floor/floor_under_screen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class FloorScreen extends StatelessWidget {
   static const routeName = "/floor";
@@ -15,20 +16,22 @@ class FloorScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldCurveGradient(
-      title: "УТЕПЛЕНИЕ\nПОЛА",
+      title: s.floor_title,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Утепление пола - это процесс добавления теплоизоляционных материалов под полы с целью уменьшить потерю тепла и повысить комфортность внутри помещения. Утепление пола особенно важно в холодных климатических условиях или на низком этаже здания, где полы находятся на земле или над холодным пространством.",
+              s.floor_description,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 15),
             Text(
-              "Некоторые способы\nутепление пола:",
+              s.floor_methods_title,
               style: AppTextStyles.invertedTextStyle,
             ),
             const SizedBox(height: 15),
@@ -39,7 +42,7 @@ class FloorScreen extends StatelessWidget {
                   onTap: () {
                     context.push(FloorUnderScreen.routeName);
                   },
-                  text: "Утепление под\nлагами".toUpperCase(),
+                  text: s.floor_method_under.toUpperCase(),
                 ),
               ],
             ),
@@ -51,7 +54,7 @@ class FloorScreen extends StatelessWidget {
                   onTap: () {
                     context.push(FloorFilmScreen.routeName);
                   },
-                  text: "Метод с параизоля-\nционной пленокой".toUpperCase(),
+                  text: s.floor_method_film.toUpperCase(),
                 ),
               ],
             ),
@@ -63,7 +66,7 @@ class FloorScreen extends StatelessWidget {
                   onTap: () {
                     context.push(FloorConcreteScreen.routeName);
                   },
-                  text: "Утепление\nбетонных полов".toUpperCase(),
+                  text: s.floor_method_concrete.toUpperCase(),
                 ),
               ],
             ),
@@ -75,7 +78,7 @@ class FloorScreen extends StatelessWidget {
                   onTap: () {
                     context.push(FloorBillingScreen.routeName);
                   },
-                  text: "Засыпной\nметод".toUpperCase(),
+                  text: s.floor_method_billing.toUpperCase(),
                 ),
               ],
             ),

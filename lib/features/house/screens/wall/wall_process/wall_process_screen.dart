@@ -7,6 +7,7 @@ import 'package:zhyluu_ui/features/common/widgets/my_button.dart';
 import 'package:zhyluu_ui/features/house/screens/wall/wall_process/thick_layer_plaster_screen.dart';
 import 'package:zhyluu_ui/features/house/screens/wall/wall_process/thin_layer_plaster_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class WallProcessScreen extends StatelessWidget {
   static const routeName = "/wall-process";
@@ -15,22 +16,24 @@ class WallProcessScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldCurveImage(
-      title: "ПРОЦЕСС",
+      title: s.wall_process_title,
       imagePath: Assets.images.wall.image30.path,
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             EnumeratingText(
-              title: "Процесс утепления стен",
+              title: s.wall_process_list_title,
               titleTextStyle: AppTextStyles.invertedTextStyle,
               includeSpacing: true,
-              texts: const [
-                "Выбор утеплителя: толщина теплоизоляционного слоя определяется на основании теплотехнических расчетов, исходя из требований, предъявляемых к сопротивлению теплопередаче ограждающих конструкций здания, с учетом климатических условий района строительства и требований противопожарных норм.",
-                "Выбор клеевого состава: специальные фасадные клеевые смеси или универсальные штукатурно-клеевые составы, которые можно использовать как для приклейки плит теплоизоляции к основанию, так и для формирования базового штукатурного слоя поверх теплоизоляции. Клей-пена для пенополистирола предназначена для крепления плит из экструзионного пенополистирола и пенополистирола к основанию при устройстве теплоизоляции внешних и внутренних стен здания, крыш, подвалов, фундаментов, полов в новых и реконструируемых зданиях. При выборе смеси необходимо обращать внимание на область ее применения в зависимости от типа используемого утеплителя.",
-                "Приготовление смеси клеевого состава: для приготовления качественной растворной смеси необходимо взять точно отмеренное количество чистой холодной воды (температура от 15 до 20°С). Необходимо подготовить или приобрести емкость с насечками в виде шкалы и указанием объема (не менее 10 л). Нужное количество воды перелить в ведро для приготовления смеси клеевого состава. В воду постепенно добавить сухую смесь и перемешать, добиваясь получения однородной массы без комков. После получения требуемой консистенции смесь оставить на 5 минут, затем еще раз перемешать. Перемешивание производят с помощью ручного электроинструмента (дрели) с насадкой для вязких растворных смесей при скорости вращения 400–800 об./мин, либо с помощью строительного миксера. Растворная смесь должна быть израсходована в течение 1,5 часов с момента приготовления. В процессе работы в смесь нельзя добавлять воду. Для поддержания пластичности можно еще раз перемешать смесь.",
+              texts: [
+                s.wall_process_01,
+                s.wall_process_02,
+                s.wall_process_03,
               ],
             ),
             const SizedBox(height: 30),
@@ -38,10 +41,8 @@ class WallProcessScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyButton(
-                  onTap: () {
-                    context.push(ThinLayerPlasterScreen.routeName);
-                  },
-                  text: "ТОНКОСЛОЙНАЯ\nШТУКАРКА",
+                  onTap: () => context.push(ThinLayerPlasterScreen.routeName),
+                  text: s.wall_process_btn_thin,
                 ),
               ],
             ),
@@ -50,13 +51,12 @@ class WallProcessScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyButton(
-                  onTap: () {
-                    context.push(ThickLayerPlasterScreen.routeName);
-                  },
-                  text: "ТОЛСТОСЛОЙНАЯ\nШТУКАТУРКА",
+                  onTap: () => context.push(ThickLayerPlasterScreen.routeName),
+                  text: s.wall_process_btn_thick,
                 ),
               ],
             ),
+            const SizedBox(height: 30),
           ],
         ),
       ),
