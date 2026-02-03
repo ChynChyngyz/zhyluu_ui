@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_image.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class WindowSlopesScreen extends StatelessWidget {
   static const routeName = "/window-slopes-screen";
@@ -11,8 +12,10 @@ class WindowSlopesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldCurveImage(
-      title: "Утепление откосов",
+      title: s.door_slopes_title,
       imagePath: Assets.images.door.windowSlopesInsulation.path,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
@@ -20,7 +23,7 @@ class WindowSlopesScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Утепление откосов",
+              s.door_slopes_heading,
               style: GoogleFonts.poppins(
                 fontSize: 16,
                 color: Colors.black,
@@ -29,19 +32,13 @@ class WindowSlopesScreen extends StatelessWidget {
               ),
             ),
             Text(
-              "    Теплоизоляцию откосов можно сделать под любую обшивку. Технология одинаковая.\nПо способу производства работ различают три варианта отделки и утепления:\n1. Нанесение цементного раствора или шпаклевочной смеси непосредственно на стены;\n2. Приклеивание отделочных элементов с помощью клея или раствора;\n3. Каркасное крепление элементов отделки.\n\n    Материал для утепления подбирают в зависимости от вида полотна двери и покрытия стен внутри помещения. Чем больше отделочных слоев, тем лучше утепление дверного проема. В качестве верхнего слоя применяют: краску, обои, декоративную штукатурку, пластик, дерево, ламинат, МДФ, панели ПВХ.\nПеред отделочными работами дверь укрывают защитной пленкой. Монтажную пену, которая выступает за край дверной коробки, осторожно срезают канцелярским ножом.\n\n     Перед отделочными работами дверь укрывают защитной пленкой. Монтажную пену, которая выступает за край дверной коробки, осторожно срезают канцелярским ножом.\n\n    После подготовки поверхности, её прогрунтовывают. Через 3–4 часа процедуру повторяют.\n\n    После того как поверхность высохла, начинаем укладывать утеплитель. В случае выбора пенопласта или экструдированного пенополистирола (пеноплекс), поверхность необходимо поцарапать наждачным листом чтобы уменьшить гладкость.\n\n    Приступаем к приклеиванию полистирола, нанося шпателем на каждую из плит порцию клея. Позволяем материалу хорошо просохнуть.\n\n   Крепим утеплитель дополнительно на пластиковые дюбеля при помощи перфоратора.\n\n   Крепим утеплитель дополнительно на пластиковые дюбеля при помощи перфоратора.\n\n   Проклеиваем готовые участки пластиковой сеткой, которая защитит поверхность от появления мелких трещин. Для полного высыхания клея потребуется от 5 до 12 часов в зависимости от температуры воздуха в помещении.\n\n    После полного высыхания поверх пластиковой сетки наносим слой шпаклевки. Если с первым слоем выровнять поверхность не удалось, смело наносите последующий с учетом просыхания всех участков.\n\n    Подсохшую шпаклевку обрабатываем крупнозернистыми наждачными листами и наносим слой грунтовки.\n\n    Позволяем конструкции просохнуть и шпаклюем уголок.\n\n    После укладки пенопласта (или другого теплоизоляционного материала) приступаем к финишному покрытию, выбранному на собственный вкус. Это может быть обшивка гипсокартоном или декоративное оштукатуривание.",
+              s.door_slopes_text,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 15),
-            // Добавляем картинку после текста
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),
-              child: Column(
-                children: [
-                  Image.asset(Assets.images.door.doorOtkos.path), // Картинка
-                  const SizedBox(height: 12),
-                ],
-              ),
+              child: Image.asset(Assets.images.door.doorOtkos.path),
             ),
           ],
         ),

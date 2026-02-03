@@ -109,25 +109,30 @@ class S {
     );
   }
 
-  /// `Проект жондо`
+  /// `About the Project`
   String get about_proj {
-    return Intl.message('Проект жондо', name: 'about_proj', desc: '', args: []);
+    return Intl.message(
+      'About the Project',
+      name: 'about_proj',
+      desc: '',
+      args: [],
+    );
   }
 
-  /// `КНАУ им. С.И. Скрябина`
+  /// `Kyrgyz National Agrarian University named after K.I. Skryabin`
   String get uni {
     return Intl.message(
-      'КНАУ им. С.И. Скрябина',
+      'Kyrgyz National Agrarian University named after K.I. Skryabin',
       name: 'uni',
       desc: '',
       args: [],
     );
   }
 
-  /// `«Жылуу үй» маалыматтык-окутуучу мобилдик тиркемеси «Таза Келечек» долбоорунун кичи гранттары программасы боюнча  «Атмосферанын зыяндуу заттар менен булгануусун кыскартуу, митигация жана климаттын ѳзгѳрүүсүнѳ ыңгайлашуусу максатында имараттардын энергиялык натыйжалуулугу маселеси боюнча Кыргызстандын калкынын маалымдуулугун жогорулатуу» демилгесин ишке ашыруунун алкагында иштелип чыккан.\nМобилдик тиркеменин максаты – катуу отунду колдонууну кыскартуу үчүн имараттардын энергиялык натыйжалуулугу боюнча ѳлкѳ калкынын маалымдуулук деңгээлин жогорулатуу. \nИмараттардын энергиялык натыйжалуулугуна карай алгачкы кадам катары иштелип чыккан тиркеме, негизинен, элди үйлѳрүн жылуулук менен изоляциялоонун зарылдыгы жана маанилүүлүгү тууралуу маалымдоого, ошондой эле элди үйдү жылытууга кеткен акча каражатын үнѳмдѳѳ үчүн жылуулукту изоляциялоонун негизги усулдарын үйрѳтүүгѳ багытталган. Узак мѳѳнѳттү максаттаган бул тиркеме Кыргыз Республикасындагы шаарларда абанын булгануу деңгээлин тѳмѳндѳтүүгѳ жана климаттын ѳзгѳрүүсүнүн кесепеттерин ыңгайлаштырууга жана жумшартууга багытталган. \nМобилдик тиркемедеги маалымат баарына түшүнүктүү болуш үчүн  жѳнѳкѳй тил менен берилген.  Булак иретинде тиркеменин мазмундук бѳлүгүндѳ жеке иштеп чыгуулар, чакырылган эксперттердин эсептѳѳлѳрү, ошондой эле имараттардын энергиялык натыйжалуулугу жаатындагы ишке ашырылган буга чейинки долбоорлордун алкагында жарыяланган материалдар, атап айтканда: Полдорду жана шыптарды жылуулоо боюнча монтаждоочулар үчүн колдонмо (“Имараттарда энергияны рационалдуу пайдалануу – кыргыз ассоциациясынын потенциалын чыңдоо - фаза II”, ЕБРР), Жеке турак үйлѳрдүн тышкы тосмо констуркцияларын жылуулоо боюнча техникалык чечимдердин каталогу (“КыргызНИИПСС”, ОФ “Camp alatoo”,  ГЭФ/ПРООН “Имараттардагы энергиялык натыйжалуулукту жакшыртуу” долбоору), СНиП КР 23-01-2013 Курулуш жылуулук техникасы (имараттардын жылуулук тосмосу), СП 23-101-2013 Имараттардын жылуулугун сактоону долбоорлоо, СНиП КР 23-02-00 Курулуштук климатология, ГОСТ 26602.2-99 Терезе жана эшик блоктору: аба ѳткѳрүмдүүлүгүн аныктоо усулу жана иликтѳѳгѳ алынган интернет-булактар колдонулду.    \n«Жылуу үй» мобилдик тиркемеси АКШ Мамлекеттик департаменти грантынын эсебинен каржыланды. Тиркемеде берилген пикирлер жана корутундулар авторлорго гана тиешелүү жана АКШнын Мамлекеттик департаментинин кѳз карашын чагылдырган эмес.   \n«Жылуу үй» мобилдик тиркемеси К. И. Скрябин атындагы КНАУ демилгелик тобу (А. В. Кенжебаева, Б. Анарбек), ошондой эле чакырылган эксперттердин командасы (А. Ч. Орозобекова, В. О. Греб, Р. А. Мигранов, О. И. Элеманов, Н. К. Рысмендеева) тарабынан түзүлдү. \nИштеп чыгуучулардын жана эксперттердин бирдиктүү командасына терең ыраазычылык билдиребиз.    `
+  /// `The informational and educational mobile application "Zhyluu Uy" was developed within the framework of the initiative "Raising public awareness in Kyrgyzstan on building energy efficiency in order to reduce atmospheric emissions and support climate change mitigation and adaptation" under the Small Grants Program of the "Taza Kelechek" project.\nThe goal of the mobile application is to increase public awareness of building energy efficiency in order to reduce the use of solid fuels.\nAs a first step towards energy-efficient buildings, the application mainly focuses on informing people about the necessity and importance of home insulation, as well as teaching basic insulation methods to save money on heating. As a long-term goal, the application aims to reduce air pollution levels in the cities of the Kyrgyz Republic and decrease atmospheric emissions to support climate change adaptation and mitigation.\nThe information in the mobile application is presented in simple language so that it is understandable to everyone. The content of the application is based on original developments, calculations by involved experts, as well as materials published within previously implemented projects in the field of building energy efficiency. In particular, the following sources were used: the Guide for Installers on Floor and Ceiling Insulation (project "Capacity Building of the Kyrgyz Association – Rational Use of Energy in Buildings – Phase II", EBRD), the Catalogue of Technical Solutions for Thermal Insulation of External Enclosing Structures of Individual Residential Buildings ("KyrgyzNIIPSS", Public Foundation "Camp Alatoo", GEF/UNDP project "Improving Energy Efficiency in Buildings"), SNiP KR 23-01-2013 Building Thermal Engineering (Thermal Protection of Buildings), SP 23-101-2013 Design of Thermal Protection of Buildings, SNiP KR 23-02-00 Building Climatology, GOST 26602.2-99 Window and Door Units: Methods for Determining Air Permeability, and analyzed internet sources.\nThe mobile application "Zhyluu Uy" is funded by a grant from the United States Department of State. The opinions and conclusions expressed in the application are those of the authors and do not necessarily reflect the views of the United States Department of State.`
   String get text_about_proj {
     return Intl.message(
-      '«Жылуу үй» маалыматтык-окутуучу мобилдик тиркемеси «Таза Келечек» долбоорунун кичи гранттары программасы боюнча  «Атмосферанын зыяндуу заттар менен булгануусун кыскартуу, митигация жана климаттын ѳзгѳрүүсүнѳ ыңгайлашуусу максатында имараттардын энергиялык натыйжалуулугу маселеси боюнча Кыргызстандын калкынын маалымдуулугун жогорулатуу» демилгесин ишке ашыруунун алкагында иштелип чыккан.\nМобилдик тиркеменин максаты – катуу отунду колдонууну кыскартуу үчүн имараттардын энергиялык натыйжалуулугу боюнча ѳлкѳ калкынын маалымдуулук деңгээлин жогорулатуу. \nИмараттардын энергиялык натыйжалуулугуна карай алгачкы кадам катары иштелип чыккан тиркеме, негизинен, элди үйлѳрүн жылуулук менен изоляциялоонун зарылдыгы жана маанилүүлүгү тууралуу маалымдоого, ошондой эле элди үйдү жылытууга кеткен акча каражатын үнѳмдѳѳ үчүн жылуулукту изоляциялоонун негизги усулдарын үйрѳтүүгѳ багытталган. Узак мѳѳнѳттү максаттаган бул тиркеме Кыргыз Республикасындагы шаарларда абанын булгануу деңгээлин тѳмѳндѳтүүгѳ жана климаттын ѳзгѳрүүсүнүн кесепеттерин ыңгайлаштырууга жана жумшартууга багытталган. \nМобилдик тиркемедеги маалымат баарына түшүнүктүү болуш үчүн  жѳнѳкѳй тил менен берилген.  Булак иретинде тиркеменин мазмундук бѳлүгүндѳ жеке иштеп чыгуулар, чакырылган эксперттердин эсептѳѳлѳрү, ошондой эле имараттардын энергиялык натыйжалуулугу жаатындагы ишке ашырылган буга чейинки долбоорлордун алкагында жарыяланган материалдар, атап айтканда: Полдорду жана шыптарды жылуулоо боюнча монтаждоочулар үчүн колдонмо (“Имараттарда энергияны рационалдуу пайдалануу – кыргыз ассоциациясынын потенциалын чыңдоо - фаза II”, ЕБРР), Жеке турак үйлѳрдүн тышкы тосмо констуркцияларын жылуулоо боюнча техникалык чечимдердин каталогу (“КыргызНИИПСС”, ОФ “Camp alatoo”,  ГЭФ/ПРООН “Имараттардагы энергиялык натыйжалуулукту жакшыртуу” долбоору), СНиП КР 23-01-2013 Курулуш жылуулук техникасы (имараттардын жылуулук тосмосу), СП 23-101-2013 Имараттардын жылуулугун сактоону долбоорлоо, СНиП КР 23-02-00 Курулуштук климатология, ГОСТ 26602.2-99 Терезе жана эшик блоктору: аба ѳткѳрүмдүүлүгүн аныктоо усулу жана иликтѳѳгѳ алынган интернет-булактар колдонулду.    \n«Жылуу үй» мобилдик тиркемеси АКШ Мамлекеттик департаменти грантынын эсебинен каржыланды. Тиркемеде берилген пикирлер жана корутундулар авторлорго гана тиешелүү жана АКШнын Мамлекеттик департаментинин кѳз карашын чагылдырган эмес.   \n«Жылуу үй» мобилдик тиркемеси К. И. Скрябин атындагы КНАУ демилгелик тобу (А. В. Кенжебаева, Б. Анарбек), ошондой эле чакырылган эксперттердин командасы (А. Ч. Орозобекова, В. О. Греб, Р. А. Мигранов, О. И. Элеманов, Н. К. Рысмендеева) тарабынан түзүлдү. \nИштеп чыгуучулардын жана эксперттердин бирдиктүү командасына терең ыраазычылык билдиребиз.    ',
+      'The informational and educational mobile application "Zhyluu Uy" was developed within the framework of the initiative "Raising public awareness in Kyrgyzstan on building energy efficiency in order to reduce atmospheric emissions and support climate change mitigation and adaptation" under the Small Grants Program of the "Taza Kelechek" project.\nThe goal of the mobile application is to increase public awareness of building energy efficiency in order to reduce the use of solid fuels.\nAs a first step towards energy-efficient buildings, the application mainly focuses on informing people about the necessity and importance of home insulation, as well as teaching basic insulation methods to save money on heating. As a long-term goal, the application aims to reduce air pollution levels in the cities of the Kyrgyz Republic and decrease atmospheric emissions to support climate change adaptation and mitigation.\nThe information in the mobile application is presented in simple language so that it is understandable to everyone. The content of the application is based on original developments, calculations by involved experts, as well as materials published within previously implemented projects in the field of building energy efficiency. In particular, the following sources were used: the Guide for Installers on Floor and Ceiling Insulation (project "Capacity Building of the Kyrgyz Association – Rational Use of Energy in Buildings – Phase II", EBRD), the Catalogue of Technical Solutions for Thermal Insulation of External Enclosing Structures of Individual Residential Buildings ("KyrgyzNIIPSS", Public Foundation "Camp Alatoo", GEF/UNDP project "Improving Energy Efficiency in Buildings"), SNiP KR 23-01-2013 Building Thermal Engineering (Thermal Protection of Buildings), SP 23-101-2013 Design of Thermal Protection of Buildings, SNiP KR 23-02-00 Building Climatology, GOST 26602.2-99 Window and Door Units: Methods for Determining Air Permeability, and analyzed internet sources.\nThe mobile application "Zhyluu Uy" is funded by a grant from the United States Department of State. The opinions and conclusions expressed in the application are those of the authors and do not necessarily reflect the views of the United States Department of State.',
       name: 'text_about_proj',
       desc: '',
       args: [],
@@ -1887,6 +1892,1911 @@ class S {
   /// `Expanded clay`
   String get mat_clay {
     return Intl.message('Expanded clay', name: 'mat_clay', desc: '', args: []);
+  }
+
+  /// `Straw insulation`
+  String get straw_title {
+    return Intl.message(
+      'Straw insulation',
+      name: 'straw_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Good thermal insulation`
+  String get pro_warm_insulation {
+    return Intl.message(
+      'Good thermal insulation',
+      name: 'pro_warm_insulation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Environmentally friendly`
+  String get pro_ecological {
+    return Intl.message(
+      'Environmentally friendly',
+      name: 'pro_ecological',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Requires additional protection`
+  String get con_protection {
+    return Intl.message(
+      'Requires additional protection',
+      name: 'con_protection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Low fire resistance`
+  String get con_fire_resistance {
+    return Intl.message(
+      'Low fire resistance',
+      name: 'con_fire_resistance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Biodegradable`
+  String get con_biodegradable {
+    return Intl.message(
+      'Biodegradable',
+      name: 'con_biodegradable',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Low moisture resistance`
+  String get con_moisture_resistance {
+    return Intl.message(
+      'Low moisture resistance',
+      name: 'con_moisture_resistance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Poor sound insulation`
+  String get con_sound_insulation {
+    return Intl.message(
+      'Poor sound insulation',
+      name: 'con_sound_insulation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Expanded clay`
+  String get clay_title {
+    return Intl.message(
+      'Expanded clay',
+      name: 'clay_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Low volume`
+  String get pro_small_volume {
+    return Intl.message(
+      'Low volume',
+      name: 'pro_small_volume',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mineral wool`
+  String get mineral_title {
+    return Intl.message(
+      'Mineral wool',
+      name: 'mineral_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Минераль-ная \nвата`
+  String get mineral_excel_name {
+    return Intl.message(
+      'Минераль-ная \nвата',
+      name: 'mineral_excel_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Breathable (vapour-permeable)`
+  String get pro_breathability {
+    return Intl.message(
+      'Breathable (vapour-permeable)',
+      name: 'pro_breathability',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bulky`
+  String get con_large_volume {
+    return Intl.message('Bulky', name: 'con_large_volume', desc: '', args: []);
+  }
+
+  /// `May irritate skin and\nairways`
+  String get con_skin_airway_irritation {
+    return Intl.message(
+      'May irritate skin and\nairways',
+      name: 'con_skin_airway_irritation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Polystyrene foam (EPS)`
+  String get pps_title {
+    return Intl.message(
+      'Polystyrene foam (EPS)',
+      name: 'pps_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Пенопо-листирол\n(Пенопласт)`
+  String get pps_excel_name {
+    return Intl.message(
+      'Пенопо-листирол\n(Пенопласт)',
+      name: 'pps_excel_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Easily\ndamaged`
+  String get con_easily_damaged {
+    return Intl.message(
+      'Easily\ndamaged',
+      name: 'con_easily_damaged',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Poor\nbreathability`
+  String get con_poor_breathability {
+    return Intl.message(
+      'Poor\nbreathability',
+      name: 'con_poor_breathability',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Extruded polystyrene (XPS)`
+  String get xps_title {
+    return Intl.message(
+      'Extruded polystyrene (XPS)',
+      name: 'xps_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Экструдиро-ванный пенополи-стирол`
+  String get xps_excel_name {
+    return Intl.message(
+      'Экструдиро-ванный пенополи-стирол',
+      name: 'xps_excel_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `High strength`
+  String get pro_strength {
+    return Intl.message(
+      'High strength',
+      name: 'pro_strength',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Polyurethane foam (PU)`
+  String get pu_title {
+    return Intl.message(
+      'Polyurethane foam (PU)',
+      name: 'pu_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Пенопо-лиуретан`
+  String get pu_excel_name {
+    return Intl.message(
+      'Пенопо-лиуретан',
+      name: 'pu_excel_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Poor\nfire resistance`
+  String get con_poor_fire_resistance {
+    return Intl.message(
+      'Poor\nfire resistance',
+      name: 'con_poor_fire_resistance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reed boards`
+  String get slabs_title {
+    return Intl.message('Reed boards', name: 'slabs_title', desc: '', args: []);
+  }
+
+  /// `Камыш`
+  String get slabs_excel_name {
+    return Intl.message('Камыш', name: 'slabs_excel_name', desc: '', args: []);
+  }
+
+  /// `Wool`
+  String get wool_title {
+    return Intl.message('Wool', name: 'wool_title', desc: '', args: []);
+  }
+
+  /// `Шерсть`
+  String get wool_excel_name {
+    return Intl.message('Шерсть', name: 'wool_excel_name', desc: '', args: []);
+  }
+
+  /// `Recommended thickness:`
+  String get recommended_thickness {
+    return Intl.message(
+      'Recommended thickness:',
+      name: 'recommended_thickness',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Not found`
+  String get not_found {
+    return Intl.message('Not found', name: 'not_found', desc: '', args: []);
+  }
+
+  /// `Material not found`
+  String get error_material_not_found {
+    return Intl.message(
+      'Material not found',
+      name: 'error_material_not_found',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `City or village not found`
+  String get error_city_not_found {
+    return Intl.message(
+      'City or village not found',
+      name: 'error_city_not_found',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Calculate thickness`
+  String get calculate_thickness {
+    return Intl.message(
+      'Calculate thickness',
+      name: 'calculate_thickness',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apartment`
+  String get category_apartment {
+    return Intl.message(
+      'Apartment',
+      name: 'category_apartment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Private house`
+  String get category_house {
+    return Intl.message(
+      'Private house',
+      name: 'category_house',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `DOOR INSULATION`
+  String get door_title {
+    return Intl.message(
+      'DOOR INSULATION',
+      name: 'door_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The main purpose of doors and windows is to protect a building from cold weather by preventing cold air from entering and keeping warmth inside. Unlike windows, which are often kept closed, entrance doors are opened and closed frequently. Because of this, door seals can become flattened over time and lose their effectiveness, so they can no longer fully perform their function.\n\nEntrance doors for houses and apartments may look structurally the same, but in private houses the door opens directly to the street, while in city apartments there is a “buffer” area such as a relatively warm entrance hall. Therefore, door insulation in houses must be noticeably stronger.\n\nIt is important to consider that the quality of the insulation inside the door plays a major role in maintaining thermal comfort and a comfortable indoor temperature.\n\nIf the door leaf is misaligned or the frame is deformed, it may be necessary to adjust the door or even replace the hinges.\nFor metal door units, misalignment usually happens due to worn-out hinges.\nAlthough you can apply self-adhesive sealing strips around the door leaf, this is not enough to fully solve the problem.`
+  String get door_intro_text {
+    return Intl.message(
+      'The main purpose of doors and windows is to protect a building from cold weather by preventing cold air from entering and keeping warmth inside. Unlike windows, which are often kept closed, entrance doors are opened and closed frequently. Because of this, door seals can become flattened over time and lose their effectiveness, so they can no longer fully perform their function.\n\nEntrance doors for houses and apartments may look structurally the same, but in private houses the door opens directly to the street, while in city apartments there is a “buffer” area such as a relatively warm entrance hall. Therefore, door insulation in houses must be noticeably stronger.\n\nIt is important to consider that the quality of the insulation inside the door plays a major role in maintaining thermal comfort and a comfortable indoor temperature.\n\nIf the door leaf is misaligned or the frame is deformed, it may be necessary to adjust the door or even replace the hinges.\nFor metal door units, misalignment usually happens due to worn-out hinges.\nAlthough you can apply self-adhesive sealing strips around the door leaf, this is not enough to fully solve the problem.',
+      name: 'door_intro_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before starting insulation, let’s look at which insulating materials can be used.\n\nIn theory, instead of foam plastic you can use extruded polystyrene foam (XPS / “Penoplex”). It is much denser and provides better thermal insulation. However, the price can be about twice as high, and with the same thickness the insulating effect is only slightly different.\n\nMineral wool is widely used as door insulation. The installation method is similar to foam boards, but there is an important point: for doors it is recommended to use only high-density mineral wool boards. They keep their shape and volume when exposed to condensation, unlike soft mats which may settle over time and lose their insulating properties.\n\nYou can also find an inexpensive door insulation kit on the market. It is usually a self-adhesive foam sealing strip that is applied around the door frame or door leaf. The quality is average, but the price is very affordable. In many cases, such sealing lasts for one season.\n\nFoil-faced isolon is an excellent material for insulating doors. It consists of foamed polyethylene (about 5 mm thick), with a foil layer on one side and an adhesive film on the other. It works well for all door types. The foil combined with the porous structure creates a “thermos effect”, providing strong thermal insulation.\n\nAs for honeycomb cardboard (originally used inside hollow interior doors), it is almost ineffective for entrance doors. The paper is not very durable and deteriorates quickly.\n\nDoor insulation can be divided into 3 stages:`
+  String get door_materials_text {
+    return Intl.message(
+      'Before starting insulation, let’s look at which insulating materials can be used.\n\nIn theory, instead of foam plastic you can use extruded polystyrene foam (XPS / “Penoplex”). It is much denser and provides better thermal insulation. However, the price can be about twice as high, and with the same thickness the insulating effect is only slightly different.\n\nMineral wool is widely used as door insulation. The installation method is similar to foam boards, but there is an important point: for doors it is recommended to use only high-density mineral wool boards. They keep their shape and volume when exposed to condensation, unlike soft mats which may settle over time and lose their insulating properties.\n\nYou can also find an inexpensive door insulation kit on the market. It is usually a self-adhesive foam sealing strip that is applied around the door frame or door leaf. The quality is average, but the price is very affordable. In many cases, such sealing lasts for one season.\n\nFoil-faced isolon is an excellent material for insulating doors. It consists of foamed polyethylene (about 5 mm thick), with a foil layer on one side and an adhesive film on the other. It works well for all door types. The foil combined with the porous structure creates a “thermos effect”, providing strong thermal insulation.\n\nAs for honeycomb cardboard (originally used inside hollow interior doors), it is almost ineffective for entrance doors. The paper is not very durable and deteriorates quickly.\n\nDoor insulation can be divided into 3 stages:',
+      name: 'door_materials_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulating\nslopes`
+  String get door_step_slopes {
+    return Intl.message(
+      'Insulating\nslopes',
+      name: 'door_step_slopes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulating the door leaf\nfrom the inside`
+  String get door_step_canvas {
+    return Intl.message(
+      'Insulating the door leaf\nfrom the inside',
+      name: 'door_step_canvas',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Replacing or installing\nseals`
+  String get door_step_seal {
+    return Intl.message(
+      'Replacing or installing\nseals',
+      name: 'door_step_seal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulating the door leaf\nfrom the inside`
+  String get door_canvas_title {
+    return Intl.message(
+      'Insulating the door leaf\nfrom the inside',
+      name: 'door_canvas_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before starting the work, all door hardware that may interfere should be removed: locks, keyholes, and the peephole. Then the door leaf should be taken off the hinges and placed on a flat, stable surface. It is possible to work with the door in a vertical position, but this is less convenient and usually requires professional skills.\n\nTo insulate the door leaf, the inner decorative panel must be removed and the door cavity filled with foam plastic or mineral wool boards. This significantly reduces heat loss through the door.\n\nThe inner panel is removed from the door. In more expensive models it may be a reinforced metal sheet, while in budget versions it is often plywood. In all cases, it is fixed with standard screws. The old insulation should be completely removed.\n\nIf the door has stiffening ribs inside, several holes should be drilled in them at intervals of 40–45 cm and filled with монтаж foam. The diameter of the holes should match the diameter of the foam tube.\n\nWhen mineral wool is used, a polyethylene moisture barrier must be installed. This is not required when using polystyrene foam. The insulation is cut to size with a small margin to avoid gaps.\n\nThe final step is placing the insulation inside the cavities. The most reliable fixing methods are liquid nails or монтаж foam. After that, the inner panel is reinstalled, the hardware is mounted back, and the door is returned to the doorway.`
+  String get door_canvas_text {
+    return Intl.message(
+      'Before starting the work, all door hardware that may interfere should be removed: locks, keyholes, and the peephole. Then the door leaf should be taken off the hinges and placed on a flat, stable surface. It is possible to work with the door in a vertical position, but this is less convenient and usually requires professional skills.\n\nTo insulate the door leaf, the inner decorative panel must be removed and the door cavity filled with foam plastic or mineral wool boards. This significantly reduces heat loss through the door.\n\nThe inner panel is removed from the door. In more expensive models it may be a reinforced metal sheet, while in budget versions it is often plywood. In all cases, it is fixed with standard screws. The old insulation should be completely removed.\n\nIf the door has stiffening ribs inside, several holes should be drilled in them at intervals of 40–45 cm and filled with монтаж foam. The diameter of the holes should match the diameter of the foam tube.\n\nWhen mineral wool is used, a polyethylene moisture barrier must be installed. This is not required when using polystyrene foam. The insulation is cut to size with a small margin to avoid gaps.\n\nThe final step is placing the insulation inside the cavities. The most reliable fixing methods are liquid nails or монтаж foam. After that, the inner panel is reinstalled, the hardware is mounted back, and the door is returned to the doorway.',
+      name: 'door_canvas_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Replacing or\ninstalling\nseals`
+  String get door_seal_title {
+    return Intl.message(
+      'Replacing or\ninstalling\nseals',
+      name: 'door_seal_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Replacing or installing\nseals`
+  String get door_seal_heading {
+    return Intl.message(
+      'Replacing or installing\nseals',
+      name: 'door_seal_heading',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `For this purpose, self-adhesive seals are used — usually polymer seals, and more rarely foam seals. Polymer seals are recommended because they last longer and are more effective. A foam adhesive strip may not last even one season; in the best case it wears out within a year. The process is simple: apply the seal along the perimeter of the door leaf. The key point is to wipe and degrease the surface beforehand so the seal sticks properly.\n\nA critical factor is choosing the correct seal thickness. A seal that is too thin will not work effectively, while a seal that is too thick will add extra load to the door hinges when closing and may cause faster wear.\n\nPlasticine can help you choose the right thickness. Wrap a small piece in plastic film and place it between the door frame and the door leaf. Close and then open the door. The thickness of the flattened plasticine roll will match the optimal seal thickness.`
+  String get door_seal_text {
+    return Intl.message(
+      'For this purpose, self-adhesive seals are used — usually polymer seals, and more rarely foam seals. Polymer seals are recommended because they last longer and are more effective. A foam adhesive strip may not last even one season; in the best case it wears out within a year. The process is simple: apply the seal along the perimeter of the door leaf. The key point is to wipe and degrease the surface beforehand so the seal sticks properly.\n\nA critical factor is choosing the correct seal thickness. A seal that is too thin will not work effectively, while a seal that is too thick will add extra load to the door hinges when closing and may cause faster wear.\n\nPlasticine can help you choose the right thickness. Wrap a small piece in plastic film and place it between the door frame and the door leaf. Close and then open the door. The thickness of the flattened plasticine roll will match the optimal seal thickness.',
+      name: 'door_seal_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulating slopes`
+  String get door_slopes_title {
+    return Intl.message(
+      'Insulating slopes',
+      name: 'door_slopes_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulating slopes`
+  String get door_slopes_heading {
+    return Intl.message(
+      'Insulating slopes',
+      name: 'door_slopes_heading',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Slope insulation can be done under any finishing — the technology is basically the same.\n\nDepending on the work method, there are three options:\n1) Applying cement mortar or putty mixture directly to the walls;\n2) Gluing finishing elements using adhesive or mortar;\n3) Installing finishing elements on a frame (batten system).\n\nThe insulation material is selected depending on the door leaf type and the interior wall finish. The more finishing layers you have, the better the insulation of the doorway. As a top layer you can use paint, wallpaper, декоратив plaster, plastic, wood, laminate, MDF, or PVC panels.\n\nBefore finishing, cover the door with protective film. Carefully cut off монтаж foam that protrudes beyond the edge of the door frame using a utility knife.\n\nAfter preparing the surface, apply primer. Repeat after 3–4 hours.\n\nWhen the surface is dry, start placing the insulation. If you use foam plastic or extruded polystyrene foam (XPS), lightly scratch the surface with sandpaper to reduce smoothness.\n\nGlue the polystyrene boards by applying adhesive to each board with a trowel, then let it dry well.\n\nAdditionally, secure the insulation with plastic wall plugs (dowels) using a hammer drill.\n\nCover the finished areas with a plastic mesh to prevent small cracks. Adhesive drying typically takes 5 to 12 hours depending on indoor temperature.\n\nAfter drying, apply a layer of putty over the mesh. If the first layer doesn’t ровнять the surface, apply another layer after drying.\n\nSand the dried putty with coarse sandpaper and apply another primer layer.\n\nLet the structure dry and finish the corner bead with putty.\n\nFinally, apply the chosen finishing: drywall cladding or decorative plastering.`
+  String get door_slopes_text {
+    return Intl.message(
+      'Slope insulation can be done under any finishing — the technology is basically the same.\n\nDepending on the work method, there are three options:\n1) Applying cement mortar or putty mixture directly to the walls;\n2) Gluing finishing elements using adhesive or mortar;\n3) Installing finishing elements on a frame (batten system).\n\nThe insulation material is selected depending on the door leaf type and the interior wall finish. The more finishing layers you have, the better the insulation of the doorway. As a top layer you can use paint, wallpaper, декоратив plaster, plastic, wood, laminate, MDF, or PVC panels.\n\nBefore finishing, cover the door with protective film. Carefully cut off монтаж foam that protrudes beyond the edge of the door frame using a utility knife.\n\nAfter preparing the surface, apply primer. Repeat after 3–4 hours.\n\nWhen the surface is dry, start placing the insulation. If you use foam plastic or extruded polystyrene foam (XPS), lightly scratch the surface with sandpaper to reduce smoothness.\n\nGlue the polystyrene boards by applying adhesive to each board with a trowel, then let it dry well.\n\nAdditionally, secure the insulation with plastic wall plugs (dowels) using a hammer drill.\n\nCover the finished areas with a plastic mesh to prevent small cracks. Adhesive drying typically takes 5 to 12 hours depending on indoor temperature.\n\nAfter drying, apply a layer of putty over the mesh. If the first layer doesn’t ровнять the surface, apply another layer after drying.\n\nSand the dried putty with coarse sandpaper and apply another primer layer.\n\nLet the structure dry and finish the corner bead with putty.\n\nFinally, apply the chosen finishing: drywall cladding or decorative plastering.',
+      name: 'door_slopes_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation installation`
+  String get insul_install_title {
+    return Intl.message(
+      'Insulation installation',
+      name: 'insul_install_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wall insulation`
+  String get insul_install_walls_title {
+    return Intl.message(
+      'Wall insulation',
+      name: 'insul_install_walls_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `For balcony wall insulation under decorative plaster, it is recommended to use extruded polystyrene foam with a milled (grooved) surface. If you use smooth XPS boards, they should be evenly roughened using a hacksaw or a metal brush.`
+  String get insul_install_walls_dot_1 {
+    return Intl.message(
+      'For balcony wall insulation under decorative plaster, it is recommended to use extruded polystyrene foam with a milled (grooved) surface. If you use smooth XPS boards, they should be evenly roughened using a hacksaw or a metal brush.',
+      name: 'insul_install_walls_dot_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next, apply foam adhesive to the prepared board and wait 5–7 minutes until polymerization starts. Then place the insulation board onto the base with a slight offset, press it to the wall with light force, and slide it into the final position.`
+  String get insul_install_walls_dot_2 {
+    return Intl.message(
+      'Next, apply foam adhesive to the prepared board and wait 5–7 minutes until polymerization starts. Then place the insulation board onto the base with a slight offset, press it to the wall with light force, and slide it into the final position.',
+      name: 'insul_install_walls_dot_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After fixing the boards with foam adhesive, additionally secure them using disc dowels. Drill holes through the insulation board with a hammer drill. Dowels consumption is about 2–3 per board.`
+  String get insul_install_walls_dot_3 {
+    return Intl.message(
+      'After fixing the boards with foam adhesive, additionally secure them using disc dowels. Drill holes through the insulation board with a hammer drill. Dowels consumption is about 2–3 per board.',
+      name: 'insul_install_walls_dot_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insert the dowel into the hole and hammer in the pin.`
+  String get insul_install_walls_dot_4 {
+    return Intl.message(
+      'Insert the dowel into the hole and hammer in the pin.',
+      name: 'insul_install_walls_dot_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After laying the insulation, fill all joints and gaps with монтаж foam.`
+  String get insul_install_walls_dot_5 {
+    return Intl.message(
+      'After laying the insulation, fill all joints and gaps with монтаж foam.',
+      name: 'insul_install_walls_dot_5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ceiling insulation`
+  String get insul_install_ceiling_title {
+    return Intl.message(
+      'Ceiling insulation',
+      name: 'insul_install_ceiling_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ceiling insulation with a rough finish using sheet materials (drywall, gypsum fiber board, OSB, plywood, etc.).\nWhen finishing a ceiling with sheet materials, it becomes possible to create complex, volumetric surface shapes.\nThe spacing, quantity, and length of brackets should be selected based on a заранее prepared design, considering the loads from sheets and finishing on the substructure.\nBefore installing drywall sheets, all electrical cables for lighting fixtures and sockets must be routed. Cables should be installed in PVC/HDPE conduits or cable channels.`
+  String get insul_install_ceiling_text {
+    return Intl.message(
+      'Ceiling insulation with a rough finish using sheet materials (drywall, gypsum fiber board, OSB, plywood, etc.).\nWhen finishing a ceiling with sheet materials, it becomes possible to create complex, volumetric surface shapes.\nThe spacing, quantity, and length of brackets should be selected based on a заранее prepared design, considering the loads from sheets and finishing on the substructure.\nBefore installing drywall sheets, all electrical cables for lighting fixtures and sockets must be routed. Cables should be installed in PVC/HDPE conduits or cable channels.',
+      name: 'insul_install_ceiling_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Install brackets for metal profiles. Profiles are installed with a spacing of 500–600 mm.`
+  String get insul_install_ceiling_dot_1 {
+    return Intl.message(
+      'Install brackets for metal profiles. Profiles are installed with a spacing of 500–600 mm.',
+      name: 'insul_install_ceiling_dot_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fix XPS boards onto the prepared base using foam adhesive for polystyrene. Provide slots in the boards for the brackets.`
+  String get insul_install_ceiling_dot_2 {
+    return Intl.message(
+      'Fix XPS boards onto the prepared base using foam adhesive for polystyrene. Provide slots in the boards for the brackets.',
+      name: 'insul_install_ceiling_dot_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fix a vapor barrier layer on top of the insulation using double-sided tape. Overlaps are also sealed with double-sided tape. Bracket проходки can additionally be sealed with metallized tape.`
+  String get insul_install_ceiling_dot_3 {
+    return Intl.message(
+      'Fix a vapor barrier layer on top of the insulation using double-sided tape. Overlaps are also sealed with double-sided tape. Bracket проходки can additionally be sealed with metallized tape.',
+      name: 'insul_install_ceiling_dot_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Balcony floor insulation`
+  String get insul_install_floor_title {
+    return Intl.message(
+      'Balcony floor insulation',
+      name: 'insul_install_floor_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lay insulation boards on the prepared base with staggered end joints in adjacent rows.`
+  String get insul_install_floor_dot_1 {
+    return Intl.message(
+      'Lay insulation boards on the prepared base with staggered end joints in adjacent rows.',
+      name: 'insul_install_floor_dot_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `It is recommended to fill large gaps with insulation offcuts or foam adhesive for polystyrene. No mechanical фиксация of boards to the floor is required. After installing insulation, lay a vapor barrier layer. Install it loosely and seal the seams with double-sided adhesive tape. The overlap of adjacent полотен should be at least 100 mm.`
+  String get insul_install_floor_dot_2 {
+    return Intl.message(
+      'It is recommended to fill large gaps with insulation offcuts or foam adhesive for polystyrene. No mechanical фиксация of boards to the floor is required. After installing insulation, lay a vapor barrier layer. Install it loosely and seal the seams with double-sided adhesive tape. The overlap of adjacent полотен should be at least 100 mm.',
+      name: 'insul_install_floor_dot_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next, install the screed or build an underfloor heating system.`
+  String get insul_install_floor_dot_3 {
+    return Intl.message(
+      'Next, install the screed or build an underfloor heating system.',
+      name: 'insul_install_floor_dot_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Waterproofing stage`
+  String get insul_install_waterproof_title {
+    return Intl.message(
+      'Waterproofing stage',
+      name: 'insul_install_waterproof_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Balcony waterproofing is essential to protect the exposed area from precipitation. Without a waterproofing barrier, structural elements may be damaged, mold and fungus may appear, and issues with neighbors are possible. When waterproofing under insulation, consider materials with high hygroscopicity, such as mineral wool.`
+  String get insul_install_waterproof_text {
+    return Intl.message(
+      'Balcony waterproofing is essential to protect the exposed area from precipitation. Without a waterproofing barrier, structural elements may be damaged, mold and fungus may appear, and issues with neighbors are possible. When waterproofing under insulation, consider materials with high hygroscopicity, such as mineral wool.',
+      name: 'insul_install_waterproof_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After sealing and leveling the surfaces, you can lay the film. Typically, this is пенofoil or polyethylene. If using penofol, make sure the reflective side faces upward. Joints are sealed with foil tape.`
+  String get insul_install_waterproof_dot_1 {
+    return Intl.message(
+      'After sealing and leveling the surfaces, you can lay the film. Typically, this is пенofoil or polyethylene. If using penofol, make sure the reflective side faces upward. Joints are sealed with foil tape.',
+      name: 'insul_install_waterproof_dot_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The waterproofing layer is fastened with self-tapping screws with wide heads, and film joints are sealed with foil tape.`
+  String get insul_install_waterproof_dot_2 {
+    return Intl.message(
+      'The waterproofing layer is fastened with self-tapping screws with wide heads, and film joints are sealed with foil tape.',
+      name: 'insul_install_waterproof_dot_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lathing installation`
+  String get insul_install_lathing_title {
+    return Intl.message(
+      'Lathing installation',
+      name: 'insul_install_lathing_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create the lathing. Use timber battens or metal profiles, mainly for drywall or other sheet finishes. Fix the battens around the ceiling perimeter, then set the timber with a 0.6 m spacing.`
+  String get insul_install_lathing_dot_1 {
+    return Intl.message(
+      'Create the lathing. Use timber battens or metal profiles, mainly for drywall or other sheet finishes. Fix the battens around the ceiling perimeter, then set the timber with a 0.6 m spacing.',
+      name: 'insul_install_lathing_dot_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The lathing is made for further fastening of finishing sheets (drywall, OSB, plastic panels, etc.).`
+  String get insul_install_lathing_dot_2 {
+    return Intl.message(
+      'The lathing is made for further fastening of finishing sheets (drywall, OSB, plastic panels, etc.).',
+      name: 'insul_install_lathing_dot_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Preparatory\nwork`
+  String get prep_work_title {
+    return Intl.message(
+      'Preparatory\nwork',
+      name: 'prep_work_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. Planning and preparation`
+  String get prep_work_1_title {
+    return Intl.message(
+      '1. Planning and preparation',
+      name: 'prep_work_1_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Estimate the required amount of insulation and materials. Base it on the balcony size and the insulation level you want to achieve.`
+  String get prep_work_1_text_1 {
+    return Intl.message(
+      'Estimate the required amount of insulation and materials. Base it on the balcony size and the insulation level you want to achieve.',
+      name: 'prep_work_1_text_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Buy:\n`
+  String get prep_work_buy_title {
+    return Intl.message(
+      'Buy:\n',
+      name: 'prep_work_buy_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- insulation (e.g., mineral wool, foam plastic, or extruded polystyrene),\n- construction tools, adhesive or монтаж foam, finishing materials (tiles, panels).`
+  String get prep_work_buy_list {
+    return Intl.message(
+      '- insulation (e.g., mineral wool, foam plastic, or extruded polystyrene),\n- construction tools, adhesive or монтаж foam, finishing materials (tiles, panels).',
+      name: 'prep_work_buy_list',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. Surface preparation`
+  String get prep_work_2_title {
+    return Intl.message(
+      '2. Surface preparation',
+      name: 'prep_work_2_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Inspect the balcony/loggia carefully for damage, cracks, and moisture traces. Also check windows and doors to make sure they close tightly and do not let cold air in.`
+  String get prep_work_2_text_1 {
+    return Intl.message(
+      'Inspect the balcony/loggia carefully for damage, cracks, and moisture traces. Also check windows and doors to make sure they close tightly and do not let cold air in.',
+      name: 'prep_work_2_text_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Clean the area from dirt, dust, and unnecessary items. Remove old paint, wallpaper, etc. from walls, floor, and ceiling. Clean surfaces improve adhesion of new materials.`
+  String get prep_work_2_text_2 {
+    return Intl.message(
+      'Clean the area from dirt, dust, and unnecessary items. Remove old paint, wallpaper, etc. from walls, floor, and ceiling. Clean surfaces improve adhesion of new materials.',
+      name: 'prep_work_2_text_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Seal all joints and cracks. Small cracks can be filled with weather-resistant sealant; larger gaps can be filled with монтаж foam. This prevents moisture проникновение and provides a solid base for insulation.`
+  String get prep_work_2_text_3 {
+    return Intl.message(
+      'Seal all joints and cracks. Small cracks can be filled with weather-resistant sealant; larger gaps can be filled with монтаж foam. This prevents moisture проникновение and provides a solid base for insulation.',
+      name: 'prep_work_2_text_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If you find moisture issues (roof/wall leaks, window leakage, etc.), fix them before insulation. Moisture can damage insulation and cause mold.`
+  String get prep_work_2_text_4 {
+    return Intl.message(
+      'If you find moisture issues (roof/wall leaks, window leakage, etc.), fix them before insulation. Moisture can damage insulation and cause mold.',
+      name: 'prep_work_2_text_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `3. Priming`
+  String get prep_work_3_title {
+    return Intl.message(
+      '3. Priming',
+      name: 'prep_work_3_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After preparing the surface, apply primer. Do not skip this step.`
+  String get prep_work_3_text_1 {
+    return Intl.message(
+      'After preparing the surface, apply primer. Do not skip this step.',
+      name: 'prep_work_3_text_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mix the primer well until uniform. Apply evenly with a brush or roller. Let the first coat dry.`
+  String get prep_work_3_text_2 {
+    return Intl.message(
+      'Mix the primer well until uniform. Apply evenly with a brush or roller. Let the first coat dry.',
+      name: 'prep_work_3_text_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `After about an hour, apply a second coat. Let both coats dry for at least 3 hours. Do not prime while the surface is still wet.`
+  String get prep_work_3_text_3 {
+    return Intl.message(
+      'After about an hour, apply a second coat. Let both coats dry for at least 3 hours. Do not prime while the surface is still wet.',
+      name: 'prep_work_3_text_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Leveling surfaces (walls, ceiling, floor) `
+  String get prep_work_leveling_title_main {
+    return Intl.message(
+      'Leveling surfaces (walls, ceiling, floor) ',
+      name: 'prep_work_leveling_title_main',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `is done if necessary.`
+  String get prep_work_leveling_title_italic {
+    return Intl.message(
+      'is done if necessary.',
+      name: 'prep_work_leveling_title_italic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. `
+  String get prep_work_leveling_1_num {
+    return Intl.message(
+      '1. ',
+      name: 'prep_work_leveling_1_num',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ceiling leveling `
+  String get prep_work_leveling_1_title {
+    return Intl.message(
+      'Ceiling leveling ',
+      name: 'prep_work_leveling_1_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- is done using plaster mixes similarly to walls. With wet processes, it is recommended to level the ceiling before walls and floor.`
+  String get prep_work_leveling_1_text {
+    return Intl.message(
+      '- is done using plaster mixes similarly to walls. With wet processes, it is recommended to level the ceiling before walls and floor.',
+      name: 'prep_work_leveling_1_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. `
+  String get prep_work_leveling_2_num {
+    return Intl.message(
+      '2. ',
+      name: 'prep_work_leveling_2_num',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wall leveling `
+  String get prep_work_leveling_2_title {
+    return Intl.message(
+      'Wall leveling ',
+      name: 'prep_work_leveling_2_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- is done using cement-sand mixes. To create a flat plane, use the `
+  String get prep_work_leveling_2_text_part1 {
+    return Intl.message(
+      '- is done using cement-sand mixes. To create a flat plane, use the ',
+      name: 'prep_work_leveling_2_text_part1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `beacon method`
+  String get prep_work_leveling_2_beacon_method {
+    return Intl.message(
+      'beacon method',
+      name: 'prep_work_leveling_2_beacon_method',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `: set beacons in one plane, fill the space with plaster, and level with a rule. Let it dry completely.`
+  String get prep_work_leveling_2_text_part2 {
+    return Intl.message(
+      ': set beacons in one plane, fill the space with plaster, and level with a rule. Let it dry completely.',
+      name: 'prep_work_leveling_2_text_part2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `3. `
+  String get prep_work_leveling_3_num {
+    return Intl.message(
+      '3. ',
+      name: 'prep_work_leveling_3_num',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Floor leveling `
+  String get prep_work_leveling_3_title {
+    return Intl.message(
+      'Floor leveling ',
+      name: 'prep_work_leveling_3_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- is done using screeds: dry/prefab, semi-dry, wet, or self-leveling. Before laying insulation, semi-dry, wet, and self-leveling screeds are commonly used.`
+  String get prep_work_leveling_3_text {
+    return Intl.message(
+      '- is done using screeds: dry/prefab, semi-dry, wet, or self-leveling. Before laying insulation, semi-dry, wet, and self-leveling screeds are commonly used.',
+      name: 'prep_work_leveling_3_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Semi-dry/wet screed:\n`
+  String get prep_work_screed_wet_title {
+    return Intl.message(
+      'Semi-dry/wet screed:\n',
+      name: 'prep_work_screed_wet_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The mix is placed between beacons set in one plane and leveled with a rule.`
+  String get prep_work_screed_wet_text {
+    return Intl.message(
+      'The mix is placed between beacons set in one plane and leveled with a rule.',
+      name: 'prep_work_screed_wet_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Self-leveling screed:\n`
+  String get prep_work_screed_self_title {
+    return Intl.message(
+      'Self-leveling screed:\n',
+      name: 'prep_work_screed_self_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Self-leveling screed is installed without beacons: the mix is poured to the needed thickness and left to gain strength (3–7 days).`
+  String get prep_work_screed_self_text {
+    return Intl.message(
+      'Self-leveling screed is installed without beacons: the mix is poured to the needed thickness and left to gain strength (3–7 days).',
+      name: 'prep_work_screed_self_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `4. Application of energy-saving window film`
+  String get film_title {
+    return Intl.message(
+      '4. Application of energy-saving window film',
+      name: 'film_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thermal insulation film can be applied to window glass to reduce heat loss and improve insulation. Plastic windows provide good protection against cold, but without proper insulation during severe frost, warm air may escape while cold air and moisture enter the room, causing glass icing. Applying window film is an affordable and effective solution.\n\nEnergy-saving film can reduce energy consumption by up to 30%, and some types retain up to 70% of heat, as most heat loss occurs through glass and gaps.`
+  String get film_text_1 {
+    return Intl.message(
+      'Thermal insulation film can be applied to window glass to reduce heat loss and improve insulation. Plastic windows provide good protection against cold, but without proper insulation during severe frost, warm air may escape while cold air and moisture enter the room, causing glass icing. Applying window film is an affordable and effective solution.\n\nEnergy-saving film can reduce energy consumption by up to 30%, and some types retain up to 70% of heat, as most heat loss occurs through glass and gaps.',
+      name: 'film_text_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `To make a room warmer, first seal all gaps with foam and sealant and adjust windows for winter mode. After that, apply energy-saving film to the windows from the inside or outside. The film adheres well, does not peel off during use, and transparent versions do not darken the room.`
+  String get film_text_2 {
+    return Intl.message(
+      'To make a room warmer, first seal all gaps with foam and sealant and adjust windows for winter mode. After that, apply energy-saving film to the windows from the inside or outside. The film adheres well, does not peel off during use, and transparent versions do not darken the room.',
+      name: 'film_text_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If desired, tinted film can be installed:`
+  String get film_text_3_title {
+    return Intl.message(
+      'If desired, tinted film can be installed:',
+      name: 'film_text_3_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `In summer, it reduces ultraviolet radiation and keeps the room cooler.\nThere are different types of films for insulating non-sealed windows and glass units — PET and PVC.\nPET sheets are polyethylene terephthalate-based plastic and do not match double-glazed units in performance.\nPET film is first mounted outside and then inside the room.\nTherefore, thermal insulation should be carried out during warm seasons, not during severe frost.`
+  String get film_text_3 {
+    return Intl.message(
+      'In summer, it reduces ultraviolet radiation and keeps the room cooler.\nThere are different types of films for insulating non-sealed windows and glass units — PET and PVC.\nPET sheets are polyethylene terephthalate-based plastic and do not match double-glazed units in performance.\nPET film is first mounted outside and then inside the room.\nTherefore, thermal insulation should be carried out during warm seasons, not during severe frost.',
+      name: 'film_text_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installing energy-saving film:`
+  String get film_installation_title {
+    return Intl.message(
+      'Installing energy-saving film:',
+      name: 'film_installation_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Clean, degrease, and dry the glass — the surface must be perfectly smooth.\nAttach double-sided tape around the window frame and separate the film layers.\nCut the film to size and attach it to the tape, removing the protective layer.\nEvenly distribute the film and heat it with a hair dryer to shrink and smooth it. Do not apply mechanical pressure.`
+  String get film_installation_text {
+    return Intl.message(
+      'Clean, degrease, and dry the glass — the surface must be perfectly smooth.\nAttach double-sided tape around the window frame and separate the film layers.\nCut the film to size and attach it to the tape, removing the protective layer.\nEvenly distribute the film and heat it with a hair dryer to shrink and smooth it. Do not apply mechanical pressure.',
+      name: 'film_installation_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. Installation of window seals`
+  String get seal_title {
+    return Intl.message(
+      '2. Installation of window seals',
+      name: 'seal_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tight contact between window sashes and frames is essential to prevent cold air from entering. Seals are installed around the frame or sash to improve airtightness.\n\nSteps for installing window seals:`
+  String get seal_intro {
+    return Intl.message(
+      'Tight contact between window sashes and frames is essential to prevent cold air from entering. Seals are installed around the frame or sash to improve airtightness.\n\nSteps for installing window seals:',
+      name: 'seal_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Surface preparation:`
+  String get seal_step_1_title {
+    return Intl.message(
+      'Surface preparation:',
+      name: 'seal_step_1_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ensure the window frame and sash are clean and dry. Remove dirt, dust, and remnants of old seals.`
+  String get seal_step_1_text {
+    return Intl.message(
+      'Ensure the window frame and sash are clean and dry. Remove dirt, dust, and remnants of old seals.',
+      name: 'seal_step_1_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choosing the seal:`
+  String get seal_step_2_title {
+    return Intl.message(
+      'Choosing the seal:',
+      name: 'seal_step_2_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select a seal (tape, rubber profile, foam) that matches the size and shape of the window profile. There are no universal seals — selection depends on the window type and groove depth.`
+  String get seal_step_2_text {
+    return Intl.message(
+      'Select a seal (tape, rubber profile, foam) that matches the size and shape of the window profile. There are no universal seals — selection depends on the window type and groove depth.',
+      name: 'seal_step_2_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Measuring length:`
+  String get seal_step_3_title {
+    return Intl.message(
+      'Measuring length:',
+      name: 'seal_step_3_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Measure each section where the seal will be installed and cut it to the required length.`
+  String get seal_step_3_text {
+    return Intl.message(
+      'Measure each section where the seal will be installed and cut it to the required length.',
+      name: 'seal_step_3_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Surface cleaning:`
+  String get seal_step_4_title {
+    return Intl.message(
+      'Surface cleaning:',
+      name: 'seal_step_4_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before installation, clean the surface with alcohol or solvent to remove grease and adhesive residue.`
+  String get seal_step_4_text {
+    return Intl.message(
+      'Before installation, clean the surface with alcohol or solvent to remove grease and adhesive residue.',
+      name: 'seal_step_4_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Applying the seal:`
+  String get seal_step_5_title {
+    return Intl.message(
+      'Applying the seal:',
+      name: 'seal_step_5_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Carefully apply the seal along the entire length of the frame or sash, ensuring even and tight contact.`
+  String get seal_step_5_text {
+    return Intl.message(
+      'Carefully apply the seal along the entire length of the frame or sash, ensuring even and tight contact.',
+      name: 'seal_step_5_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Trimming and fixing:`
+  String get seal_step_6_title {
+    return Intl.message(
+      'Trimming and fixing:',
+      name: 'seal_step_6_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Trim excess material and ensure the seal is firmly attached.`
+  String get seal_step_6_text {
+    return Intl.message(
+      'Trim excess material and ensure the seal is firmly attached.',
+      name: 'seal_step_6_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Checking airtightness:`
+  String get seal_step_7_title {
+    return Intl.message(
+      'Checking airtightness:',
+      name: 'seal_step_7_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Close the window and ensure there are no gaps between the frame and sash and that it closes tightly.`
+  String get seal_step_7_text {
+    return Intl.message(
+      'Close the window and ensure there are no gaps between the frame and sash and that it closes tightly.',
+      name: 'seal_step_7_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. Installation of plastic (PVC) windows`
+  String get pvc_title {
+    return Intl.message(
+      '1. Installation of plastic (PVC) windows',
+      name: 'pvc_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Replacing old wooden frames with modern PVC windows is a common solution because they retain heat effectively, are usually much cheaper than new wooden alternatives, and do not compromise on quality. PVC windows have strong thermal insulation properties: due to their structure and materials, window profiles transmit less heat, helping keep rooms warm in winter and cooler in summer. This reduces heating and air-conditioning costs. When choosing PVC windows, it is important to pay attention to profile quality and installation. It is recommended to contact trusted manufacturers and professionals to ensure durable and reliable windows.`
+  String get pvc_intro {
+    return Intl.message(
+      'Replacing old wooden frames with modern PVC windows is a common solution because they retain heat effectively, are usually much cheaper than new wooden alternatives, and do not compromise on quality. PVC windows have strong thermal insulation properties: due to their structure and materials, window profiles transmit less heat, helping keep rooms warm in winter and cooler in summer. This reduces heating and air-conditioning costs. When choosing PVC windows, it is important to pay attention to profile quality and installation. It is recommended to contact trusted manufacturers and professionals to ensure durable and reliable windows.',
+      name: 'pvc_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New window installation process`
+  String get pvc_process_title {
+    return Intl.message(
+      'New window installation process',
+      name: 'pvc_process_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before installing a new PVC window, you need to remove the old one and properly prepare the window opening.`
+  String get pvc_process_text {
+    return Intl.message(
+      'Before installing a new PVC window, you need to remove the old one and properly prepare the window opening.',
+      name: 'pvc_process_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Room preparation and window removal includes:`
+  String get pvc_prepare_title {
+    return Intl.message(
+      'Room preparation and window removal includes:',
+      name: 'pvc_prepare_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ensure free access to the window, remove household appliances and small items, move large furniture away and cover it with plastic film, and cover the floor as well.\nAll work should be done carefully to avoid damaging the window opening.`
+  String get pvc_prepare_text {
+    return Intl.message(
+      'Ensure free access to the window, remove household appliances and small items, move large furniture away and cover it with plastic film, and cover the floor as well.\nAll work should be done carefully to avoid damaging the window opening.',
+      name: 'pvc_prepare_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The old window removal process is as follows:`
+  String get pvc_dismantle_title {
+    return Intl.message(
+      'The old window removal process is as follows:',
+      name: 'pvc_dismantle_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. Remove window sashes from the hinges. If there is a fixed sash, remove the glass from it.\n2. Cut the mullion and the frame.\n3. Remove the old frames.\n4. Remove remaining insulation material.\n5. Clean the opening from plaster and cement residues.\n6. Remove the exterior sill flashing and the windowsill.\n7. Clean up and dispose of debris.\n8. Install the new windows.`
+  String get pvc_dismantle_steps {
+    return Intl.message(
+      '1. Remove window sashes from the hinges. If there is a fixed sash, remove the glass from it.\n2. Cut the mullion and the frame.\n3. Remove the old frames.\n4. Remove remaining insulation material.\n5. Clean the opening from plaster and cement residues.\n6. Remove the exterior sill flashing and the windowsill.\n7. Clean up and dispose of debris.\n8. Install the new windows.',
+      name: 'pvc_dismantle_steps',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `3. Installation of window slopes`
+  String get slopes_title {
+    return Intl.message(
+      '3. Installation of window slopes',
+      name: 'slopes_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Window slopes help prevent cold bridges between frames and walls...`
+  String get slopes_intro {
+    return Intl.message(
+      'Window slopes help prevent cold bridges between frames and walls...',
+      name: 'slopes_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Plastered slopes`
+  String get slopes_plaster_title {
+    return Intl.message(
+      'Plastered slopes',
+      name: 'slopes_plaster_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This is the most traditional and cost-effective method...`
+  String get slopes_plaster_text {
+    return Intl.message(
+      'This is the most traditional and cost-effective method...',
+      name: 'slopes_plaster_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Plastic slope installation process`
+  String get slopes_plastic_process_title {
+    return Intl.message(
+      'Plastic slope installation process',
+      name: 'slopes_plastic_process_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before installation, surfaces must be cleaned...`
+  String get slopes_plastic_process_text {
+    return Intl.message(
+      'Before installation, surfaces must be cleaned...',
+      name: 'slopes_plastic_process_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Plastic slopes`
+  String get slopes_plastic_title {
+    return Intl.message(
+      'Plastic slopes',
+      name: 'slopes_plastic_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Plastic is widely used for exterior window slopes...`
+  String get slopes_plastic_text {
+    return Intl.message(
+      'Plastic is widely used for exterior window slopes...',
+      name: 'slopes_plastic_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Materials required:`
+  String get slopes_materials_title {
+    return Intl.message(
+      'Materials required:',
+      name: 'slopes_materials_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- U-shaped plastic strip\n- Wooden batten\n- F-shaped trim`
+  String get slopes_materials_list {
+    return Intl.message(
+      '- U-shaped plastic strip\n- Wooden batten\n- F-shaped trim',
+      name: 'slopes_materials_list',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Installation steps`
+  String get slopes_steps_title {
+    return Intl.message(
+      'Installation steps',
+      name: 'slopes_steps_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The starter strip is fixed to the window frame.`
+  String get slopes_step_1 {
+    return Intl.message(
+      'The starter strip is fixed to the window frame.',
+      name: 'slopes_step_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Battens are installed and aligned.`
+  String get slopes_step_2 {
+    return Intl.message(
+      'Battens are installed and aligned.',
+      name: 'slopes_step_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulation is placed if required.`
+  String get slopes_step_3 {
+    return Intl.message(
+      'Insulation is placed if required.',
+      name: 'slopes_step_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The top panel is cut and installed.`
+  String get slopes_step_4 {
+    return Intl.message(
+      'The top panel is cut and installed.',
+      name: 'slopes_step_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `F-shaped trims are installed.`
+  String get slopes_step_5 {
+    return Intl.message(
+      'F-shaped trims are installed.',
+      name: 'slopes_step_5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Joints are sealed with sealant.`
+  String get slopes_step_6 {
+    return Intl.message(
+      'Joints are sealed with sealant.',
+      name: 'slopes_step_6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Metal slope installation`
+  String get slopes_metal_title {
+    return Intl.message(
+      'Metal slope installation',
+      name: 'slopes_metal_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Measure the window opening.`
+  String get slopes_metal_1 {
+    return Intl.message(
+      'Measure the window opening.',
+      name: 'slopes_metal_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Prepare metal sheets.`
+  String get slopes_metal_2 {
+    return Intl.message(
+      'Prepare metal sheets.',
+      name: 'slopes_metal_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Install the bottom flashing.`
+  String get slopes_metal_3 {
+    return Intl.message(
+      'Install the bottom flashing.',
+      name: 'slopes_metal_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Install side panels.`
+  String get slopes_metal_4 {
+    return Intl.message(
+      'Install side panels.',
+      name: 'slopes_metal_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Install the top panel with sealing.`
+  String get slopes_metal_5 {
+    return Intl.message(
+      'Install the top panel with sealing.',
+      name: 'slopes_metal_5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `5. Sealing additional gaps and cracks`
+  String get sealing_cracks_title {
+    return Intl.message(
+      '5. Sealing additional gaps and cracks',
+      name: 'sealing_cracks_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Inspect window frames and fill all small gaps and cracks with sealant or insulation material to eliminate drafts.`
+  String get sealing_cracks_intro {
+    return Intl.message(
+      'Inspect window frames and fill all small gaps and cracks with sealant or insulation material to eliminate drafts.',
+      name: 'sealing_cracks_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Applying paper strips`
+  String get sealing_paper_title {
+    return Intl.message(
+      'Applying paper strips',
+      name: 'sealing_paper_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `One of the cheapest and oldest methods. Soaked paper or newspapers were used to fill gaps in wooden window frames, then covered with paper strips. Today, self-adhesive paper is used as a budget insulation option.`
+  String get sealing_paper_text {
+    return Intl.message(
+      'One of the cheapest and oldest methods. Soaked paper or newspapers were used to fill gaps in wooden window frames, then covered with paper strips. Today, self-adhesive paper is used as a budget insulation option.',
+      name: 'sealing_paper_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Using foam seals`
+  String get sealing_foam_title {
+    return Intl.message(
+      'Using foam seals',
+      name: 'sealing_foam_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Foam adhesive seals are an economical way to insulate windows. They have an adhesive layer and are easy to apply. In spring, they can be easily removed.`
+  String get sealing_foam_text {
+    return Intl.message(
+      'Foam adhesive seals are an economical way to insulate windows. They have an adhesive layer and are easy to apply. In spring, they can be easily removed.',
+      name: 'sealing_foam_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Using sealants to fill gaps`
+  String get sealing_sealant_title {
+    return Intl.message(
+      'Using sealants to fill gaps',
+      name: 'sealing_sealant_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Insulating windows with silicone sealant requires a clean surface and a special applicator. Sealant fills gaps and reduces heat loss, but it is not a thermal insulation material.`
+  String get sealing_sealant_text {
+    return Intl.message(
+      'Insulating windows with silicone sealant requires a clean surface and a special applicator. Sealant fills gaps and reduces heat loss, but it is not a thermal insulation material.',
+      name: 'sealing_sealant_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `WINDOW INSULATION`
+  String get window_title {
+    return Intl.message(
+      'WINDOW INSULATION',
+      name: 'window_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Most buildings lose heat through windows. Proper window insulation reduces heat loss, improves indoor comfort, and helps save money on heating.`
+  String get window_intro {
+    return Intl.message(
+      'Most buildings lose heat through windows. Proper window insulation reduces heat loss, improves indoor comfort, and helps save money on heating.',
+      name: 'window_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `General recommendations`
+  String get window_general_recommendations {
+    return Intl.message(
+      'General recommendations',
+      name: 'window_general_recommendations',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Before starting any window insulation procedure—especially when using adhesive seals—wash, dry, and degrease the window frame. This improves adhesion.`
+  String get window_rec_1 {
+    return Intl.message(
+      'Before starting any window insulation procedure—especially when using adhesive seals—wash, dry, and degrease the window frame. This improves adhesion.',
+      name: 'window_rec_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `For effective insulation, keep glass and frames clean and check that the glass is not damaged—otherwise your effort may be wasted.`
+  String get window_rec_2 {
+    return Intl.message(
+      'For effective insulation, keep glass and frames clean and check that the glass is not damaged—otherwise your effort may be wasted.',
+      name: 'window_rec_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pay special attention to areas where the frame meets the wall: gaps there can cause major heat loss. Seal these joints carefully.`
+  String get window_rec_3 {
+    return Intl.message(
+      'Pay special attention to areas where the frame meets the wall: gaps there can cause major heat loss. Seal these joints carefully.',
+      name: 'window_rec_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `It is recommended to insulate windows before the first frost. In freezing temperatures, some materials may behave differently and become less effective.`
+  String get window_rec_4 {
+    return Intl.message(
+      'It is recommended to insulate windows before the first frost. In freezing temperatures, some materials may behave differently and become less effective.',
+      name: 'window_rec_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If you use монтаж foam as the final filling for gaps between the frame and the opening:`
+  String get window_rec_5 {
+    return Intl.message(
+      'If you use монтаж foam as the final filling for gaps between the frame and the opening:',
+      name: 'window_rec_5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Do not leave монтаж foam uncovered for more than 1 month, as it will lose strength and insulating properties!`
+  String get window_warning {
+    return Intl.message(
+      'Do not leave монтаж foam uncovered for more than 1 month, as it will lose strength and insulating properties!',
+      name: 'window_warning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Window waterproofing\nand vapor barrier`
+  String get window_hydro_vapor_title {
+    return Intl.message(
+      'Window waterproofing\nand vapor barrier',
+      name: 'window_hydro_vapor_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sealing the space between the window unit and the opening includes three main layers: central, outer, and inner.`
+  String get window_hydro_vapor_intro {
+    return Intl.message(
+      'Sealing the space between the window unit and the opening includes three main layers: central, outer, and inner.',
+      name: 'window_hydro_vapor_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Central layer `
+  String get window_central_layer_title {
+    return Intl.message(
+      'Central layer ',
+      name: 'window_central_layer_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- in most cases, this is монтаж foam. `
+  String get window_central_layer_text {
+    return Intl.message(
+      '- in most cases, this is монтаж foam. ',
+      name: 'window_central_layer_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Outer layer `
+  String get window_outer_layer_title {
+    return Intl.message(
+      'Outer layer ',
+      name: 'window_outer_layer_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `– waterproofing: it prevents moisture from entering from outside, protects the gap, and shields it from UV radiation.`
+  String get window_outer_layer_text {
+    return Intl.message(
+      '– waterproofing: it prevents moisture from entering from outside, protects the gap, and shields it from UV radiation.',
+      name: 'window_outer_layer_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Common waterproofing materials include special sealing tapes (e.g., compressed sealing tape) and liquid sealing mastics.`
+  String get window_hydro_materials {
+    return Intl.message(
+      'Common waterproofing materials include special sealing tapes (e.g., compressed sealing tape) and liquid sealing mastics.',
+      name: 'window_hydro_materials',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Inner layer `
+  String get window_inner_layer_title {
+    return Intl.message(
+      'Inner layer ',
+      name: 'window_inner_layer_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `– vapor barrier. It is installed from the room side and prevents moisture from entering the монтаж joint. This is especially important in humid rooms (kitchens, bathrooms). It can be implemented using sealing foil.`
+  String get window_inner_layer_text {
+    return Intl.message(
+      '– vapor barrier. It is installed from the room side and prevents moisture from entering the монтаж joint. This is especially important in humid rooms (kitchens, bathrooms). It can be implemented using sealing foil.',
+      name: 'window_inner_layer_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `There are several ways to insulate windows to reduce heat loss and improve energy efficiency:`
+  String get window_methods_intro {
+    return Intl.message(
+      'There are several ways to insulate windows to reduce heat loss and improve energy efficiency:',
+      name: 'window_methods_intro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1. Installing PVC double-glazed windows;`
+  String get window_method_1 {
+    return Intl.message(
+      '1. Installing PVC double-glazed windows;',
+      name: 'window_method_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `2. Installing seals;`
+  String get window_method_2 {
+    return Intl.message(
+      '2. Installing seals;',
+      name: 'window_method_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `3. Installing window slopes;`
+  String get window_method_3 {
+    return Intl.message(
+      '3. Installing window slopes;',
+      name: 'window_method_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `4. Applying energy-saving window film;`
+  String get window_method_4 {
+    return Intl.message(
+      '4. Applying energy-saving window film;',
+      name: 'window_method_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `5. Sealing additional gaps and cracks`
+  String get window_method_5 {
+    return Intl.message(
+      '5. Sealing additional gaps and cracks',
+      name: 'window_method_5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `I want to insulate:`
+  String get appartment_title {
+    return Intl.message(
+      'I want to insulate:',
+      name: 'appartment_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Loggia / Balcony`
+  String get appartment_loggia {
+    return Intl.message(
+      'Loggia / Balcony',
+      name: 'appartment_loggia',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Window`
+  String get appartment_window {
+    return Intl.message(
+      'Window',
+      name: 'appartment_window',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Door`
+  String get appartment_door {
+    return Intl.message('Door', name: 'appartment_door', desc: '', args: []);
   }
 }
 

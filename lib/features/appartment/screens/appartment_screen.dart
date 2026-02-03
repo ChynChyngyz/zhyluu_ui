@@ -11,6 +11,7 @@ import 'package:zhyluu_ui/features/common/widgets/my_back_button.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_house_appartment_card.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_menu_button.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class AppartmentScreen extends StatelessWidget {
   static const routeName = "/appartment";
@@ -19,6 +20,8 @@ class AppartmentScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldColor(
       appBar: MyAppBar(
         myMenuButtonType: MyMenuButtonType.inverted,
@@ -43,7 +46,7 @@ class AppartmentScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 28),
                 child: Text(
-                  "Хочу утеплить:",
+                  s.appartment_title,
                   textAlign: TextAlign.start,
                   style: GoogleFonts.poppins(
                     fontSize: 18,
@@ -68,21 +71,21 @@ class AppartmentScreen extends StatelessWidget {
                       context.push(LoggiaBalconyScreen.routeName);
                     },
                     iconPath: Assets.icons.appartment.loggiaBalcony.path,
-                    text: "Лоджия/Балкон",
+                    text: s.appartment_loggia,
                   ),
                   MyHouseAppartmentCard(
                     onTap: () {
                       context.push(WindowScreen.routeName);
                     },
                     iconPath: Assets.icons.appartment.window.path,
-                    text: "Окно",
+                    text: s.appartment_window,
                   ),
                   MyHouseAppartmentCard(
                     onTap: () {
                       context.push(DoorScreen.routeName);
                     },
                     iconPath: Assets.icons.appartment.door.path,
-                    text: "Дверь",
+                    text: s.appartment_door,
                   ),
                 ],
               ),

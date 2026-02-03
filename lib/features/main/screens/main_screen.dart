@@ -53,7 +53,6 @@ class MainScreen extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 28),
                     child: Text(
                       s.home_categories,
-                      textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                         fontSize: 18,
                         letterSpacing: 0.63,
@@ -68,9 +67,11 @@ class MainScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       MyButton(
-                        text: "Рассчитать толщину",
+                        text: s.calculate_thickness,
                         onTap: () {
-                          context.push(ThicknessDimensionsScreen.routeName);
+                          context.push(
+                            ThicknessDimensionsScreen.routeName,
+                          );
                         },
                       ),
                     ],

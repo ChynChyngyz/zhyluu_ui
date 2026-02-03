@@ -22,13 +22,21 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "about_proj": MessageLookupByLibrary.simpleMessage("Проект жондо"),
+    "about_proj": MessageLookupByLibrary.simpleMessage("About the Project"),
     "adobe_title": MessageLookupByLibrary.simpleMessage("Adobe/Clay"),
     "advantage_insulation_balcony_loggia_title":
         MessageLookupByLibrary.simpleMessage(
           "Преимущества утепления\nбалкона/ лоджии:",
         ),
     "and_conjunction": MessageLookupByLibrary.simpleMessage("and "),
+    "appartment_door": MessageLookupByLibrary.simpleMessage("Door"),
+    "appartment_loggia": MessageLookupByLibrary.simpleMessage(
+      "Loggia / Balcony",
+    ),
+    "appartment_title": MessageLookupByLibrary.simpleMessage(
+      "I want to insulate:",
+    ),
+    "appartment_window": MessageLookupByLibrary.simpleMessage("Window"),
     "balcony_text_1": MessageLookupByLibrary.simpleMessage(
       "Энергоэффективность — утепление балкона помогает уменьшить теплопотери через стены, что повышает энергоэффективность всего здания. Это позволяет снизить расходы на отопление и кондиционирование воздуха и сделать жильё более комфортным независимо от времени года.",
     ),
@@ -52,6 +60,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "button_inside": MessageLookupByLibrary.simpleMessage("Изнутри"),
     "button_outside": MessageLookupByLibrary.simpleMessage("Снаружи"),
     "buy": MessageLookupByLibrary.simpleMessage("Приобретите:\n"),
+    "calculate_thickness": MessageLookupByLibrary.simpleMessage(
+      "Calculate thickness",
+    ),
     "card_ceiling": MessageLookupByLibrary.simpleMessage("Ceiling\nconnection"),
     "card_floor": MessageLookupByLibrary.simpleMessage("Floor"),
     "card_foundation": MessageLookupByLibrary.simpleMessage("Foundation"),
@@ -59,6 +70,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "card_roof": MessageLookupByLibrary.simpleMessage("Roof"),
     "card_walls": MessageLookupByLibrary.simpleMessage("Walls"),
     "card_windows_doors": MessageLookupByLibrary.simpleMessage("Windows/Doors"),
+    "category_apartment": MessageLookupByLibrary.simpleMessage("Apartment"),
+    "category_house": MessageLookupByLibrary.simpleMessage("Private house"),
     "ceiling_description": MessageLookupByLibrary.simpleMessage(
       "Another place where thermal bridges are often found is the connection between the ceiling and the wall in the so-called ring beam.\nHowever, in older buildings, this problem occurs much more frequently, especially after replacing old, leaky wooden windows with PVC ones. Moisture can accumulate in these areas, and mold or even fungus may appear. This is all due to the joint between the floor slab and the outer edge of the wall. Fortunately, the thermal bridge here can be eliminated by carefully aligning the slab joint with the edge of the wall.",
     ),
@@ -82,6 +95,73 @@ class MessageLookup extends MessageLookupByLibrary {
     "city_tokmok": MessageLookupByLibrary.simpleMessage("Tokmok city"),
     "city_toktogul": MessageLookupByLibrary.simpleMessage("Toktogul city"),
     "city_uzgen": MessageLookupByLibrary.simpleMessage("Uzgen city"),
+    "clay_title": MessageLookupByLibrary.simpleMessage("Expanded clay"),
+    "con_biodegradable": MessageLookupByLibrary.simpleMessage("Biodegradable"),
+    "con_easily_damaged": MessageLookupByLibrary.simpleMessage(
+      "Easily\ndamaged",
+    ),
+    "con_fire_resistance": MessageLookupByLibrary.simpleMessage(
+      "Low fire resistance",
+    ),
+    "con_large_volume": MessageLookupByLibrary.simpleMessage("Bulky"),
+    "con_moisture_resistance": MessageLookupByLibrary.simpleMessage(
+      "Low moisture resistance",
+    ),
+    "con_poor_breathability": MessageLookupByLibrary.simpleMessage(
+      "Poor\nbreathability",
+    ),
+    "con_poor_fire_resistance": MessageLookupByLibrary.simpleMessage(
+      "Poor\nfire resistance",
+    ),
+    "con_protection": MessageLookupByLibrary.simpleMessage(
+      "Requires additional protection",
+    ),
+    "con_skin_airway_irritation": MessageLookupByLibrary.simpleMessage(
+      "May irritate skin and\nairways",
+    ),
+    "con_sound_insulation": MessageLookupByLibrary.simpleMessage(
+      "Poor sound insulation",
+    ),
+    "door_canvas_text": MessageLookupByLibrary.simpleMessage(
+      "Before starting the work, all door hardware that may interfere should be removed: locks, keyholes, and the peephole. Then the door leaf should be taken off the hinges and placed on a flat, stable surface. It is possible to work with the door in a vertical position, but this is less convenient and usually requires professional skills.\n\nTo insulate the door leaf, the inner decorative panel must be removed and the door cavity filled with foam plastic or mineral wool boards. This significantly reduces heat loss through the door.\n\nThe inner panel is removed from the door. In more expensive models it may be a reinforced metal sheet, while in budget versions it is often plywood. In all cases, it is fixed with standard screws. The old insulation should be completely removed.\n\nIf the door has stiffening ribs inside, several holes should be drilled in them at intervals of 40–45 cm and filled with монтаж foam. The diameter of the holes should match the diameter of the foam tube.\n\nWhen mineral wool is used, a polyethylene moisture barrier must be installed. This is not required when using polystyrene foam. The insulation is cut to size with a small margin to avoid gaps.\n\nThe final step is placing the insulation inside the cavities. The most reliable fixing methods are liquid nails or монтаж foam. After that, the inner panel is reinstalled, the hardware is mounted back, and the door is returned to the doorway.",
+    ),
+    "door_canvas_title": MessageLookupByLibrary.simpleMessage(
+      "Insulating the door leaf\nfrom the inside",
+    ),
+    "door_intro_text": MessageLookupByLibrary.simpleMessage(
+      "The main purpose of doors and windows is to protect a building from cold weather by preventing cold air from entering and keeping warmth inside. Unlike windows, which are often kept closed, entrance doors are opened and closed frequently. Because of this, door seals can become flattened over time and lose their effectiveness, so they can no longer fully perform their function.\n\nEntrance doors for houses and apartments may look structurally the same, but in private houses the door opens directly to the street, while in city apartments there is a “buffer” area such as a relatively warm entrance hall. Therefore, door insulation in houses must be noticeably stronger.\n\nIt is important to consider that the quality of the insulation inside the door plays a major role in maintaining thermal comfort and a comfortable indoor temperature.\n\nIf the door leaf is misaligned or the frame is deformed, it may be necessary to adjust the door or even replace the hinges.\nFor metal door units, misalignment usually happens due to worn-out hinges.\nAlthough you can apply self-adhesive sealing strips around the door leaf, this is not enough to fully solve the problem.",
+    ),
+    "door_materials_text": MessageLookupByLibrary.simpleMessage(
+      "Before starting insulation, let’s look at which insulating materials can be used.\n\nIn theory, instead of foam plastic you can use extruded polystyrene foam (XPS / “Penoplex”). It is much denser and provides better thermal insulation. However, the price can be about twice as high, and with the same thickness the insulating effect is only slightly different.\n\nMineral wool is widely used as door insulation. The installation method is similar to foam boards, but there is an important point: for doors it is recommended to use only high-density mineral wool boards. They keep their shape and volume when exposed to condensation, unlike soft mats which may settle over time and lose their insulating properties.\n\nYou can also find an inexpensive door insulation kit on the market. It is usually a self-adhesive foam sealing strip that is applied around the door frame or door leaf. The quality is average, but the price is very affordable. In many cases, such sealing lasts for one season.\n\nFoil-faced isolon is an excellent material for insulating doors. It consists of foamed polyethylene (about 5 mm thick), with a foil layer on one side and an adhesive film on the other. It works well for all door types. The foil combined with the porous structure creates a “thermos effect”, providing strong thermal insulation.\n\nAs for honeycomb cardboard (originally used inside hollow interior doors), it is almost ineffective for entrance doors. The paper is not very durable and deteriorates quickly.\n\nDoor insulation can be divided into 3 stages:",
+    ),
+    "door_seal_heading": MessageLookupByLibrary.simpleMessage(
+      "Replacing or installing\nseals",
+    ),
+    "door_seal_text": MessageLookupByLibrary.simpleMessage(
+      "For this purpose, self-adhesive seals are used — usually polymer seals, and more rarely foam seals. Polymer seals are recommended because they last longer and are more effective. A foam adhesive strip may not last even one season; in the best case it wears out within a year. The process is simple: apply the seal along the perimeter of the door leaf. The key point is to wipe and degrease the surface beforehand so the seal sticks properly.\n\nA critical factor is choosing the correct seal thickness. A seal that is too thin will not work effectively, while a seal that is too thick will add extra load to the door hinges when closing and may cause faster wear.\n\nPlasticine can help you choose the right thickness. Wrap a small piece in plastic film and place it between the door frame and the door leaf. Close and then open the door. The thickness of the flattened plasticine roll will match the optimal seal thickness.",
+    ),
+    "door_seal_title": MessageLookupByLibrary.simpleMessage(
+      "Replacing or\ninstalling\nseals",
+    ),
+    "door_slopes_heading": MessageLookupByLibrary.simpleMessage(
+      "Insulating slopes",
+    ),
+    "door_slopes_text": MessageLookupByLibrary.simpleMessage(
+      "Slope insulation can be done under any finishing — the technology is basically the same.\n\nDepending on the work method, there are three options:\n1) Applying cement mortar or putty mixture directly to the walls;\n2) Gluing finishing elements using adhesive or mortar;\n3) Installing finishing elements on a frame (batten system).\n\nThe insulation material is selected depending on the door leaf type and the interior wall finish. The more finishing layers you have, the better the insulation of the doorway. As a top layer you can use paint, wallpaper, декоратив plaster, plastic, wood, laminate, MDF, or PVC panels.\n\nBefore finishing, cover the door with protective film. Carefully cut off монтаж foam that protrudes beyond the edge of the door frame using a utility knife.\n\nAfter preparing the surface, apply primer. Repeat after 3–4 hours.\n\nWhen the surface is dry, start placing the insulation. If you use foam plastic or extruded polystyrene foam (XPS), lightly scratch the surface with sandpaper to reduce smoothness.\n\nGlue the polystyrene boards by applying adhesive to each board with a trowel, then let it dry well.\n\nAdditionally, secure the insulation with plastic wall plugs (dowels) using a hammer drill.\n\nCover the finished areas with a plastic mesh to prevent small cracks. Adhesive drying typically takes 5 to 12 hours depending on indoor temperature.\n\nAfter drying, apply a layer of putty over the mesh. If the first layer doesn’t ровнять the surface, apply another layer after drying.\n\nSand the dried putty with coarse sandpaper and apply another primer layer.\n\nLet the structure dry and finish the corner bead with putty.\n\nFinally, apply the chosen finishing: drywall cladding or decorative plastering.",
+    ),
+    "door_slopes_title": MessageLookupByLibrary.simpleMessage(
+      "Insulating slopes",
+    ),
+    "door_step_canvas": MessageLookupByLibrary.simpleMessage(
+      "Insulating the door leaf\nfrom the inside",
+    ),
+    "door_step_seal": MessageLookupByLibrary.simpleMessage(
+      "Replacing or installing\nseals",
+    ),
+    "door_step_slopes": MessageLookupByLibrary.simpleMessage(
+      "Insulating\nslopes",
+    ),
+    "door_title": MessageLookupByLibrary.simpleMessage("DOOR INSULATION"),
     "doors_insulation_link": MessageLookupByLibrary.simpleMessage(
       "DOOR INSULATION",
     ),
@@ -90,6 +170,33 @@ class MessageLookup extends MessageLookupByLibrary {
     "drawer_feedback": MessageLookupByLibrary.simpleMessage("Feedback"),
     "drawer_main": MessageLookupByLibrary.simpleMessage("Home"),
     "drawer_where": MessageLookupByLibrary.simpleMessage("Where to insulate?"),
+    "error_city_not_found": MessageLookupByLibrary.simpleMessage(
+      "City or village not found",
+    ),
+    "error_material_not_found": MessageLookupByLibrary.simpleMessage(
+      "Material not found",
+    ),
+    "film_installation_text": MessageLookupByLibrary.simpleMessage(
+      "Clean, degrease, and dry the glass — the surface must be perfectly smooth.\nAttach double-sided tape around the window frame and separate the film layers.\nCut the film to size and attach it to the tape, removing the protective layer.\nEvenly distribute the film and heat it with a hair dryer to shrink and smooth it. Do not apply mechanical pressure.",
+    ),
+    "film_installation_title": MessageLookupByLibrary.simpleMessage(
+      "Installing energy-saving film:",
+    ),
+    "film_text_1": MessageLookupByLibrary.simpleMessage(
+      "Thermal insulation film can be applied to window glass to reduce heat loss and improve insulation. Plastic windows provide good protection against cold, but without proper insulation during severe frost, warm air may escape while cold air and moisture enter the room, causing glass icing. Applying window film is an affordable and effective solution.\n\nEnergy-saving film can reduce energy consumption by up to 30%, and some types retain up to 70% of heat, as most heat loss occurs through glass and gaps.",
+    ),
+    "film_text_2": MessageLookupByLibrary.simpleMessage(
+      "To make a room warmer, first seal all gaps with foam and sealant and adjust windows for winter mode. After that, apply energy-saving film to the windows from the inside or outside. The film adheres well, does not peel off during use, and transparent versions do not darken the room.",
+    ),
+    "film_text_3": MessageLookupByLibrary.simpleMessage(
+      "In summer, it reduces ultraviolet radiation and keeps the room cooler.\nThere are different types of films for insulating non-sealed windows and glass units — PET and PVC.\nPET sheets are polyethylene terephthalate-based plastic and do not match double-glazed units in performance.\nPET film is first mounted outside and then inside the room.\nTherefore, thermal insulation should be carried out during warm seasons, not during severe frost.",
+    ),
+    "film_text_3_title": MessageLookupByLibrary.simpleMessage(
+      "If desired, tinted film can be installed:",
+    ),
+    "film_title": MessageLookupByLibrary.simpleMessage(
+      "4. Application of energy-saving window film",
+    ),
     "floor": MessageLookupByLibrary.simpleMessage("Floor"),
     "floor_cover_title": MessageLookupByLibrary.simpleMessage("Floor covering"),
     "floor_description": MessageLookupByLibrary.simpleMessage(
@@ -148,6 +255,75 @@ class MessageLookup extends MessageLookupByLibrary {
     "inside_insulation_title_1": MessageLookupByLibrary.simpleMessage(
       "Утепление\nбалкона/лоджии изнутри\n",
     ),
+    "insul_install_ceiling_dot_1": MessageLookupByLibrary.simpleMessage(
+      "Install brackets for metal profiles. Profiles are installed with a spacing of 500–600 mm.",
+    ),
+    "insul_install_ceiling_dot_2": MessageLookupByLibrary.simpleMessage(
+      "Fix XPS boards onto the prepared base using foam adhesive for polystyrene. Provide slots in the boards for the brackets.",
+    ),
+    "insul_install_ceiling_dot_3": MessageLookupByLibrary.simpleMessage(
+      "Fix a vapor barrier layer on top of the insulation using double-sided tape. Overlaps are also sealed with double-sided tape. Bracket проходки can additionally be sealed with metallized tape.",
+    ),
+    "insul_install_ceiling_text": MessageLookupByLibrary.simpleMessage(
+      "Ceiling insulation with a rough finish using sheet materials (drywall, gypsum fiber board, OSB, plywood, etc.).\nWhen finishing a ceiling with sheet materials, it becomes possible to create complex, volumetric surface shapes.\nThe spacing, quantity, and length of brackets should be selected based on a заранее prepared design, considering the loads from sheets and finishing on the substructure.\nBefore installing drywall sheets, all electrical cables for lighting fixtures and sockets must be routed. Cables should be installed in PVC/HDPE conduits or cable channels.",
+    ),
+    "insul_install_ceiling_title": MessageLookupByLibrary.simpleMessage(
+      "Ceiling insulation",
+    ),
+    "insul_install_floor_dot_1": MessageLookupByLibrary.simpleMessage(
+      "Lay insulation boards on the prepared base with staggered end joints in adjacent rows.",
+    ),
+    "insul_install_floor_dot_2": MessageLookupByLibrary.simpleMessage(
+      "It is recommended to fill large gaps with insulation offcuts or foam adhesive for polystyrene. No mechanical фиксация of boards to the floor is required. After installing insulation, lay a vapor barrier layer. Install it loosely and seal the seams with double-sided adhesive tape. The overlap of adjacent полотен should be at least 100 mm.",
+    ),
+    "insul_install_floor_dot_3": MessageLookupByLibrary.simpleMessage(
+      "Next, install the screed or build an underfloor heating system.",
+    ),
+    "insul_install_floor_title": MessageLookupByLibrary.simpleMessage(
+      "Balcony floor insulation",
+    ),
+    "insul_install_lathing_dot_1": MessageLookupByLibrary.simpleMessage(
+      "Create the lathing. Use timber battens or metal profiles, mainly for drywall or other sheet finishes. Fix the battens around the ceiling perimeter, then set the timber with a 0.6 m spacing.",
+    ),
+    "insul_install_lathing_dot_2": MessageLookupByLibrary.simpleMessage(
+      "The lathing is made for further fastening of finishing sheets (drywall, OSB, plastic panels, etc.).",
+    ),
+    "insul_install_lathing_title": MessageLookupByLibrary.simpleMessage(
+      "Lathing installation",
+    ),
+    "insul_install_title": MessageLookupByLibrary.simpleMessage(
+      "Insulation installation",
+    ),
+    "insul_install_walls_dot_1": MessageLookupByLibrary.simpleMessage(
+      "For balcony wall insulation under decorative plaster, it is recommended to use extruded polystyrene foam with a milled (grooved) surface. If you use smooth XPS boards, they should be evenly roughened using a hacksaw or a metal brush.",
+    ),
+    "insul_install_walls_dot_2": MessageLookupByLibrary.simpleMessage(
+      "Next, apply foam adhesive to the prepared board and wait 5–7 minutes until polymerization starts. Then place the insulation board onto the base with a slight offset, press it to the wall with light force, and slide it into the final position.",
+    ),
+    "insul_install_walls_dot_3": MessageLookupByLibrary.simpleMessage(
+      "After fixing the boards with foam adhesive, additionally secure them using disc dowels. Drill holes through the insulation board with a hammer drill. Dowels consumption is about 2–3 per board.",
+    ),
+    "insul_install_walls_dot_4": MessageLookupByLibrary.simpleMessage(
+      "Insert the dowel into the hole and hammer in the pin.",
+    ),
+    "insul_install_walls_dot_5": MessageLookupByLibrary.simpleMessage(
+      "After laying the insulation, fill all joints and gaps with монтаж foam.",
+    ),
+    "insul_install_walls_title": MessageLookupByLibrary.simpleMessage(
+      "Wall insulation",
+    ),
+    "insul_install_waterproof_dot_1": MessageLookupByLibrary.simpleMessage(
+      "After sealing and leveling the surfaces, you can lay the film. Typically, this is пенofoil or polyethylene. If using penofol, make sure the reflective side faces upward. Joints are sealed with foil tape.",
+    ),
+    "insul_install_waterproof_dot_2": MessageLookupByLibrary.simpleMessage(
+      "The waterproofing layer is fastened with self-tapping screws with wide heads, and film joints are sealed with foil tape.",
+    ),
+    "insul_install_waterproof_text": MessageLookupByLibrary.simpleMessage(
+      "Balcony waterproofing is essential to protect the exposed area from precipitation. Without a waterproofing barrier, structural elements may be damaged, mold and fungus may appear, and issues with neighbors are possible. When waterproofing under insulation, consider materials with high hygroscopicity, such as mineral wool.",
+    ),
+    "insul_install_waterproof_title": MessageLookupByLibrary.simpleMessage(
+      "Waterproofing stage",
+    ),
     "insulation_balcony_loggia_title": MessageLookupByLibrary.simpleMessage(
       "УТЕПЛЕНИЕ\\nБАЛКОНА / ЛОДЖИИ",
     ),
@@ -164,6 +340,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "mat_xps": MessageLookupByLibrary.simpleMessage(
       "Extruded polystyrene (XPS)",
     ),
+    "mineral_excel_name": MessageLookupByLibrary.simpleMessage(
+      "Минераль-ная \nвата",
+    ),
+    "mineral_title": MessageLookupByLibrary.simpleMessage("Mineral wool"),
+    "not_found": MessageLookupByLibrary.simpleMessage("Not found"),
     "on_ground": MessageLookupByLibrary.simpleMessage("On the ground"),
     "outside_insulation_text": MessageLookupByLibrary.simpleMessage(
       "\nкрайне сложно выполнить самостоятельно. Необходима помощь промышленных альпинистов, имеющих опыт работы с наружными стенами многоэтажных зданий. Кроме того, такой процесс может потребовать дополнительного разрешения местной администрации на изменение фасада, что может привести к дополнительным расходам. Преимущество внешнего утепления - слой утеплителя не забирает уже и так небольшую площадь балкона.",
@@ -185,8 +366,95 @@ class MessageLookup extends MessageLookupByLibrary {
     "planning_2": MessageLookupByLibrary.simpleMessage(
       "3. Грунтовка поверхностей",
     ),
+    "pps_excel_name": MessageLookupByLibrary.simpleMessage(
+      "Пенопо-листирол\n(Пенопласт)",
+    ),
+    "pps_title": MessageLookupByLibrary.simpleMessage("Polystyrene foam (EPS)"),
     "prep_work": MessageLookupByLibrary.simpleMessage(
       "Подготовительные\nработы",
+    ),
+    "prep_work_1_text_1": MessageLookupByLibrary.simpleMessage(
+      "Estimate the required amount of insulation and materials. Base it on the balcony size and the insulation level you want to achieve.",
+    ),
+    "prep_work_1_title": MessageLookupByLibrary.simpleMessage(
+      "1. Planning and preparation",
+    ),
+    "prep_work_2_text_1": MessageLookupByLibrary.simpleMessage(
+      "Inspect the balcony/loggia carefully for damage, cracks, and moisture traces. Also check windows and doors to make sure they close tightly and do not let cold air in.",
+    ),
+    "prep_work_2_text_2": MessageLookupByLibrary.simpleMessage(
+      "Clean the area from dirt, dust, and unnecessary items. Remove old paint, wallpaper, etc. from walls, floor, and ceiling. Clean surfaces improve adhesion of new materials.",
+    ),
+    "prep_work_2_text_3": MessageLookupByLibrary.simpleMessage(
+      "Seal all joints and cracks. Small cracks can be filled with weather-resistant sealant; larger gaps can be filled with монтаж foam. This prevents moisture проникновение and provides a solid base for insulation.",
+    ),
+    "prep_work_2_text_4": MessageLookupByLibrary.simpleMessage(
+      "If you find moisture issues (roof/wall leaks, window leakage, etc.), fix them before insulation. Moisture can damage insulation and cause mold.",
+    ),
+    "prep_work_2_title": MessageLookupByLibrary.simpleMessage(
+      "2. Surface preparation",
+    ),
+    "prep_work_3_text_1": MessageLookupByLibrary.simpleMessage(
+      "After preparing the surface, apply primer. Do not skip this step.",
+    ),
+    "prep_work_3_text_2": MessageLookupByLibrary.simpleMessage(
+      "Mix the primer well until uniform. Apply evenly with a brush or roller. Let the first coat dry.",
+    ),
+    "prep_work_3_text_3": MessageLookupByLibrary.simpleMessage(
+      "After about an hour, apply a second coat. Let both coats dry for at least 3 hours. Do not prime while the surface is still wet.",
+    ),
+    "prep_work_3_title": MessageLookupByLibrary.simpleMessage("3. Priming"),
+    "prep_work_buy_list": MessageLookupByLibrary.simpleMessage(
+      "- insulation (e.g., mineral wool, foam plastic, or extruded polystyrene),\n- construction tools, adhesive or монтаж foam, finishing materials (tiles, panels).",
+    ),
+    "prep_work_buy_title": MessageLookupByLibrary.simpleMessage("Buy:\n"),
+    "prep_work_leveling_1_num": MessageLookupByLibrary.simpleMessage("1. "),
+    "prep_work_leveling_1_text": MessageLookupByLibrary.simpleMessage(
+      "- is done using plaster mixes similarly to walls. With wet processes, it is recommended to level the ceiling before walls and floor.",
+    ),
+    "prep_work_leveling_1_title": MessageLookupByLibrary.simpleMessage(
+      "Ceiling leveling ",
+    ),
+    "prep_work_leveling_2_beacon_method": MessageLookupByLibrary.simpleMessage(
+      "beacon method",
+    ),
+    "prep_work_leveling_2_num": MessageLookupByLibrary.simpleMessage("2. "),
+    "prep_work_leveling_2_text_part1": MessageLookupByLibrary.simpleMessage(
+      "- is done using cement-sand mixes. To create a flat plane, use the ",
+    ),
+    "prep_work_leveling_2_text_part2": MessageLookupByLibrary.simpleMessage(
+      ": set beacons in one plane, fill the space with plaster, and level with a rule. Let it dry completely.",
+    ),
+    "prep_work_leveling_2_title": MessageLookupByLibrary.simpleMessage(
+      "Wall leveling ",
+    ),
+    "prep_work_leveling_3_num": MessageLookupByLibrary.simpleMessage("3. "),
+    "prep_work_leveling_3_text": MessageLookupByLibrary.simpleMessage(
+      "- is done using screeds: dry/prefab, semi-dry, wet, or self-leveling. Before laying insulation, semi-dry, wet, and self-leveling screeds are commonly used.",
+    ),
+    "prep_work_leveling_3_title": MessageLookupByLibrary.simpleMessage(
+      "Floor leveling ",
+    ),
+    "prep_work_leveling_title_italic": MessageLookupByLibrary.simpleMessage(
+      "is done if necessary.",
+    ),
+    "prep_work_leveling_title_main": MessageLookupByLibrary.simpleMessage(
+      "Leveling surfaces (walls, ceiling, floor) ",
+    ),
+    "prep_work_screed_self_text": MessageLookupByLibrary.simpleMessage(
+      "Self-leveling screed is installed without beacons: the mix is poured to the needed thickness and left to gain strength (3–7 days).",
+    ),
+    "prep_work_screed_self_title": MessageLookupByLibrary.simpleMessage(
+      "Self-leveling screed:\n",
+    ),
+    "prep_work_screed_wet_text": MessageLookupByLibrary.simpleMessage(
+      "The mix is placed between beacons set in one plane and leveled with a rule.",
+    ),
+    "prep_work_screed_wet_title": MessageLookupByLibrary.simpleMessage(
+      "Semi-dry/wet screed:\n",
+    ),
+    "prep_work_title": MessageLookupByLibrary.simpleMessage(
+      "Preparatory\nwork",
     ),
     "preparation_inside_text": MessageLookupByLibrary.simpleMessage(
       "1. Подготовительные работы",
@@ -200,12 +468,52 @@ class MessageLookup extends MessageLookupByLibrary {
     "preparation_outside_text_1": MessageLookupByLibrary.simpleMessage(
       "2. Монтаж утеплителя",
     ),
+    "pro_breathability": MessageLookupByLibrary.simpleMessage(
+      "Breathable (vapour-permeable)",
+    ),
+    "pro_ecological": MessageLookupByLibrary.simpleMessage(
+      "Environmentally friendly",
+    ),
+    "pro_small_volume": MessageLookupByLibrary.simpleMessage("Low volume"),
+    "pro_strength": MessageLookupByLibrary.simpleMessage("High strength"),
+    "pro_warm_insulation": MessageLookupByLibrary.simpleMessage(
+      "Good thermal insulation",
+    ),
+    "pu_excel_name": MessageLookupByLibrary.simpleMessage("Пенопо-лиуретан"),
+    "pu_title": MessageLookupByLibrary.simpleMessage("Polyurethane foam (PU)"),
+    "pvc_dismantle_steps": MessageLookupByLibrary.simpleMessage(
+      "1. Remove window sashes from the hinges. If there is a fixed sash, remove the glass from it.\n2. Cut the mullion and the frame.\n3. Remove the old frames.\n4. Remove remaining insulation material.\n5. Clean the opening from plaster and cement residues.\n6. Remove the exterior sill flashing and the windowsill.\n7. Clean up and dispose of debris.\n8. Install the new windows.",
+    ),
+    "pvc_dismantle_title": MessageLookupByLibrary.simpleMessage(
+      "The old window removal process is as follows:",
+    ),
+    "pvc_intro": MessageLookupByLibrary.simpleMessage(
+      "Replacing old wooden frames with modern PVC windows is a common solution because they retain heat effectively, are usually much cheaper than new wooden alternatives, and do not compromise on quality. PVC windows have strong thermal insulation properties: due to their structure and materials, window profiles transmit less heat, helping keep rooms warm in winter and cooler in summer. This reduces heating and air-conditioning costs. When choosing PVC windows, it is important to pay attention to profile quality and installation. It is recommended to contact trusted manufacturers and professionals to ensure durable and reliable windows.",
+    ),
+    "pvc_prepare_text": MessageLookupByLibrary.simpleMessage(
+      "Ensure free access to the window, remove household appliances and small items, move large furniture away and cover it with plastic film, and cover the floor as well.\nAll work should be done carefully to avoid damaging the window opening.",
+    ),
+    "pvc_prepare_title": MessageLookupByLibrary.simpleMessage(
+      "Room preparation and window removal includes:",
+    ),
+    "pvc_process_text": MessageLookupByLibrary.simpleMessage(
+      "Before installing a new PVC window, you need to remove the old one and properly prepare the window opening.",
+    ),
+    "pvc_process_title": MessageLookupByLibrary.simpleMessage(
+      "New window installation process",
+    ),
+    "pvc_title": MessageLookupByLibrary.simpleMessage(
+      "1. Installation of plastic (PVC) windows",
+    ),
     "qw": MessageLookupByLibrary.simpleMessage("Coating"),
     "recommendationTitle": MessageLookupByLibrary.simpleMessage(
       "Recommendation for you:",
     ),
     "recommendation_title": MessageLookupByLibrary.simpleMessage(
       "Recommendation for you:",
+    ),
+    "recommended_thickness": MessageLookupByLibrary.simpleMessage(
+      "Recommended thickness:",
     ),
     "regionBatken": MessageLookupByLibrary.simpleMessage("Batken"),
     "regionChui": MessageLookupByLibrary.simpleMessage("Chui"),
@@ -249,12 +557,156 @@ class MessageLookup extends MessageLookupByLibrary {
     "roof_title": MessageLookupByLibrary.simpleMessage(
       "Heat loss through the roof of the building",
     ),
+    "seal_intro": MessageLookupByLibrary.simpleMessage(
+      "Tight contact between window sashes and frames is essential to prevent cold air from entering. Seals are installed around the frame or sash to improve airtightness.\n\nSteps for installing window seals:",
+    ),
+    "seal_step_1_text": MessageLookupByLibrary.simpleMessage(
+      "Ensure the window frame and sash are clean and dry. Remove dirt, dust, and remnants of old seals.",
+    ),
+    "seal_step_1_title": MessageLookupByLibrary.simpleMessage(
+      "Surface preparation:",
+    ),
+    "seal_step_2_text": MessageLookupByLibrary.simpleMessage(
+      "Select a seal (tape, rubber profile, foam) that matches the size and shape of the window profile. There are no universal seals — selection depends on the window type and groove depth.",
+    ),
+    "seal_step_2_title": MessageLookupByLibrary.simpleMessage(
+      "Choosing the seal:",
+    ),
+    "seal_step_3_text": MessageLookupByLibrary.simpleMessage(
+      "Measure each section where the seal will be installed and cut it to the required length.",
+    ),
+    "seal_step_3_title": MessageLookupByLibrary.simpleMessage(
+      "Measuring length:",
+    ),
+    "seal_step_4_text": MessageLookupByLibrary.simpleMessage(
+      "Before installation, clean the surface with alcohol or solvent to remove grease and adhesive residue.",
+    ),
+    "seal_step_4_title": MessageLookupByLibrary.simpleMessage(
+      "Surface cleaning:",
+    ),
+    "seal_step_5_text": MessageLookupByLibrary.simpleMessage(
+      "Carefully apply the seal along the entire length of the frame or sash, ensuring even and tight contact.",
+    ),
+    "seal_step_5_title": MessageLookupByLibrary.simpleMessage(
+      "Applying the seal:",
+    ),
+    "seal_step_6_text": MessageLookupByLibrary.simpleMessage(
+      "Trim excess material and ensure the seal is firmly attached.",
+    ),
+    "seal_step_6_title": MessageLookupByLibrary.simpleMessage(
+      "Trimming and fixing:",
+    ),
+    "seal_step_7_text": MessageLookupByLibrary.simpleMessage(
+      "Close the window and ensure there are no gaps between the frame and sash and that it closes tightly.",
+    ),
+    "seal_step_7_title": MessageLookupByLibrary.simpleMessage(
+      "Checking airtightness:",
+    ),
+    "seal_title": MessageLookupByLibrary.simpleMessage(
+      "2. Installation of window seals",
+    ),
+    "sealing_cracks_intro": MessageLookupByLibrary.simpleMessage(
+      "Inspect window frames and fill all small gaps and cracks with sealant or insulation material to eliminate drafts.",
+    ),
+    "sealing_cracks_title": MessageLookupByLibrary.simpleMessage(
+      "5. Sealing additional gaps and cracks",
+    ),
+    "sealing_foam_text": MessageLookupByLibrary.simpleMessage(
+      "Foam adhesive seals are an economical way to insulate windows. They have an adhesive layer and are easy to apply. In spring, they can be easily removed.",
+    ),
+    "sealing_foam_title": MessageLookupByLibrary.simpleMessage(
+      "Using foam seals",
+    ),
+    "sealing_paper_text": MessageLookupByLibrary.simpleMessage(
+      "One of the cheapest and oldest methods. Soaked paper or newspapers were used to fill gaps in wooden window frames, then covered with paper strips. Today, self-adhesive paper is used as a budget insulation option.",
+    ),
+    "sealing_paper_title": MessageLookupByLibrary.simpleMessage(
+      "Applying paper strips",
+    ),
+    "sealing_sealant_text": MessageLookupByLibrary.simpleMessage(
+      "Insulating windows with silicone sealant requires a clean surface and a special applicator. Sealant fills gaps and reduces heat loss, but it is not a thermal insulation material.",
+    ),
+    "sealing_sealant_title": MessageLookupByLibrary.simpleMessage(
+      "Using sealants to fill gaps",
+    ),
     "settlementTitle": MessageLookupByLibrary.simpleMessage("Settlement"),
     "settlement_title": MessageLookupByLibrary.simpleMessage("Settlement"),
     "silicate_brick": MessageLookupByLibrary.simpleMessage("Silicate"),
+    "slabs_excel_name": MessageLookupByLibrary.simpleMessage("Камыш"),
+    "slabs_title": MessageLookupByLibrary.simpleMessage("Reed boards"),
+    "slopes_intro": MessageLookupByLibrary.simpleMessage(
+      "Window slopes help prevent cold bridges between frames and walls...",
+    ),
+    "slopes_materials_list": MessageLookupByLibrary.simpleMessage(
+      "- U-shaped plastic strip\n- Wooden batten\n- F-shaped trim",
+    ),
+    "slopes_materials_title": MessageLookupByLibrary.simpleMessage(
+      "Materials required:",
+    ),
+    "slopes_metal_1": MessageLookupByLibrary.simpleMessage(
+      "Measure the window opening.",
+    ),
+    "slopes_metal_2": MessageLookupByLibrary.simpleMessage(
+      "Prepare metal sheets.",
+    ),
+    "slopes_metal_3": MessageLookupByLibrary.simpleMessage(
+      "Install the bottom flashing.",
+    ),
+    "slopes_metal_4": MessageLookupByLibrary.simpleMessage(
+      "Install side panels.",
+    ),
+    "slopes_metal_5": MessageLookupByLibrary.simpleMessage(
+      "Install the top panel with sealing.",
+    ),
+    "slopes_metal_title": MessageLookupByLibrary.simpleMessage(
+      "Metal slope installation",
+    ),
+    "slopes_plaster_text": MessageLookupByLibrary.simpleMessage(
+      "This is the most traditional and cost-effective method...",
+    ),
+    "slopes_plaster_title": MessageLookupByLibrary.simpleMessage(
+      "Plastered slopes",
+    ),
+    "slopes_plastic_process_text": MessageLookupByLibrary.simpleMessage(
+      "Before installation, surfaces must be cleaned...",
+    ),
+    "slopes_plastic_process_title": MessageLookupByLibrary.simpleMessage(
+      "Plastic slope installation process",
+    ),
+    "slopes_plastic_text": MessageLookupByLibrary.simpleMessage(
+      "Plastic is widely used for exterior window slopes...",
+    ),
+    "slopes_plastic_title": MessageLookupByLibrary.simpleMessage(
+      "Plastic slopes",
+    ),
+    "slopes_step_1": MessageLookupByLibrary.simpleMessage(
+      "The starter strip is fixed to the window frame.",
+    ),
+    "slopes_step_2": MessageLookupByLibrary.simpleMessage(
+      "Battens are installed and aligned.",
+    ),
+    "slopes_step_3": MessageLookupByLibrary.simpleMessage(
+      "Insulation is placed if required.",
+    ),
+    "slopes_step_4": MessageLookupByLibrary.simpleMessage(
+      "The top panel is cut and installed.",
+    ),
+    "slopes_step_5": MessageLookupByLibrary.simpleMessage(
+      "F-shaped trims are installed.",
+    ),
+    "slopes_step_6": MessageLookupByLibrary.simpleMessage(
+      "Joints are sealed with sealant.",
+    ),
+    "slopes_steps_title": MessageLookupByLibrary.simpleMessage(
+      "Installation steps",
+    ),
+    "slopes_title": MessageLookupByLibrary.simpleMessage(
+      "3. Installation of window slopes",
+    ),
     "solid_brick": MessageLookupByLibrary.simpleMessage("Solid"),
+    "straw_title": MessageLookupByLibrary.simpleMessage("Straw insulation"),
     "text_about_proj": MessageLookupByLibrary.simpleMessage(
-      "«Жылуу үй» маалыматтык-окутуучу мобилдик тиркемеси «Таза Келечек» долбоорунун кичи гранттары программасы боюнча  «Атмосферанын зыяндуу заттар менен булгануусун кыскартуу, митигация жана климаттын ѳзгѳрүүсүнѳ ыңгайлашуусу максатында имараттардын энергиялык натыйжалуулугу маселеси боюнча Кыргызстандын калкынын маалымдуулугун жогорулатуу» демилгесин ишке ашыруунун алкагында иштелип чыккан.\nМобилдик тиркеменин максаты – катуу отунду колдонууну кыскартуу үчүн имараттардын энергиялык натыйжалуулугу боюнча ѳлкѳ калкынын маалымдуулук деңгээлин жогорулатуу. \nИмараттардын энергиялык натыйжалуулугуна карай алгачкы кадам катары иштелип чыккан тиркеме, негизинен, элди үйлѳрүн жылуулук менен изоляциялоонун зарылдыгы жана маанилүүлүгү тууралуу маалымдоого, ошондой эле элди үйдү жылытууга кеткен акча каражатын үнѳмдѳѳ үчүн жылуулукту изоляциялоонун негизги усулдарын үйрѳтүүгѳ багытталган. Узак мѳѳнѳттү максаттаган бул тиркеме Кыргыз Республикасындагы шаарларда абанын булгануу деңгээлин тѳмѳндѳтүүгѳ жана климаттын ѳзгѳрүүсүнүн кесепеттерин ыңгайлаштырууга жана жумшартууга багытталган. \nМобилдик тиркемедеги маалымат баарына түшүнүктүү болуш үчүн  жѳнѳкѳй тил менен берилген.  Булак иретинде тиркеменин мазмундук бѳлүгүндѳ жеке иштеп чыгуулар, чакырылган эксперттердин эсептѳѳлѳрү, ошондой эле имараттардын энергиялык натыйжалуулугу жаатындагы ишке ашырылган буга чейинки долбоорлордун алкагында жарыяланган материалдар, атап айтканда: Полдорду жана шыптарды жылуулоо боюнча монтаждоочулар үчүн колдонмо (“Имараттарда энергияны рационалдуу пайдалануу – кыргыз ассоциациясынын потенциалын чыңдоо - фаза II”, ЕБРР), Жеке турак үйлѳрдүн тышкы тосмо констуркцияларын жылуулоо боюнча техникалык чечимдердин каталогу (“КыргызНИИПСС”, ОФ “Camp alatoo”,  ГЭФ/ПРООН “Имараттардагы энергиялык натыйжалуулукту жакшыртуу” долбоору), СНиП КР 23-01-2013 Курулуш жылуулук техникасы (имараттардын жылуулук тосмосу), СП 23-101-2013 Имараттардын жылуулугун сактоону долбоорлоо, СНиП КР 23-02-00 Курулуштук климатология, ГОСТ 26602.2-99 Терезе жана эшик блоктору: аба ѳткѳрүмдүүлүгүн аныктоо усулу жана иликтѳѳгѳ алынган интернет-булактар колдонулду.    \n«Жылуу үй» мобилдик тиркемеси АКШ Мамлекеттик департаменти грантынын эсебинен каржыланды. Тиркемеде берилген пикирлер жана корутундулар авторлорго гана тиешелүү жана АКШнын Мамлекеттик департаментинин кѳз карашын чагылдырган эмес.   \n«Жылуу үй» мобилдик тиркемеси К. И. Скрябин атындагы КНАУ демилгелик тобу (А. В. Кенжебаева, Б. Анарбек), ошондой эле чакырылган эксперттердин командасы (А. Ч. Орозобекова, В. О. Греб, Р. А. Мигранов, О. И. Элеманов, Н. К. Рысмендеева) тарабынан түзүлдү. \nИштеп чыгуучулардын жана эксперттердин бирдиктүү командасына терең ыраазычылык билдиребиз.    ",
+      "The informational and educational mobile application \"Zhyluu Uy\" was developed within the framework of the initiative \"Raising public awareness in Kyrgyzstan on building energy efficiency in order to reduce atmospheric emissions and support climate change mitigation and adaptation\" under the Small Grants Program of the \"Taza Kelechek\" project.\nThe goal of the mobile application is to increase public awareness of building energy efficiency in order to reduce the use of solid fuels.\nAs a first step towards energy-efficient buildings, the application mainly focuses on informing people about the necessity and importance of home insulation, as well as teaching basic insulation methods to save money on heating. As a long-term goal, the application aims to reduce air pollution levels in the cities of the Kyrgyz Republic and decrease atmospheric emissions to support climate change adaptation and mitigation.\nThe information in the mobile application is presented in simple language so that it is understandable to everyone. The content of the application is based on original developments, calculations by involved experts, as well as materials published within previously implemented projects in the field of building energy efficiency. In particular, the following sources were used: the Guide for Installers on Floor and Ceiling Insulation (project \"Capacity Building of the Kyrgyz Association – Rational Use of Energy in Buildings – Phase II\", EBRD), the Catalogue of Technical Solutions for Thermal Insulation of External Enclosing Structures of Individual Residential Buildings (\"KyrgyzNIIPSS\", Public Foundation \"Camp Alatoo\", GEF/UNDP project \"Improving Energy Efficiency in Buildings\"), SNiP KR 23-01-2013 Building Thermal Engineering (Thermal Protection of Buildings), SP 23-101-2013 Design of Thermal Protection of Buildings, SNiP KR 23-02-00 Building Climatology, GOST 26602.2-99 Window and Door Units: Methods for Determining Air Permeability, and analyzed internet sources.\nThe mobile application \"Zhyluu Uy\" is funded by a grant from the United States Department of State. The opinions and conclusions expressed in the application are those of the authors and do not necessarily reflect the views of the United States Department of State.",
     ),
     "text_planning": MessageLookupByLibrary.simpleMessage(
       "Оцените необходимое количество утеплителя и материалов. Исходите из размеров балкона и степени утепления, которую хотите достичь.\n",
@@ -325,7 +777,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "text_planning_5_7": MessageLookupByLibrary.simpleMessage(
       "Самонивелирующаяся стяжка (наливной пол) монтируется без использования маяков. Раствор в виде шликера разливается по поверхности пола необходимым по толщине слоем. Далее стяжка выдерживается в течение определенного времени до набора необходимой прочности (3–7 суток) и после этого готова для дальнейшего производства работ.",
     ),
-    "uni": MessageLookupByLibrary.simpleMessage("КНАУ им. С.И. Скрябина"),
+    "uni": MessageLookupByLibrary.simpleMessage(
+      "Kyrgyz National Agrarian University named after K.I. Skryabin",
+    ),
     "unit_mm": MessageLookupByLibrary.simpleMessage("mm"),
     "variants_balcony_ins_": MessageLookupByLibrary.simpleMessage("Изнутри"),
     "variants_balcony_ins_1": MessageLookupByLibrary.simpleMessage(
@@ -448,6 +902,76 @@ class MessageLookup extends MessageLookupByLibrary {
     "where_to_insulate_title": MessageLookupByLibrary.simpleMessage(
       "Where to insulate?",
     ),
+    "window_central_layer_text": MessageLookupByLibrary.simpleMessage(
+      "- in most cases, this is монтаж foam. ",
+    ),
+    "window_central_layer_title": MessageLookupByLibrary.simpleMessage(
+      "Central layer ",
+    ),
+    "window_general_recommendations": MessageLookupByLibrary.simpleMessage(
+      "General recommendations",
+    ),
+    "window_hydro_materials": MessageLookupByLibrary.simpleMessage(
+      "Common waterproofing materials include special sealing tapes (e.g., compressed sealing tape) and liquid sealing mastics.",
+    ),
+    "window_hydro_vapor_intro": MessageLookupByLibrary.simpleMessage(
+      "Sealing the space between the window unit and the opening includes three main layers: central, outer, and inner.",
+    ),
+    "window_hydro_vapor_title": MessageLookupByLibrary.simpleMessage(
+      "Window waterproofing\nand vapor barrier",
+    ),
+    "window_inner_layer_text": MessageLookupByLibrary.simpleMessage(
+      "– vapor barrier. It is installed from the room side and prevents moisture from entering the монтаж joint. This is especially important in humid rooms (kitchens, bathrooms). It can be implemented using sealing foil.",
+    ),
+    "window_inner_layer_title": MessageLookupByLibrary.simpleMessage(
+      "Inner layer ",
+    ),
+    "window_intro": MessageLookupByLibrary.simpleMessage(
+      "Most buildings lose heat through windows. Proper window insulation reduces heat loss, improves indoor comfort, and helps save money on heating.",
+    ),
+    "window_method_1": MessageLookupByLibrary.simpleMessage(
+      "1. Installing PVC double-glazed windows;",
+    ),
+    "window_method_2": MessageLookupByLibrary.simpleMessage(
+      "2. Installing seals;",
+    ),
+    "window_method_3": MessageLookupByLibrary.simpleMessage(
+      "3. Installing window slopes;",
+    ),
+    "window_method_4": MessageLookupByLibrary.simpleMessage(
+      "4. Applying energy-saving window film;",
+    ),
+    "window_method_5": MessageLookupByLibrary.simpleMessage(
+      "5. Sealing additional gaps and cracks",
+    ),
+    "window_methods_intro": MessageLookupByLibrary.simpleMessage(
+      "There are several ways to insulate windows to reduce heat loss and improve energy efficiency:",
+    ),
+    "window_outer_layer_text": MessageLookupByLibrary.simpleMessage(
+      "– waterproofing: it prevents moisture from entering from outside, protects the gap, and shields it from UV radiation.",
+    ),
+    "window_outer_layer_title": MessageLookupByLibrary.simpleMessage(
+      "Outer layer ",
+    ),
+    "window_rec_1": MessageLookupByLibrary.simpleMessage(
+      "Before starting any window insulation procedure—especially when using adhesive seals—wash, dry, and degrease the window frame. This improves adhesion.",
+    ),
+    "window_rec_2": MessageLookupByLibrary.simpleMessage(
+      "For effective insulation, keep glass and frames clean and check that the glass is not damaged—otherwise your effort may be wasted.",
+    ),
+    "window_rec_3": MessageLookupByLibrary.simpleMessage(
+      "Pay special attention to areas where the frame meets the wall: gaps there can cause major heat loss. Seal these joints carefully.",
+    ),
+    "window_rec_4": MessageLookupByLibrary.simpleMessage(
+      "It is recommended to insulate windows before the first frost. In freezing temperatures, some materials may behave differently and become less effective.",
+    ),
+    "window_rec_5": MessageLookupByLibrary.simpleMessage(
+      "If you use монтаж foam as the final filling for gaps between the frame and the opening:",
+    ),
+    "window_title": MessageLookupByLibrary.simpleMessage("WINDOW INSULATION"),
+    "window_warning": MessageLookupByLibrary.simpleMessage(
+      "Do not leave монтаж foam uncovered for more than 1 month, as it will lose strength and insulating properties!",
+    ),
     "windows_doors_description_part1": MessageLookupByLibrary.simpleMessage(
       "Other critical points of heat leakage are windows and doors in external walls, especially lintels and direct connections of the window to the building wall.\nHeat loss through a window occurs through several channels: loss through the window unit and frames (thermal bridges, leaks), loss due to air thermal conductivity and convective flows between the panes, as well as heat loss through thermal radiation. Obviously, the amount of heat loss through the window unit directly depends on the window design, materials used, and manufacturing quality. In reality, it accounts for about 10% of the total heat loss from the room. The other two channels of heat loss are losses directly through the glazing.\n\nAssessing whether the work was done correctly in this case is quite difficult.\nIf errors are visible, we can minimize heat loss at the joints using so-called warm window installation using tapes and sealing foil.\nFor more details about window and door insulation, you can study the section ",
     ),
@@ -458,6 +982,14 @@ class MessageLookup extends MessageLookupByLibrary {
       "WINDOW INSULATION ",
     ),
     "wood": MessageLookupByLibrary.simpleMessage("Wood"),
+    "wool_excel_name": MessageLookupByLibrary.simpleMessage("Шерсть"),
+    "wool_title": MessageLookupByLibrary.simpleMessage("Wool"),
+    "xps_excel_name": MessageLookupByLibrary.simpleMessage(
+      "Экструдиро-ванный пенополи-стирол",
+    ),
+    "xps_title": MessageLookupByLibrary.simpleMessage(
+      "Extruded polystyrene (XPS)",
+    ),
     "your_list_title": MessageLookupByLibrary.simpleMessage("Your list:"),
   };
 }

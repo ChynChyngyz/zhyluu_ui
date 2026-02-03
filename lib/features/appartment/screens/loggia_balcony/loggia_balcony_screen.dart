@@ -11,7 +11,6 @@ import 'package:zhyluu_ui/features/common/widgets/my_button.dart';
 import 'package:zhyluu_ui/features/common/widgets/text_with_dot.dart';
 import 'package:zhyluu_ui/generated/l10n.dart';
 
-
 class LoggiaBalconyScreen extends StatelessWidget {
   static const routeName = "/loggia-balcony";
 
@@ -20,9 +19,23 @@ class LoggiaBalconyScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final s = S.of(context);
+
+    final baseSpanStyle = GoogleFonts.poppins(
+      fontSize: 16,
+      color: Colors.black,
+      letterSpacing: 0.88,
+    );
+
+    final boldSpanStyle = GoogleFonts.poppins(
+      fontSize: 16,
+      fontWeight: FontWeight.w600,
+      color: Colors.black,
+      letterSpacing: 0.88,
+    );
+
     return MyScaffoldCurveGradient(
       title: s.insulation_balcony_loggia_title,
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,24 +63,13 @@ class LoggiaBalconyScreen extends StatelessWidget {
               style: AppTextStyles.invertedTextStyle,
             ),
             const SizedBox(height: 15),
+
             RichTextWithDot(
               dotColor: AppColors.yellow,
               text: TextSpan(
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                  color: Colors.black,
-                  letterSpacing: 0.88,
-                ),
+                style: baseSpanStyle,
                 children: [
-                  TextSpan(
-                    text: s.variants_balcony_out,
-                    style: GoogleFonts.poppins(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black,
-                      letterSpacing: 0.88,
-                    ),
-                  ),
+                  TextSpan(text: s.variants_balcony_out, style: boldSpanStyle),
                   TextSpan(text: s.variants_balcony_out_1),
                 ],
               ),
@@ -85,24 +87,13 @@ class LoggiaBalconyScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 15),
+
             RichTextWithDot(
               dotColor: AppColors.yellow,
               text: TextSpan(
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                  color: Colors.black,
-                  letterSpacing: 0.88,
-                ),
+                style: baseSpanStyle,
                 children: [
-                  TextSpan(
-                    text: s.variants_balcony_ins_,
-                    style: GoogleFonts.poppins(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black,
-                      letterSpacing: 0.88,
-                    ),
-                  ),
+                  TextSpan(text: s.variants_balcony_ins_, style: boldSpanStyle),
                   TextSpan(text: s.variants_balcony_ins_1),
                 ],
               ),
@@ -120,36 +111,22 @@ class LoggiaBalconyScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 15),
+
             RichTextWithDot(
               dotColor: AppColors.yellow,
               text: TextSpan(
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                  color: Colors.black,
-                  letterSpacing: 0.88,
-                ),
+                style: baseSpanStyle,
                 children: [
-                  TextSpan(
-                    text: s.variants_balcony_two,
-                    style: GoogleFonts.poppins(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black,
-                      letterSpacing: 0.88,
-                    ),
-                  ),
+                  TextSpan(text: s.variants_balcony_two, style: boldSpanStyle),
                   TextSpan(text: s.variants_balcony_two_1),
                 ],
               ),
             ),
             const SizedBox(height: 15),
+
             RichText(
               text: TextSpan(
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                  color: Colors.black,
-                  letterSpacing: 0.88,
-                ),
+                style: baseSpanStyle,
                 children: [
                   TextSpan(
                     text: s.variants_two_side,
@@ -160,13 +137,12 @@ class LoggiaBalconyScreen extends StatelessWidget {
                       letterSpacing: 0.88,
                     ),
                   ),
-                  TextSpan(
-                      text:
-                          s.variants_two_side_1,
-                  )
+                  TextSpan(text: s.variants_two_side_1),
                 ],
               ),
-            )
+            ),
+
+            const SizedBox(height: 24),
           ],
         ),
       ),

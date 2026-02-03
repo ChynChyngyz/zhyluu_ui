@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zhyluu_ui/features/thickness_dimensions/presentation/screens/materials/material_base_screen.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class WoolScreen extends StatelessWidget {
   static const name = "wool";
@@ -16,38 +17,40 @@ class WoolScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MaterialBaseScreen(
-      title: "Шерсть",
-      materialName: "Шерсть",
+      title: s.wool_title,
+      materialName: s.wool_excel_name, // важно: совпадает с Excel
       fileName: fileName,
       cityOrVillage: cityOrVillage,
       imagePath: Assets.images.howToInsulate.prosAndCons.wool.path,
       pros: [
         ProsAndCons(
-          name: "теплоизоляция",
+          name: s.pro_warm_insulation,
           imagePath: Assets.images.howToInsulate.prosAndCons.warm.path,
         ),
         ProsAndCons(
-          name: "экологичный",
+          name: s.pro_ecological,
           imagePath: Assets.images.howToInsulate.prosAndCons.leaf.path,
         ),
         ProsAndCons(
-          name: "звукоизоляция",
+          name: s.con_sound_insulation, // как и раньше
           imagePath: Assets.images.howToInsulate.prosAndCons.noAudio.path,
         ),
       ],
       cons: [
         ProsAndCons(
-          name: "защита",
+          name: s.con_protection,
           imagePath: Assets.images.howToInsulate.prosAndCons.escapeMask.path,
         ),
         ProsAndCons(
-          name: "огнеупорность",
+          name: s.con_fire_resistance,
           imagePath:
-              Assets.images.howToInsulate.prosAndCons.fireExtinguisher.path,
+          Assets.images.howToInsulate.prosAndCons.fireExtinguisher.path,
         ),
         ProsAndCons(
-          name: "биоразлагаемый",
+          name: s.con_biodegradable,
           imagePath: Assets.images.howToInsulate.prosAndCons.protect.path,
         ),
       ],

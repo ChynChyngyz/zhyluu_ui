@@ -9,6 +9,7 @@ import 'package:zhyluu_ui/features/common/extensions/build_context_extension.dar
 import 'package:zhyluu_ui/features/common/widgets/my_app_bar.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_back_button.dart';
 import 'package:zhyluu_ui/features/common/widgets/my_drawer.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class ProsAndCons {
   final String name;
@@ -37,27 +38,26 @@ class MaterialBaseScreen extends StatelessWidget {
   final List<ProsAndCons> pros;
   final List<ProsAndCons> cons;
 
-  Future<String> getSize() async {
-    final file = "$fileName.xlsx";
-    print(file);
+  Future<String> getSize(BuildContext context) async {
+    final s = S.of(context);
 
+    final file = "$fileName.xlsx";
     ByteData data = await rootBundle.load('assets/data/$file');
 
-    var bytes = data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
-    var excel = Excel.decodeBytes(bytes);
+    final bytes =
+    data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
+    final excel = Excel.decodeBytes(bytes);
 
-    var sheetName = excel.tables.keys.first;
-    var sheet = excel[sheetName];
+    final sheetName = excel.tables.keys.first;
+    final sheet = excel[sheetName];
 
-    print(sheet.sheetName);
-
-    var cityOrVillageIndex = 0;
+    const cityOrVillageIndex = 0;
     var materialIndex = -1;
 
     // Find the column index of the material name
     for (var col = 1; col < sheet.maxColumns; col++) {
-      var cell =
-          sheet.cell(CellIndex.indexByColumnRow(columnIndex: col, rowIndex: 0));
+      final cell = sheet
+          .cell(CellIndex.indexByColumnRow(columnIndex: col, rowIndex: 0));
       if (cell.value.toString() == materialName) {
         materialIndex = col;
         break;
@@ -65,14 +65,16 @@ class MaterialBaseScreen extends StatelessWidget {
     }
 
     if (materialIndex == -1) {
-      return "Материал не найден";
+      return s.error_material_not_found;
     }
 
     // Find the row index of the city or village name
     var rowIndex = -1;
     for (var row = 1; row < sheet.maxRows; row++) {
-      var cell = sheet.cell(CellIndex.indexByColumnRow(
-          columnIndex: cityOrVillageIndex, rowIndex: row));
+      final cell = sheet.cell(CellIndex.indexByColumnRow(
+        columnIndex: cityOrVillageIndex,
+        rowIndex: row,
+      ));
       if (cell.value.toString() == cityOrVillage) {
         rowIndex = row;
         break;
@@ -80,21 +82,23 @@ class MaterialBaseScreen extends StatelessWidget {
     }
 
     if (rowIndex == -1) {
-      return "Город или Село не найдено";
+      return s.error_city_not_found;
     }
 
     // Get the material size
-    var cell = sheet.cell(CellIndex.indexByColumnRow(
-        columnIndex: materialIndex, rowIndex: rowIndex));
-    var materialSize = cell.value.toString();
-
-    print(materialSize);
+    final cell = sheet.cell(CellIndex.indexByColumnRow(
+      columnIndex: materialIndex,
+      rowIndex: rowIndex,
+    ));
+    final materialSize = cell.value.toString();
 
     return materialSize;
   }
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return Scaffold(
       backgroundColor: Colors.transparent,
       endDrawer: const MyDrawer(),
@@ -134,131 +138,180 @@ class MaterialBaseScreen extends StatelessWidget {
                       topRight: Radius.circular(20),
                     ),
                   ),
-                  child: Column(
-                    children: [
-                      const SizedBox(height: 55),
-                      Row(
-                        children: [
-                          const SizedBox(width: 26),
-                          Text(
-                            title,
-                            style: GoogleFonts.poppins(
-                              fontSize: 20,
-                              color: AppColors.secondary,
-                              fontWeight: FontWeight.w700,
-                              letterSpacing: 0.7,
-                            ),
-                          ),
-                          const Spacer(),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Column(
-                            children: [
-                              const SizedBox(height: 22),
-                              Text(
-                                "+",
-                                style: GoogleFonts.roboto(
-                                  fontSize: 35,
-                                  color: AppColors.secondaryDark,
-                                  fontWeight: FontWeight.w900,
-                                  letterSpacing: 0.7,
-                                ),
-                              ),
-                              for (final pro in pros)
-                                Column(
-                                  children: [
-                                    const SizedBox(height: 20),
-                                    Image.asset(
-                                      pro.imagePath,
-                                    ),
-                                    const SizedBox(height: 10),
-                                    Text(
-                                      pro.name,
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.poppins(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                            ],
-                          ),
-                          const SizedBox(width: 50),
-                          Column(
-                            children: [
-                              const SizedBox(height: 9),
-                              Text(
-                                "-",
-                                style: GoogleFonts.roboto(
-                                  fontSize: 55,
-                                  color: AppColors.secondaryDark,
-                                  fontWeight: FontWeight.w900,
-                                  letterSpacing: 0.7,
-                                ),
-                              ),
-                              for (final con in cons)
-                                Column(
-                                  children: [
-                                    const SizedBox(height: 20),
-                                    Image.asset(
-                                      con.imagePath,
-                                    ),
-                                    const SizedBox(height: 10),
-                                    Text(
-                                      con.name,
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.poppins(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                            ],
-                          )
-                        ],
-                      ),
-                      const SizedBox(height: 30),
-                      Row(
-                        children: [
-                          const SizedBox(width: 27),
-                          Text(
-                            "Рекомендуемая толщина:",
-                            style: GoogleFonts.poppins(
-                              fontSize: 16,
-                              color: AppColors.secondary,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          const Spacer(),
-                        ],
-                      ),
-                      const SizedBox(height: 5),
-                      Row(
-                        children: [
-                          const SizedBox(width: 27),
-                          FutureBuilder(
-                            future: getSize(),
-                            initialData: "...",
-                            builder: (context, snapshot) {
-                              return Text(
-                                "$cityOrVillage-${snapshot.data ?? "Не найдено"}",
+                  child: Padding(
+                    // ✅ wider usable width, less “squeezed”
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Column(
+                      children: [
+                        const SizedBox(height: 55),
+
+                        // Title
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                title,
                                 style: GoogleFonts.poppins(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w300,
+                                  fontSize: 20,
+                                  color: AppColors.secondary,
+                                  fontWeight: FontWeight.w700,
+                                  letterSpacing: 0.7,
                                 ),
+                              ),
+                            ),
+                          ],
+                        ),
+
+                        // ====== Adaptive pros/cons layout (no overflow) ======
+                        LayoutBuilder(
+                          builder: (context, constraints) {
+                            final isNarrow = constraints.maxWidth < 360;
+
+                            Widget prosColumn = Column(
+                              children: [
+                                const SizedBox(height: 22),
+                                Text(
+                                  "+",
+                                  style: GoogleFonts.roboto(
+                                    fontSize: 35,
+                                    color: AppColors.secondaryDark,
+                                    fontWeight: FontWeight.w900,
+                                    letterSpacing: 0.7,
+                                  ),
+                                ),
+                                for (final pro in pros)
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 20),
+                                    child: Column(
+                                      children: [
+                                        Image.asset(
+                                          pro.imagePath,
+                                          width: 36,
+                                          height: 36,
+                                          fit: BoxFit.contain,
+                                        ),
+                                        const SizedBox(height: 10),
+                                        Text(
+                                          pro.name,
+                                          textAlign: TextAlign.center,
+                                          softWrap: true,
+                                          style: GoogleFonts.poppins(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w500,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                              ],
+                            );
+
+                            Widget consColumn = Column(
+                              children: [
+                                const SizedBox(height: 9),
+                                Text(
+                                  "-",
+                                  style: GoogleFonts.roboto(
+                                    fontSize: 55,
+                                    color: AppColors.secondaryDark,
+                                    fontWeight: FontWeight.w900,
+                                    letterSpacing: 0.7,
+                                  ),
+                                ),
+                                for (final con in cons)
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 20),
+                                    child: Column(
+                                      children: [
+                                        Image.asset(
+                                          con.imagePath,
+                                          width: 36,
+                                          height: 36,
+                                          fit: BoxFit.contain,
+                                        ),
+                                        const SizedBox(height: 10),
+                                        Text(
+                                          con.name,
+                                          textAlign: TextAlign.center,
+                                          softWrap: true,
+                                          style: GoogleFonts.poppins(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w500,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                              ],
+                            );
+
+                            if (isNarrow) {
+                              return Column(
+                                children: [
+                                  prosColumn,
+                                  const SizedBox(height: 24),
+                                  consColumn,
+                                ],
                               );
-                            },
-                          ),
-                          const Spacer(),
-                        ],
-                      ),
-                    ],
+                            }
+
+                            return Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(child: prosColumn),
+                                const SizedBox(width: 16),
+                                Expanded(child: consColumn),
+                              ],
+                            );
+                          },
+                        ),
+                        // ====== END ======
+
+                        const SizedBox(height: 30),
+
+                        // Recommended thickness title (localized)
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                s.recommended_thickness,
+                                style: GoogleFonts.poppins(
+                                  fontSize: 16,
+                                  color: AppColors.secondary,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+
+                        const SizedBox(height: 5),
+
+                        // Size value
+                        Row(
+                          children: [
+                            Expanded(
+                              child: FutureBuilder<String>(
+                                future: getSize(context),
+                                initialData: "...",
+                                builder: (context, snapshot) {
+                                  final value = snapshot.data ?? s.not_found;
+                                  return Text(
+                                    "$cityOrVillage-$value",
+                                    style: GoogleFonts.poppins(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w300,
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                          ],
+                        ),
+
+                        const SizedBox(height: 24),
+                      ],
+                    ),
                   ),
                 ),
               ],

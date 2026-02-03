@@ -17,42 +17,44 @@ class StrawScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MaterialBaseScreen(
-      title: "Утеплитель из соломы",
-      materialName: "Соло-ма",
+      title: s.straw_title,
+      materialName: s.mat_straw,
       cityOrVillage: cityOrVillage,
       fileName: fileName,
       imagePath: Assets.images.howToInsulate.prosAndCons.straw.path,
       pros: [
         ProsAndCons(
-          name: "теплоизоляция",
+          name: s.pro_warm_insulation,
           imagePath: Assets.images.howToInsulate.prosAndCons.warm.path,
         ),
         ProsAndCons(
-          name: "экологичный",
+          name: s.pro_ecological,
           imagePath: Assets.images.howToInsulate.prosAndCons.leaf.path,
         ),
       ],
       cons: [
         ProsAndCons(
-          name: "защита",
+          name: s.con_protection,
           imagePath: Assets.images.howToInsulate.prosAndCons.escapeMask.path,
         ),
         ProsAndCons(
-          name: "огнеупорность",
+          name: s.con_fire_resistance,
           imagePath:
-              Assets.images.howToInsulate.prosAndCons.fireExtinguisher.path,
+          Assets.images.howToInsulate.prosAndCons.fireExtinguisher.path,
         ),
         ProsAndCons(
-          name: "биоразлагаемый",
+          name: s.con_biodegradable,
           imagePath: Assets.images.howToInsulate.prosAndCons.protect.path,
         ),
         ProsAndCons(
-          name: "стойкость к влаге",
+          name: s.con_moisture_resistance,
           imagePath: Assets.images.howToInsulate.prosAndCons.keepDry.path,
         ),
         ProsAndCons(
-          name: "звукоизоляция",
+          name: s.con_sound_insulation,
           imagePath: Assets.images.howToInsulate.prosAndCons.noAudio.path,
         ),
       ],

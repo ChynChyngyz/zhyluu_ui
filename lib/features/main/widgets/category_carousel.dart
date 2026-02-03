@@ -6,28 +6,32 @@ import 'package:zhyluu_ui/features/main/widgets/my_main_card.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
 import 'package:expandable_page_view/expandable_page_view.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class CategoryCarousel extends StatelessWidget {
   const CategoryCarousel({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     final cards = [
       MyMainCard(
         onTap: () {
           context.push(AppartmentScreen.routeName);
         },
         imagePath: Assets.images.main.appartment.path,
-        text: "Квартира",
+        text: s.category_apartment,
       ),
       MyMainCard(
         onTap: () {
           context.push(HouseScreen.routeName);
         },
         imagePath: Assets.images.main.house.path,
-        text: "Частный дом",
+        text: s.category_house,
       ),
     ];
+
     final controller = PageController(viewportFraction: 0.65);
 
     return Column(

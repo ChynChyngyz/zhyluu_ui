@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_image.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class SealPerimeterScreen extends StatelessWidget {
   static const routeName = "/seal-perimeter-screen";
@@ -11,8 +12,10 @@ class SealPerimeterScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldCurveImage(
-      title: "Замена или\nустановка\nуполнителей",
+      title: s.door_seal_title,
       imagePath: Assets.images.door.sealInstalationPerimeter.path,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
@@ -20,7 +23,7 @@ class SealPerimeterScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Замена или установка\nуплотнителей",
+              s.door_seal_heading,
               style: GoogleFonts.poppins(
                 fontSize: 16,
                 color: Colors.black,
@@ -29,20 +32,10 @@ class SealPerimeterScreen extends StatelessWidget {
             ),
             const SizedBox(height: 15),
             Text(
-              "Для этих целей используется уплотнитель – полимерный или поролоновый (реже) на клеящейся основе. Предпочтение лучше отдать полимерному, т.к. срок его эксплуатации дольше, а эффективность выше. Поролоновая клейкая лента не продержится и сезон, в лучшем случае, износится в течение года. Сам процесс утепления прост и предполагает наклейку уплотнителя по периметру дверного полотна. Главное, предварительно протереть и обезжирить поверхность, чтобы уплотнитель лучше приклеился.\n\n    Важным аспектом, от которого зависит эффективность утепления, является правильный подбор толщины уплотнителя. Тонкий уплотнитель не будет выполнять свою функцию в полном объеме, а толстый создаст дополнительную нагрузку на дверные петли в процессе закрывания дверей, и приведет к их ускоренному износу.\n\n    В решении этой проблемы поможет пластилин. Его нужно завернуть в целлофан и поместить между дверной коробкой и полотном. Затем дверь закрыть и открыть. Толщина полученного пластилинового валика будет соответствовать оптимальной толщине уплотнителя.",
+              s.door_seal_text,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 15),
-            // Добавляем картинки
-            // Padding(
-            //   padding: const EdgeInsets.symmetric(vertical: 10),
-            //   child: Column(
-            //     children: [
-            //       // Image.asset(Assets.images.door.doorOtkos.path), // Первая картинка
-            //       // const SizedBox(height: 12)
-            //     ],
-            //   ),
-            // ),
           ],
         ),
       ),

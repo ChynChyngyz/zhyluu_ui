@@ -12,6 +12,7 @@ import 'package:zhyluu_ui/features/appartment/screens/window/sealing_cracks_scre
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_curve_gradient.dart';
 import 'package:zhyluu_ui/features/common/widgets/enumerating_text.dart';
 import 'package:zhyluu_ui/gen/assets.gen.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class WindowScreen extends StatelessWidget {
   static const routeName = "/window-screen";
@@ -20,15 +21,17 @@ class WindowScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldCurveGradient(
-      title: "УТЕПЛЕНИЕ ОКОН",
+      title: s.window_title,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Все здания теряют тепло через окна, однако, ряд мероприятий по утеплению окон, снижает тепловые потери помещений. Утепление окон - это не только способ повысить комфорт в помещении, но и сэкономить на затратах на отопление.",
+              s.window_intro,
               style: GoogleFonts.poppins(
                 fontSize: 15,
                 fontStyle: FontStyle.italic,
@@ -37,8 +40,9 @@ class WindowScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 15),
+
             EnumeratingText(
-              title: "Общие рекомендации",
+              title: s.window_general_recommendations,
               dotColor: AppColors.yellow,
               includeSpacing: true,
               titleTextStyle: GoogleFonts.poppins(
@@ -46,14 +50,15 @@ class WindowScreen extends StatelessWidget {
                 color: Colors.black,
                 fontWeight: FontWeight.w600,
               ),
-              texts: const [
-                "Перед началом любой процедуры по утеплению окон, особенно если используются клейкие уплотнители, необходимо тщательно промыть, высушить и обезжирить поверхность оконной рамы. Это обеспечит лучшее сцепление клейкой стороны утеплителя с рамой окна.",
-                "Чтобы утепление было эффективным и качественным нужно обратить внимание на чистоту стекол и рам окна, проверить целостность стекол, иначе усилия и затраты могут быть бесполезными.",
-                "Уделите внимание местам, где рама окна примыкает к стене, так как здесь могут быть щели, через которые тепло уходит наружу. Обратите особое внимание на уплотнение в этих местах.",
-                "Рекомендуется утеплять окна заранее, до наступления первых заморозков. Помните, что в минусовую погоду материалы могут вести себя иначе, и их эффективность может быть снижена.",
-                "При использовании монтажной пены в качестве конечного покрытия проемов между оконной рамой и оконным проемом:",
+              texts: [
+                s.window_rec_1,
+                s.window_rec_2,
+                s.window_rec_3,
+                s.window_rec_4,
+                s.window_rec_5,
               ],
             ),
+
             RichText(
               text: TextSpan(
                 style: GoogleFonts.poppins(
@@ -71,17 +76,17 @@ class WindowScreen extends StatelessWidget {
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
-                      text:
-                          "Не позволяйте монтажной пене оставаться непокрытой более 1 месяца, так как она будет терять свои изоляционные свойства и прочность!"),
+                  TextSpan(text: s.window_warning),
                 ],
               ),
             ),
+
             const SizedBox(height: 20),
             Image.asset(Assets.images.appartment.windowScheme.path),
             const SizedBox(height: 20),
+
             Text(
-              "Устройство гидро и\nпароизоляции окон.",
+              s.window_hydro_vapor_title,
               style: GoogleFonts.poppins(
                 fontSize: 16,
                 color: AppColors.secondaryDark,
@@ -89,17 +94,19 @@ class WindowScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 15),
+
             Text(
-              "Герметизация пространства между оконным блоком и проемом включает в себя три основных слоя: центральный, внешний и внутренний.",
+              s.window_hydro_vapor_intro,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 15),
+
             RichText(
               text: TextSpan(
                 style: AppTextStyles.regularTextStyle,
                 children: [
                   TextSpan(
-                    text: "Центральный слой ",
+                    text: s.window_central_layer_title,
                     style: GoogleFonts.poppins(
                       fontSize: 16,
                       fontStyle: FontStyle.italic,
@@ -107,11 +114,9 @@ class WindowScreen extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  const TextSpan(
-                      text:
-                          "- это в подавляющем большинстве случаев монтажная пена."),
+                  TextSpan(text: s.window_central_layer_text),
                   TextSpan(
-                    text: "Внешний слой ",
+                    text: s.window_outer_layer_title,
                     style: GoogleFonts.poppins(
                       fontSize: 16,
                       fontStyle: FontStyle.italic,
@@ -119,24 +124,24 @@ class WindowScreen extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  const TextSpan(
-                      text:
-                          "– гидроизоляция, необходим для исключения попадания влаги со стороны улицы, утепляет проем и защищает его от УФ-излучения."),
+                  TextSpan(text: s.window_outer_layer_text),
                 ],
               ),
             ),
             const SizedBox(height: 15),
+
             Text(
-              "Наиболее распространенные материалы для гидроизоляции – это специализированные ленточные изделия, например, сжатая уплотнительная лента и герметизирующие жидкие мастики",
+              s.window_hydro_materials,
               style: AppTextStyles.regularTextStyle,
             ),
             const SizedBox(height: 15),
+
             RichText(
               text: TextSpan(
                 style: AppTextStyles.regularTextStyle,
                 children: [
                   TextSpan(
-                    text: "Внутренний слой ",
+                    text: s.window_inner_layer_title,
                     style: GoogleFonts.poppins(
                       fontSize: 16,
                       fontStyle: FontStyle.italic,
@@ -144,15 +149,14 @@ class WindowScreen extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  const TextSpan(
-                      text:
-                          "– пароизоляция. Расположен со стороны комнаты, препятствует попаданию влаги в монтажный шов. Это особенно важно при остеклении помещений, в которых бывает сравнительно много паровых скоплений – кухонь или санузлов. Обработка монтажного шва со стороны помещения необходима для его изоляции от попадания сконденсированной влаги и паровых образований. Данный тип отделки может быть реализован герметизирующей фольгой."),
+                  TextSpan(text: s.window_inner_layer_text),
                 ],
               ),
             ),
             const SizedBox(height: 15),
+
             Text(
-              "Существует несколько способов утепления окон, которые могут помочь снизить потери тепла и повысить энергоэффективность в помещениях:",
+              s.window_methods_intro,
               style: GoogleFonts.poppins(
                 fontSize: 15,
                 fontStyle: FontStyle.italic,
@@ -161,83 +165,52 @@ class WindowScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 15),
-            RichText(
-              text: TextSpan(
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w500,
-                  letterSpacing: 0.56,
-                ),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = () {
-                    context.push(InstalationPVCScreen.routeName);
-                  },
-                text: "1. Установка пластиковых стеклопакетов (ПВХ);",
-              ),
+
+            _LinkItem(
+              text: s.window_method_1,
+              onTap: () => context.push(InstalationPVCScreen.routeName),
             ),
-            RichText(
-              text: TextSpan(
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w500,
-                  letterSpacing: 0.56,
-                ),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = () {
-                    context.push(InstalationSealScreen.routeName);
-                  },
-                text: "2. Установка уплотнителей;",
-              ),
+            _LinkItem(
+              text: s.window_method_2,
+              onTap: () => context.push(InstalationSealScreen.routeName),
             ),
-            RichText(
-              text: TextSpan(
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w500,
-                  letterSpacing: 0.56,
-                ),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = () {
-                    context.push(InstalationSlopesScreen.routeName);
-                  },
-                text: "3. Установка оконных откосов;",
-              ),
+            _LinkItem(
+              text: s.window_method_3,
+              onTap: () => context.push(InstalationSlopesScreen.routeName),
             ),
-            RichText(
-              text: TextSpan(
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w500,
-                  letterSpacing: 0.56,
-                ),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = () {
-                    context.push(FilmApplicationScreen.routeName);
-                  },
-                text: "4. Применение энергосберегающей пленки;",
-              ),
+            _LinkItem(
+              text: s.window_method_4,
+              onTap: () => context.push(FilmApplicationScreen.routeName),
             ),
-            RichText(
-              text: TextSpan(
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w500,
-                  letterSpacing: 0.56,
-                ),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = () {
-                    context.push(SealingCracksScreen.routeName);
-                  },
-                text: "5. Заклеивание дополнительных щелей и трещин",
-              ),
+            _LinkItem(
+              text: s.window_method_5,
+              onTap: () => context.push(SealingCracksScreen.routeName),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _LinkItem extends StatelessWidget {
+  const _LinkItem({required this.text, required this.onTap});
+
+  final String text;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return RichText(
+      text: TextSpan(
+        style: GoogleFonts.poppins(
+          fontSize: 16,
+          color: Colors.black,
+          fontWeight: FontWeight.w500,
+          letterSpacing: 0.56,
+        ),
+        recognizer: TapGestureRecognizer()..onTap = onTap,
+        text: text,
       ),
     );
   }

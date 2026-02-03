@@ -4,6 +4,7 @@ import 'package:zhyluu_ui/constants/colors.dart';
 import 'package:zhyluu_ui/constants/text_styles.dart';
 import 'package:zhyluu_ui/features/common/screens/my_scaffold_image_background.dart';
 import 'package:zhyluu_ui/features/common/widgets/enumerating_text.dart';
+import 'package:zhyluu_ui/generated/l10n.dart';
 
 class PreparatoryWorkScreen extends StatelessWidget {
   static const routeName = "/preparatory-work-screen";
@@ -12,15 +13,17 @@ class PreparatoryWorkScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final s = S.of(context);
+
     return MyScaffoldImageBackground(
-      title: "Подготовительные\nработы",
-      body: Padding(
+      title: s.prep_work_title,
+      body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 27),
         child: Column(
           children: [
             EnumeratingRichText(
               title: TextSpan(
-                text: "1. Планирование и подготовка",
+                text: s.prep_work_1_title,
                 style: GoogleFonts.poppins(
                   color: AppColors.secondary,
                   fontSize: 16,
@@ -31,26 +34,25 @@ class PreparatoryWorkScreen extends StatelessWidget {
               ),
               texts: [
                 TextSpan(
-                    style: AppTextStyles.regularTextStyle,
-                    text:
-                        "Оцените необходимое количество утеплителя и материалов. Исходите из размеров балкона и степени утепления, которую хотите достичь."),
+                  style: AppTextStyles.regularTextStyle,
+                  text: s.prep_work_1_text_1,
+                ),
                 TextSpan(
                   style: AppTextStyles.regularTextStyle,
                   children: [
                     TextSpan(
-                      text: "Приобретите:\n",
+                      text: s.prep_work_buy_title,
                       style: AppTextStyles.italicTextStyle,
                     ),
-                    const TextSpan(
-                        text:
-                            "- утеплитель (например, минеральную вату, пенопласт или экструдированный пенополистирол),\n- строительные инструменты, клей или монтажную пену, декоративные материалы (плитки, панели) для отделки.")
+                    TextSpan(text: s.prep_work_buy_list),
                   ],
                 ),
               ],
             ),
             const SizedBox(height: 15),
+
             EnumeratingText(
-              title: "2. Подготовка поверхностей",
+              title: s.prep_work_2_title,
               titleTextStyle: GoogleFonts.poppins(
                 color: AppColors.secondary,
                 fontSize: 16,
@@ -58,16 +60,17 @@ class PreparatoryWorkScreen extends StatelessWidget {
                 fontWeight: FontWeight.w600,
                 letterSpacing: 0.56,
               ),
-              texts: const [
-                "Тщательно осмотрите балкон/лоджию, обратив внимание на наличие повреждений, трещин, и следов влажности. Проверьте также состояние окон и дверей, чтобы убедиться, что они герметично закрываются и не пропускают холодный воздух.",
-                "Тщательно очистите помещение от грязи, пыли и лишних предметов, удалите со стен, пола и потолка старую краску, обои т.п. Чистые стены, потолок, пол обеспечат лучшую адгезию (способность покрытия к прочному сцеплению с поверхностью основания) новых материалов.",
-                "Заделайте все швы и трещины. Мелкие трещины и щелочки можно замазать атмосферостойким герметиком. Крупные щели можно заделать монтажной пеной. Это важно, чтобы предотвратить проникновение влаги и обеспечить прочное основание для утеплителя.",
-                "Если вы обнаружите проблемы с влажностью, такие как протекание крыши или стены, утечка из окон или другие источники влаги, они должны быть исправлены до начала утепления. Влага может нанести серьезный вред утеплителю и привести к образованию плесени.",
+              texts: [
+                s.prep_work_2_text_1,
+                s.prep_work_2_text_2,
+                s.prep_work_2_text_3,
+                s.prep_work_2_text_4,
               ],
             ),
             const SizedBox(height: 15),
+
             EnumeratingText(
-              title: "3. Грунтовка поверхностей",
+              title: s.prep_work_3_title,
               titleTextStyle: GoogleFonts.poppins(
                 color: AppColors.secondary,
                 fontSize: 16,
@@ -75,20 +78,20 @@ class PreparatoryWorkScreen extends StatelessWidget {
                 fontWeight: FontWeight.w600,
                 letterSpacing: 0.56,
               ),
-              texts: const [
-                "После того, как вы подготовили поверхность, пришло время нанести грунтовку. Это шаг, который вы не должны пропускать.",
-                "Сначала тщательно перемешайте грунтовку, чтобы смесь стала однородной. После этого кистью или валиком равномерно нанести грунтовку на поверхность балкона. Когда вы закончите первый слой, дайте ему высохнуть.",
-                "Затем примерно через час нанесите второй слой. Наконец, дайте обоим слоям высохнуть не менее 3 часов. Грунтовка может стать сухой на ощупь через час, но это не означает, что она готова к нанесению следующего слоя. Не наносите грунтовку, пока она еще влажная. Если вы это сделаете, то не только покрытие не приклеится, но и испортит грунтовочный слой.",
+              texts: [
+                s.prep_work_3_text_1,
+                s.prep_work_3_text_2,
+                s.prep_work_3_text_3,
               ],
             ),
             const SizedBox(height: 15),
+
             EnumeratingRichText(
               title: TextSpan(
                 children: [
-                  const TextSpan(
-                      text: "Выравнивание поверхностей (стен, потолка, пола) "),
+                  TextSpan(text: s.prep_work_leveling_title_main),
                   TextSpan(
-                    text: "выполняется при необходимости.",
+                    text: s.prep_work_leveling_title_italic,
                     style: GoogleFonts.poppins(
                       color: Colors.black,
                       fontSize: 16,
@@ -108,9 +111,10 @@ class PreparatoryWorkScreen extends StatelessWidget {
               ),
               texts: [
                 TextSpan(
+                  style: AppTextStyles.regularTextStyle,
                   children: [
                     TextSpan(
-                      text: "1. ",
+                      text: s.prep_work_leveling_1_num,
                       style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontSize: 16,
@@ -119,7 +123,7 @@ class PreparatoryWorkScreen extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: "Выравнивание потолка ",
+                      text: s.prep_work_leveling_1_title,
                       style: GoogleFonts.poppins(
                         color: AppColors.secondary,
                         fontSize: 16,
@@ -128,16 +132,14 @@ class PreparatoryWorkScreen extends StatelessWidget {
                         letterSpacing: 0.56,
                       ),
                     ),
-                    const TextSpan(
-                        text:
-                            "- проводится с помощью штукатурных смесей аналогичным со стенами (описан ниже) образом. При использовании мокрых процессов выравнивание потолка рекомендуется проводить до работ со стенами и полом. (Мокрый процесс – использование смеси на гипсовой основе, цементной штукатурки, плитки. Требуется время для высыхания слоев)."),
+                    TextSpan(text: s.prep_work_leveling_1_text),
                   ],
-                  style: AppTextStyles.regularTextStyle,
                 ),
                 TextSpan(
+                  style: AppTextStyles.regularTextStyle,
                   children: [
                     TextSpan(
-                      text: "2. ",
+                      text: s.prep_work_leveling_2_num,
                       style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontSize: 16,
@@ -146,7 +148,7 @@ class PreparatoryWorkScreen extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: "Выравнивание стен ",
+                      text: s.prep_work_leveling_2_title,
                       style: GoogleFonts.poppins(
                         color: AppColors.secondary,
                         fontSize: 16,
@@ -155,11 +157,9 @@ class PreparatoryWorkScreen extends StatelessWidget {
                         letterSpacing: 0.56,
                       ),
                     ),
-                    const TextSpan(
-                        text:
-                            "- проводится с помощью цементно-песчаных смесей. Смеси могут быть как готовые, так и изготовленные непосредственно на месте проведения работ. Для создания ровной поверхности стен с помощью выравнивающих смесей рекомендуется использовать "),
+                    TextSpan(text: s.prep_work_leveling_2_text_part1),
                     TextSpan(
-                      text: "маячковый метод",
+                      text: s.prep_work_leveling_2_beacon_method,
                       style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontSize: 16,
@@ -168,16 +168,14 @@ class PreparatoryWorkScreen extends StatelessWidget {
                         letterSpacing: 0.56,
                       ),
                     ),
-                    const TextSpan(
-                        text:
-                            ". Маяки устанавливаются так, чтобы образовалась единая плоскость. Для правильной установки маяков применяются отвесы, которые задают вертикальное расположение. Для выведения единой плоскости по горизонтали можно использовать нитку, натянутую между крайними точками основания, либо воспользоваться лазерным уровнем. Штукатурным составом заполняется пространство между соседними маяками. Затем при помощи правила, ширина которого больше расстояния между соседними маяками, производится выравнивание нанесенной штукатурки. После нанесения выравнивающего слоя поверхность оставляют до полного отверждения штукатурной смеси."),
+                    TextSpan(text: s.prep_work_leveling_2_text_part2),
                   ],
-                  style: AppTextStyles.regularTextStyle,
                 ),
                 TextSpan(
+                  style: AppTextStyles.regularTextStyle,
                   children: [
                     TextSpan(
-                      text: "3. ",
+                      text: s.prep_work_leveling_3_num,
                       style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontSize: 16,
@@ -186,7 +184,7 @@ class PreparatoryWorkScreen extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: "Выравнивание пола ",
+                      text: s.prep_work_leveling_3_title,
                       style: GoogleFonts.poppins(
                         color: AppColors.secondary,
                         fontSize: 16,
@@ -195,21 +193,20 @@ class PreparatoryWorkScreen extends StatelessWidget {
                         letterSpacing: 0.56,
                       ),
                     ),
-                    const TextSpan(
-                        text:
-                            "– проводится с помощью стяжек (стяжка - это промежуточный слой между основанием пола и финишным покрытием, например линолеумом). Виды стяжек:\n- Сухие/сборные стяжки применяются в основном для устройства черновой поверхности пола по слою теплоизоляции.\n- Полусухая – используется стандартная пескоцементная смесь, но затворяемая минимальным количеством воды, чтобы раствор быстрее высыхал.\n- Мокрая – выполняется из цементно-песчаного раствора.\n- Самовыравнивающиеся (наливной пол) – использование специальной смеси из цемента, гипса, песка, клея и пластификаторов. Смесь хорошо заполняет изъяны основного покрытия и растекается по всей площади балкона/лоджии.\nДля выравнивания пола перед укладкой теплоизоляции используются полусухие, мокрые и самонивелирующиеся стяжки."),
+                    TextSpan(text: s.prep_work_leveling_3_text),
                   ],
-                  style: AppTextStyles.regularTextStyle,
                 ),
               ],
             ),
+
             const SizedBox(height: 15),
+
             RichText(
               text: TextSpan(
                 style: AppTextStyles.regularTextStyle,
                 children: [
                   TextSpan(
-                    text: "Выполнение полусухой/мокрой стяжки:\n",
+                    text: s.prep_work_screed_wet_title,
                     style: GoogleFonts.poppins(
                       color: AppColors.secondary,
                       fontSize: 16,
@@ -218,18 +215,19 @@ class PreparatoryWorkScreen extends StatelessWidget {
                       letterSpacing: 0.56,
                     ),
                   ),
-                  const TextSpan(
-                      text:
-                          "Смесь полусухой/мокрой стяжки засыпается между установленными в одной плоскости маяками и разравнивается правилом."),
+                  TextSpan(text: s.prep_work_screed_wet_text),
                 ],
               ),
             ),
+
+            const SizedBox(height: 12),
+
             RichText(
               text: TextSpan(
                 style: AppTextStyles.regularTextStyle,
                 children: [
                   TextSpan(
-                    text: "Выполнение самонивелирующейся стяжки:\n",
+                    text: s.prep_work_screed_self_title,
                     style: GoogleFonts.poppins(
                       color: AppColors.secondary,
                       fontSize: 16,
@@ -238,12 +236,12 @@ class PreparatoryWorkScreen extends StatelessWidget {
                       letterSpacing: 0.56,
                     ),
                   ),
-                  const TextSpan(
-                      text:
-                          "Самонивелирующаяся стяжка (наливной пол) монтируется без использования маяков. Раствор в виде шликера разливается по поверхности пола необходимым по толщине слоем. Далее стяжка выдерживается в течение определенного времени до набора необходимой прочности (3–7 суток) и после этого готова для дальнейшего производства работ."),
+                  TextSpan(text: s.prep_work_screed_self_text),
                 ],
               ),
             ),
+
+            const SizedBox(height: 24),
           ],
         ),
       ),
